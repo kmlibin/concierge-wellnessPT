@@ -1,0 +1,17 @@
+.testimonials{
+    color: white;
+    width: 100%;
+    min-height: 50vh;
+
+    .white {
+        color: white;
+    }
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
