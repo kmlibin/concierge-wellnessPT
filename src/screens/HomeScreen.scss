@@ -1,0 +1,60 @@
+@import "../variables/variables.scss";
+
+main {
+  background-color: $background;
+  color: $primaryText;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.logo-container {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 35%;
+    height: 50%;
+  }
+  .brand-text {
+    width: 33%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: $bodyFont;
+    margin-right: 1rem;
+
+    p {
+      letter-spacing: 1px;
+      text-align: right;
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 0;
+      font-family: $headerFont;
+    }
+
+    h2 {
+      text-align: right;
+      font-size: 45px;
+      font-weight: 200;
+      font-style: italic;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .blue-color {
+        color: $accent;
+      }
+    }
+
+    h4 {
+      text-align: right;
+      margin-top: 0;
+      font-size: 20px;
+      width: 70%;
+      color: $mediumGrey;
+    }
+  }
+}
