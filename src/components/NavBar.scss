@@ -1,0 +1,53 @@
+@import "../variables/variables.scss";
+
+.navbar {
+  width: 100%;
+  background-color: $background;
+  // position: fixed;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    .contact-link {
+      background-color: $primaryText;
+      padding: 0.75em;
+      border-radius: 5px;
+      text-align: center;
+
+      a {
+        color: $accent;
+        text-decoration: none;
+        font-family: $bodyFont;
+        font-weight: bold;
+      }
+      :hover {
+        color: $darkAccent;
+        border-bottom: none;
+      }
+    }
+
+    .nav-link {
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $primaryText;
+        font-family: $bodyFont;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+      }
+
+      :hover {
+        color: $accent;
+        border-bottom: 1px solid $accent;
+      }
+    }
+  }
+}
