@@ -4,12 +4,29 @@ main {
   background-color: $background;
   color: $primaryText;
   width: 100%;
-  min-height: 80vh;
+  min-height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+
+  .location {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $bodyFont;
+    font-size: 35px;
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 7rem;
+    }
+  }
 }
 .logo-container {
   width: 100%;
+  min-height: 90vh;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -55,6 +72,75 @@ main {
       font-size: 20px;
       width: 70%;
       color: $mediumGrey;
+    }
+  }
+}
+.blue-color {
+  color: $accent;
+}
+.plx-image1 {
+  background-image: url(../assets/weights.jpg);
+  width: 100%;
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process-container {
+  font-family: $bodyFont;
+  font-size: 35px;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+
+  .process-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 5rem;
+    height: 80%;
+    width: 80%;
+    background-color: rgba(99, 99, 99, 0.95);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    .process-info {
+      display: flex;
+      padding: 3px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid $lightGrey;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 32%;
+      height: auto;
+      font-size: 20px;
+
+      img {
+        height: auto;
+        width: 100%;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+      }
+      h4 {
+        padding-top: 1rem;
+        margin: 0;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      p {
+        padding-left: 0.75rem;
+        margin: 0;
+        padding-bottom: 1rem;
+      }
     }
   }
 }
