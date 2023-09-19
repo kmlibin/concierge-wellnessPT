@@ -94,9 +94,28 @@ main {
   min-height: 70vh;
   width: 100%;
   display: flex;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   flex-direction: column;
   align-items: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    color: $mediumGrey;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0
+  }
 
   .process-info-container {
     display: flex;
@@ -111,10 +130,11 @@ main {
     border-radius: 5px;
 
     .process-info {
+      background-color: rgba(0, 0, 0, 0.5);
       display: flex;
       padding: 3px;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-      border: 1px solid $lightGrey;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      // border: 1px solid $lightGrey;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
@@ -128,6 +148,7 @@ main {
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
       }
       h4 {
+        color: $accent;
         padding-top: 1rem;
         margin: 0;
       }
@@ -137,7 +158,9 @@ main {
       }
 
       p {
+        text-align: center;
         padding-left: 0.75rem;
+        padding-right: .75rem;
         margin: 0;
         padding-bottom: 1rem;
       }
