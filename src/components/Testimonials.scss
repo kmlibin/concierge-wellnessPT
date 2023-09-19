@@ -4,7 +4,7 @@
   background-color: rgba(99, 99, 99, .95);
   color: $blackText;
   width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
   display: flex;
   justify-content: center;
   font-family: $bodyFont;
@@ -20,10 +20,12 @@
     width: 100%;
   }
   .testimonial-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     padding-right: 2rem;
@@ -31,16 +33,28 @@
     // opacity: 1;
     // transition: opacity 0.5s ease;
 
-    h4 {
+    .content-wrapper {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+      
+      h4 {
+      // position: absolute;
+      // top: 0;
       font-size: 30px;
-      padding-top: 1rem;
+      padding-top: 2rem;
       margin: 0;
     }
     .hr-line {
       border-bottom: 1px solid black;
-      width: 9%;
-      margin-top: 1rem;
+      width: 25px;
     }
+    }
+
+   
 
     p {
       width: 75%;

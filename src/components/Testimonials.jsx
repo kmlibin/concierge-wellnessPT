@@ -40,8 +40,10 @@ const Testimonials = () => {
           </div>
           <div className="testimonial-item-container">
           <div className="testimonial-item">
+            <div className="content-wrapper">
               <h4>{review.name}</h4>
               <span className="hr-line"></span>
+              </div>
               <p>{review.content}</p>
             </div>
             <div className="testimonial-dots">{renderDots()}</div>
