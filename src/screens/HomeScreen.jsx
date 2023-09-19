@@ -35,7 +35,10 @@ const HomeScreen = () => {
           <h2>
             The <span className="blue-color">Concierge</span> Process
           </h2>
-
+          <h4>
+            Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar
+          </h4>
+          <p> Rhoncus | Dolor | Purus</p>
           <div className="process-info-container">
             <div className="process-info">
               <img src={running}></img>
@@ -81,7 +84,10 @@ const HomeScreen = () => {
             src="https://storage.googleapis.com/maps-solutions-xk6pj5ttcx/locator-plus/7rd4/locator-plus.html"
             width="100%"
             height="500"
-            style={{ border: 0, boxShadow:  "inset 0px 0px 15px rgba(0, 0, 0, 0.2)" }}
+            style={{
+              border: 0,
+              boxShadow: "inset 0px 0px 15px rgba(0, 0, 0, 0.2)",
+            }}
             loading="lazy"
           ></iframe>
         </div>
