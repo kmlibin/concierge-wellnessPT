@@ -1,50 +1,62 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Testimonials.scss";
 import reviewData from "./data/testimonials";
-import FontAwesome from "./FontAwesome";
+import leftArrow from "../assets/chevron-left-solid.svg";
+import rightArrow from "../assets/chevron-right-solid.svg";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   //will show one testimonial at a time, based on index
   const review = reviewData[currentIndex];
-  console.log(review);
-  const kitCode = process.env.FONTAWESOME;
 
   const handleClick = (index) => {
     setCurrentIndex(index);
   };
 
+  const renderDots = () => {
+    return reviewData.map((item, index) => (
+      <span
+        key={index}
+        className={`dot ${currentIndex === index ? "active" : ""}`}
+        onClick={() => handleClick(index)}
+      ></span>
+    ));
+  };
+  
   return (
     <div className="testimonials">
       {reviewData?.length && (
         <>
-          <div className="testimonial-item">
-            <h4>{review.name}</h4>
-            <p>{review.content}</p>
-          </div>
-
-          <div className="testimonial-btns">
-            <div
+          <div className="testimonial-btn">
+            <button
               onClick={() =>
                 handleClick(
                   currentIndex === 0 ? reviewData.length - 1 : currentIndex - 1
                 )
               }
             >
-              <FontAwesome kitCode={kitCode} />
-              <i className="fas fa-heart white"></i>
+              <img src={leftArrow} alt="Right Chevron" />
+            </button>
+          </div>
+          <div className="testimonial-item-container">
+          <div className="testimonial-item">
+              <h4>{review.name}</h4>
+              <span className="hr-line"></span>
+              <p>{review.content}</p>
             </div>
-
-            <div
-              className="app__flex"
+            <div className="testimonial-dots">{renderDots()}</div>
+          </div>
+          <div className="testimonial-btn">
+            <button
+              
               onClick={() =>
                 handleClick(
                   currentIndex === reviewData.length - 1 ? 0 : currentIndex + 1
                 )
               }
             >
-              {/* <HiChevronRight /> */}
-            </div>
+              <img src={rightArrow} alt="Left Chevron" />
+            </button>
           </div>
         </>
       )}
