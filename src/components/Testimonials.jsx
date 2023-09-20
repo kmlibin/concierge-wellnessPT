@@ -22,7 +22,7 @@ const Testimonials = () => {
       ></span>
     ));
   };
-  
+
   return (
     <div className="testimonials">
       {reviewData?.length && (
@@ -39,10 +39,12 @@ const Testimonials = () => {
             </button>
           </div>
           <div className="testimonial-item-container">
-          <div className="testimonial-item">
-            <div className="content-wrapper">
-              <h4>{review.name}</h4>
-              <span className="hr-line"></span>
+            <div className="testimonial-item"  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+              <div className="content-wrapper">
+                <h4>{review.name}</h4>
+                <span className="hr-line"></span>
               </div>
               <p>{review.content}</p>
             </div>
@@ -50,7 +52,6 @@ const Testimonials = () => {
           </div>
           <div className="testimonial-btn">
             <button
-              
               onClick={() =>
                 handleClick(
                   currentIndex === reviewData.length - 1 ? 0 : currentIndex + 1

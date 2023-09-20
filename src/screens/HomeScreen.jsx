@@ -11,7 +11,12 @@ const HomeScreen = () => {
     <>
       <main>
         <div className="logo-container">
-          <div className="brand-text">
+          <div
+            className="brand-text"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p>Dr.Christian Wade</p>
             <h2>
               <span className="blue-color">Lorem ipsum </span>dolor sit amet,{" "}
@@ -40,7 +45,12 @@ const HomeScreen = () => {
           </h4>
           <p> Rhoncus | Dolor | Purus</p>
           <div className="process-info-container">
-            <div className="process-info">
+            <div
+              className="process-info"
+              data-aos="zoom-in-right"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
               <img src={running}></img>
               <h4>Heading</h4>
               <ul>
@@ -52,7 +62,12 @@ const HomeScreen = () => {
                 Rhoncus dolor purus non enim praesent elementum facilisis leo.
               </p>
             </div>
-            <div className="process-info">
+            <div
+              className="process-info"
+              data-aos="zoom-in-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
               <img src={fitness}></img>
               <p>
                 Rhoncus dolor purus non enim praesent elementum facilisis leo.
@@ -61,7 +76,12 @@ const HomeScreen = () => {
                 quam.
               </p>
             </div>
-            <div className="process-info">
+            <div
+              className="process-info"
+              data-aos="zoom-in-left"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
               <img src={moreweights}></img>
               <h4>Heading</h4>
               <ul>
