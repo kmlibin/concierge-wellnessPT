@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./Testimonials.scss";
 import reviewData from "./data/testimonials";
 import leftArrow from "../assets/chevron-left-solid.svg";
