@@ -6,11 +6,18 @@ import rightArrow from "../assets/chevron-right-solid.svg";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [opacity, setOpacity] = useState(1);
+
   //will show one testimonial at a time, based on index
   const review = reviewData[currentIndex];
 
+  //updates index and opacity, this way item fades in with each click
   const handleClick = (index) => {
-    setCurrentIndex(index);
+    setOpacity(0); 
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setOpacity(1); 
+    }, 500); 
   };
 
   const renderDots = () => {
@@ -38,10 +45,8 @@ const Testimonials = () => {
               <img src={leftArrow} alt="Right Chevron" />
             </button>
           </div>
-          <div className="testimonial-item-container">
-            <div className="testimonial-item"  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out">
+          <div className={`testimonial-item-container ${review.name}`}>
+            <div style={{ opacity: opacity }} className="testimonial-item">
               <div className="content-wrapper">
                 <h4>{review.name}</h4>
                 <span className="hr-line"></span>
