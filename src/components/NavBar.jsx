@@ -1,28 +1,53 @@
-import React from 'react'
-import './NavBar.scss'
+import React from "react";
+import "./NavBar.scss";
+import { Link } from "react-router-dom";
+
+const navRoutes = [
+  {
+    name: "Home",
+    route: "/",
+  },
+  {
+    name: "Meet Your PT",
+    route: "/meet",
+  },
+  {
+    name: "My Story",
+    route: "/mystory",
+  },
+  ,
+  {
+    name: "Services",
+    route: "/services",
+  },
+  {
+    name: "FAQ",
+    route: "/faq",
+  },
+  {
+    name: "Request Free Phone Call",
+    route: "/contact",
+  },
+];
 
 const NavBar = () => {
   return (
     <nav className="navbar">
- <ul className="navbar-links">
-        {["Home", "Meet Your PT", "My Story", "Services", "FAQ", "Request Free Phone Call"].map((item) => (
-          item === "Request Free Phone Call" ? (
-         
-            <li className="contact-link" key={`link-${item}`}>
-              <a href={`#${item}`}>{item}</a>
+      <ul className="navbar-links">
+        {navRoutes.map((item) =>
+          item.name === "Request Free Phone Call" ? (
+            <li className="contact-link" key={`link-${item.name}`}>
+              <Link to={item.route}>{item.name}</Link>
             </li>
-          
           ) : (
-           
-            <li className="nav-link"key={`link-${item}`}>
-              <a href={`#${item}`}>{item}</a>
+            <li className="nav-link" key={`link-${item.name}`}>
+              <Link to={item.route}>{item.name}</Link>
             </li>
-          
           )
-        ))}
+        )}
       </ul>
-  </nav>
-  )
-}
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
