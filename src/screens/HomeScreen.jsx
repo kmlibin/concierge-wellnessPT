@@ -97,6 +97,12 @@ const HomeScreen = () => {
           </div>
         </div>
 
+        <div
+          className="plx-image2"
+          title="Weight Lifter"
+          alt="Photo by Victor Freitas on Unsplash "
+        ></div>
+        
         <div className="location">
           <h2>Location</h2>
           <iframe
