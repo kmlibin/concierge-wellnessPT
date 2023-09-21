@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MyStoryScreen.scss";
 import chickenman from "../assets/chickenman.jpg";
 import bands from "../assets/bands.jpg";
@@ -6,7 +6,7 @@ import weights from "../assets/weights.jpg";
 import running from "../assets/running.jpg";
 import fitness from "../assets/fitness.jpg";
 import moreweights from "../assets/moreweights.jpg";
-
+import {BiChevronLeftSquare, BiChevronRightSquare} from 'react-icons/bi'
 const MyStoryScreen = () => {
   const images = [
     chickenman,
@@ -29,6 +29,17 @@ const MyStoryScreen = () => {
     const prevIndex = (currentIndex - 1 + images.length) % images.length;
     setCurrentIndex(prevIndex);
   };
+
+  const autoScroll = () => {
+    const nextIndex = (currentIndex + 1) % images.length;
+    setCurrentIndex(nextIndex);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(autoScroll, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [currentIndex]);
 
   //determine images present in the array (in what order) based on index
   const visibleImages = [];
@@ -66,16 +77,16 @@ const MyStoryScreen = () => {
       </div>
 
       <div className="image-gallery">
-        <div className="image-list">
+        <div className="image-list" >
           {visibleImages.map((image, index) => (
-            <div className="image">
+            <div className="image" >
               <img src={image} alt="Gallery" />
             </div>
           ))}
         </div>
         <div className="controls">
-          <button onClick={handlePrevClick}>Previous</button>
-          <button onClick={handleNextClick}>Next</button>
+          <button onClick={handlePrevClick}><BiChevronLeftSquare className="button-icon" /></button>
+          <button onClick={handleNextClick}><BiChevronRightSquare className="button-icon"/></button>
         </div>
       </div>
     </main>
