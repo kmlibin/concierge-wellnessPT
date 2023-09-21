@@ -1,110 +1,114 @@
 @import "../variables/variables.scss";
 
-
 .story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: $blackText;
+
+  .story-container {
+    background-color: $primaryText;
+    min-height: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    color: $blackText;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    margin-top: 1rem;
+    padding: 3rem 0;
 
-
-    .story-container {
-        background-color: $primaryText;
-        min-height: 70%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, .9);
-        margin-top: 1rem;
-        padding: 3rem 0;
-
-        h2 {
-            font-family: $headerFont;
-            margin-bottom: .75rem;
-            font-size: 35px;
-        }
-            .hr-line {
-            border-bottom: 1px solid $accent;
-            margin-bottom: 2rem;
-            width: 40%;
-           
-        }
-
-        p {
-            width: 75%;
-            font-family: $bodyFont;
-            font-size: 18px;
-        }
+    h2 {
+      font-family: $headerFont;
+      margin-bottom: 0.75rem;
+      font-size: 35px;
+    }
+    .hr-line {
+      border-bottom: 1px solid $accent;
+      margin-bottom: 2rem;
+      width: 40%;
     }
 
+    p {
+      width: 75%;
+      font-family: $bodyFont;
+      font-size: 18px;
+    }
+  }
 
-    .image-gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        height: 30%;
-        max-width: 100%;
-        
-        .image-list {
-            display: flex;
-            width: 120%;
-            overflow: hidden;
-            height: 300px;
-            margin: 0 -10px;
-          }
-          
-          .image {
-            flex: 0 0 20%; 
-            // margin: 0 10px; 
-            border: 2px solid #ddd;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-            opacity: 0.35; 
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    height: 30%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .image-list {
+      display: flex;
+      width: 120%;
+      height: 300px;
+      margin: 0 -10px;
+    }
+
+    .image {
+      flex: 0 0 20%;
+      // margin: 0 10px;
+      border: 2px solid #ddd;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      opacity: 0.35;
+    }
+
+    .image:nth-child(3) {
+      opacity: 1;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    }
+
+    .image:first-child {
+      margin-left: 0;
+    }
+
+    .image:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .controls {
+      margin-top: 10px;
+
+      button {
+        margin: 0 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        .button-icon {
+          font-size: 50px;
+          color: $primaryText;
+          transition: color 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease all;
+            color: $accent;
           }
 
-          .image:nth-child(3) {
-            opacity: 1.0;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-          }
-          
-          .image:first-child {
-            margin-left: 0;
-          }
-          
-          .image:last-child {
-            margin-right: 0;
-          }
-          
-          img {
-            width: 100%;
-            height: 100%;
-            display: block;
-          }
-        
-        .controls {
-          margin-top: 10px;
-          
-          button {
-            padding: 10px 20px;
-            margin: 0 5px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            outline: none;
-            transition: background-color 0.3s ease;
-            
-            &:hover {
-              background-color: #0056b3;
-            }
+          &:active {
+            transform: translateY(2px);
           }
         }
       }
     }
+  }
+}
