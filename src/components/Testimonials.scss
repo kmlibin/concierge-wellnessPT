@@ -63,30 +63,46 @@
       width: 75%;
     }
   }
-  .testimonial-btn {
+  .testimonial-btn-container {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
+
     button {
-      background-color: transparent;
-      border: none;
-      height: 50px;
-      width: 50px;
-    }
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
 
-    button:hover {
+      .button-icon {
+        font-size: 75px;
+        color: rgba(0, 0, 0, .5);
+        transition: color 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 0.2s ease all;
+          color: $accent;
+        }
+
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+
+    &:hover {
       cursor: pointer;
-
       border-radius: 5px;
       transform: scale(1.1);
       transition: transform 0.2s ease all;
     }
+
     button:active {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       transform: translateY(2px);
     }
-
+  }
     img {
       height: 100%;
       width: 100%;

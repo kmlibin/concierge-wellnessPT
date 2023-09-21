@@ -3,6 +3,7 @@ import "./Testimonials.scss";
 import reviewData from "./data/testimonials";
 import leftArrow from "../assets/chevron-left-solid.svg";
 import rightArrow from "../assets/chevron-right-solid.svg";
+import {BsChevronCompactRight, BsChevronCompactLeft} from 'react-icons/bs'
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +35,7 @@ const Testimonials = () => {
     <div className="testimonials">
       {reviewData?.length && (
         <>
-          <div className="testimonial-btn">
+          <div className="testimonial-btn-container">
             <button
               onClick={() =>
                 handleClick(
@@ -42,7 +43,7 @@ const Testimonials = () => {
                 )
               }
             >
-              <img src={leftArrow} alt="Right Chevron" />
+              <BsChevronCompactLeft className ="button-icon"/>
             </button>
           </div>
           <div className={`testimonial-item-container ${review.name}`}>
@@ -55,7 +56,7 @@ const Testimonials = () => {
             </div>
             <div className="testimonial-dots">{renderDots()}</div>
           </div>
-          <div className="testimonial-btn">
+          <div className="testimonial-btn-container">
             <button
               onClick={() =>
                 handleClick(
@@ -63,7 +64,7 @@ const Testimonials = () => {
                 )
               }
             >
-              <img src={rightArrow} alt="Left Chevron" />
+              <BsChevronCompactRight className="button-icon" />
             </button>
           </div>
         </>
