@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Testimonials.scss";
 import reviewData from "./data/testimonials";
-import leftArrow from "../assets/chevron-left-solid.svg";
-import rightArrow from "../assets/chevron-right-solid.svg";
-import {BsChevronCompactRight, BsChevronCompactLeft} from 'react-icons/bs'
+import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,11 +12,11 @@ const Testimonials = () => {
 
   //updates index and opacity, this way item fades in with each click
   const handleClick = (index) => {
-    setOpacity(0); 
+    setOpacity(0);
     setTimeout(() => {
       setCurrentIndex(index);
-      setOpacity(1); 
-    }, 500); 
+      setOpacity(1);
+    }, 500);
   };
 
   const renderDots = () => {
@@ -43,7 +41,7 @@ const Testimonials = () => {
                 )
               }
             >
-              <BsChevronCompactLeft className ="button-icon"/>
+              <BsChevronCompactLeft className="button-icon" />
             </button>
           </div>
           <div className={`testimonial-item-container ${review.name}`}>
