@@ -15,23 +15,30 @@
     padding: 0 32px;
 
     .contact-link {
-      background-color: $primaryText;
-      padding: 0.75em;
-      border-radius: 5px;
-      text-align: center;
-     
-
       a {
         color: $accent;
         text-decoration: none;
         font-family: $bodyFont;
         font-weight: bold;
-        
-      }
+        display: inline-block;
+        padding: .75rem;
+        border-radius: 5px;
+        text-align: center;
+        background-color: $primaryText;
+        transition: all .2s ease-in;
+
+       &:hover {
+        color: $primaryText;
+        background-color: $darkAccent;
+      }   
+    }
+
       :hover {
-        color: $darkAccent;
-        border-bottom: none;
+        color: $primaryText;
+        background-color: $accent;
       }
+      
+    
     }
 
     .nav-link {
