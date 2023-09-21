@@ -25,7 +25,7 @@ const navRoutes = [
     route: "/faq",
   },
   {
-    name: "Request Free Phone Call",
+    name: "Contact",
     route: "/contact",
   },
 ];
@@ -35,7 +35,7 @@ const NavBar = () => {
     <nav className="navbar">
       <ul className="navbar-links">
         {navRoutes.map((item) =>
-          item.name === "Request Free Phone Call" ? (
+          item.name === "Contact" ? (
             <li className="contact-link" key={`link-${item.name}`}>
               <Link to={item.route}>{item.name}</Link>
             </li>
