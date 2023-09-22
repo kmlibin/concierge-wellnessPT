@@ -1,24 +1,50 @@
 @import "../variables/variables.scss";
 
 .contact-form {
-  background-color: rgba(99, 99, 99, 0.45);
   font-family: $bodyFont;
   font-size: 18px;
   color: $primaryText;
   width: 65%;
+  height: 100%;
   border-radius: 5px;
-  margin: 0 auto;
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+
+  h2 {
+    text-align: center;
+    color: $accent;
+    font-family: $headerFont;
+    font-size: 35px;
+    padding-bottom: 12px;
+  }
+
+  .hr-line {
+    width: 50%;
+    border-bottom: 1px solid $lightGrey;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
 
   form {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 15px 15px 0 0;
+    padding: 3rem;
+    margin: 0;
     color: $primaryText;
     display: flex;
+    width: 65%;
+    height: 85%;
     flex-direction: column;
 
     .name-input,
+    .lastname-input,
     .email-input,
     .phone-input {
-      width: 35%;
+      width: 45%;
 
       input {
         margin-top: 0.5rem;
@@ -30,19 +56,20 @@
       }
     }
 
-    .email-phone-container {
+    .email-phone-container,
+    .name-lastname-container {
       display: flex;
       justify-content: space-between;
+    }
 
-      .select-input {
-        width: 25%;
-        select {
-          margin-top: 0.5rem;
-          width: 100%;
-          padding: 10px;
-          border-radius: 5px;
-          box-sizing: border-box;
-        }
+    .select-input {
+      width: 45%;
+      select {
+        margin-top: 0.5rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
       }
     }
 
@@ -67,7 +94,7 @@
         font-size: 16px;
         box-sizing: border-box;
         resize: vertical;
-        height: 150px;
+        height: 200px;
       }
     }
 
