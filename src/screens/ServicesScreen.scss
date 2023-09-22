@@ -2,24 +2,30 @@
 
 .services {
   height: 90vh;
-  max-height: calc(90vh - 2rem); /* Adjust the max height to create space for the overlapping box */
-position: relative;
+  max-height: calc(
+    90vh - 2rem
+  ); /* Adjust the max height to create space for the overlapping box */
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: rgba(99, 99, 99, 0.45);
-  background-image: url('../assets/fitness.jpg');
+  background-image: url("../assets/fitness.jpg");
   z-index: -2;
 
   .overlapping {
-
     position: absolute;
-
     top: 2rem; /* Adjust the top position to create a border on top */
-    left: calc(11.5% - 2rem); /* Adjust the left position to create a border on the left */
-    width: calc(35% - 2rem); /* Adjust the width to accommodate the border width */
-    height: calc(100% - 4rem); /* Adjust the height to accommodate the border height */
+    left: calc(
+      11.5% - 2rem
+    ); /* Adjust the left position to create a border on the left */
+    width: calc(
+      35% - 2rem
+    ); /* Adjust the width to accommodate the border width */
+    height: calc(
+      100% - 4rem
+    ); /* Adjust the height to accommodate the border height */
     background-color: $lightGrey; /* Replace with your desired background color */
     z-index: -1; /* Place the rectangles behind the content */
   }
@@ -28,6 +34,7 @@ position: relative;
     width: 35%;
     margin: 2rem;
     height: auto;
+    max-height: 90%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
   }
 
@@ -41,10 +48,9 @@ position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    // border-radius: 5px;
 
     .services-text {
-       
       height: 50%;
       font-family: $bodyFont;
       display: flex;
@@ -76,16 +82,19 @@ position: relative;
       }
 
       .service-list {
+        margin: 1rem;
         display: flex;
+        align-items: flex-end;
         width: 75%;
-
+        background-color: rgba(176, 176, 176, .25);
+        border-radius: 5px;
         ul {
           font-family: $bodyFont;
           color: $blackText;
           margin: 2rem;
 
           li {
-            padding: 0.5rem;
+            padding: 0.25rem;
           }
         }
       }
