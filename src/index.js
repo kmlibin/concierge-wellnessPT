@@ -12,6 +12,8 @@ import App from "./App";
 import HomeScreen from "./screens/HomeScreen";
 import BioScreen from "./screens/BioScreen";
 import MyStoryScreen from './screens/MyStoryScreen';
+import ContactScreen from "./screens/ContactScreen";
+import ServicesScreen from "./screens/ServicesScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +21,8 @@ const router = createBrowserRouter(
       <Route index={true} path="/" element={<HomeScreen />} />
       <Route path ="/meet" element = {<BioScreen />} />
       <Route path ="/mystory" element = {<MyStoryScreen />} />
+      <Route path ="/contact" element = {<ContactScreen />} />
+      <Route path ="/services" element = {<ServicesScreen />} />
     </Route>
   )
 );
