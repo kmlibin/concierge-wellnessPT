@@ -20,8 +20,6 @@ const ContactForm = () => {
     });
   };
 
- 
-
   const validateForm = () => {
     let errors = {};
     let formIsValid = true;
@@ -59,17 +57,17 @@ const ContactForm = () => {
       errors["message"] = "*Please provide information";
     }
 
-    setErrors( errors );
+    setErrors(errors);
     return formIsValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    validateForm()
+    validateForm();
     console.log(formData);
   };
 
-  console.log(errors.number)
+  console.log(errors.number);
   return (
     <div className="contact-form">
       <form onSubmit={handleSubmit}>
@@ -77,12 +75,13 @@ const ContactForm = () => {
           <label htmlFor="name">
             Name:
             <input
+              className={`${errors.username ? "red-border" : ""}`}
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleChange}
-           
+              required
             />
           </label>
           <div className="error-message">{errors.username}</div>
@@ -92,6 +91,7 @@ const ContactForm = () => {
             <label htmlFor="email">
               Email:
               <input
+                className={`${errors.email ? "red-border" : ""}`}
                 type="email"
                 id="email"
                 name="email"
@@ -107,13 +107,13 @@ const ContactForm = () => {
             <label htmlFor="phone">
               Phone:
               <input
-              className={`${errors.number ? "red-border" : ""}`}
+                className={`${errors.number ? "red-border" : ""}`}
                 type="tel"
                 id="phone"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-          
+                required
               />
             </label>
             <div className="error-message">{errors.number}</div>
@@ -121,7 +121,7 @@ const ContactForm = () => {
 
           <div className="select-input">
             <label htmlFor="preferredContactMethod">
-              Preferred Contact Method:
+              Preferred Contact:
               <select
                 id="preferredContactMethod"
                 name="preferredContactMethod"
@@ -137,8 +137,9 @@ const ContactForm = () => {
         </div>
         <div className="message-container">
           <label htmlFor="message">
-            Message (max 500 characters):
+            Message <span className="regular-font">(max 500 characters)</span>:
             <textarea
+              className={`${errors.message ? "red-border" : ""}`}
               id="message"
               name="message"
               value={formData.message}
