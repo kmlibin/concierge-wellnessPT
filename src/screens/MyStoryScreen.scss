@@ -10,7 +10,7 @@
   color: $blackText;
 
   .story-container {
-    background-color: $primaryText;
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
     min-height: 70%;
     width: 100%;
     display: flex;
