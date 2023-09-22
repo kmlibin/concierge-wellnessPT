@@ -5,6 +5,7 @@ import { toHaveErrorMessage } from "@testing-library/jest-dom/matchers";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
+    lastName: "",
     email: "",
     phone: "",
     preferredContactMethod: "phone",
@@ -71,20 +72,36 @@ const ContactForm = () => {
   return (
     <div className="contact-form">
       <form onSubmit={handleSubmit}>
-        <div className="name-input">
-          <label htmlFor="name">
-            Name:
-            <input
-              className={`${errors.username ? "red-border" : ""}`}
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <div className="error-message">{errors.username}</div>
+        <h2>Let's Connect!</h2>
+        <span className="hr-line"></span>
+        <div className="name-lastname-container">
+          <div className="name-input">
+            <label htmlFor="name">
+              Name:
+              <input
+                className={`${errors.username ? "red-border" : ""}`}
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </label>
+          </div>
+          <div className="lastname-input">
+            <label htmlFor="lastname">
+              Last Name:
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </label>
+          </div>
         </div>
         <div className="email-phone-container">
           <div className="email-input">
@@ -118,23 +135,23 @@ const ContactForm = () => {
             </label>
             <div className="error-message">{errors.number}</div>
           </div>
-
-          <div className="select-input">
-            <label htmlFor="preferredContactMethod">
-              Preferred Contact:
-              <select
-                id="preferredContactMethod"
-                name="preferredContactMethod"
-                value={formData.preferredContactMethod}
-                onChange={handleChange}
-              >
-                <option value="phone">Phone</option>
-                <option value="email">Email</option>
-              </select>
-            </label>
-            <div className="error-message">{errors.contactMethod}</div>
-          </div>
         </div>
+        <div className="select-input">
+          <label htmlFor="preferredContactMethod">
+            Preferred Contact:
+            <select
+              id="preferredContactMethod"
+              name="preferredContactMethod"
+              value={formData.preferredContactMethod}
+              onChange={handleChange}
+            >
+              <option value="phone">Phone</option>
+              <option value="email">Email</option>
+            </select>
+          </label>
+          <div className="error-message">{errors.contactMethod}</div>
+        </div>
+
         <div className="message-container">
           <label htmlFor="message">
             Message <span className="regular-font">(max 500 characters)</span>:
