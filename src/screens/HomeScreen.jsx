@@ -9,7 +9,7 @@ import moreweights from "../assets/moreweights.jpg";
 const HomeScreen = () => {
   return (
     <>
-      <main>
+      <main className="main-container">
         <div className="logo-container">
           <div
             className="brand-text"
