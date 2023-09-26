@@ -1,0 +1,65 @@
+@import "../variables/variables.scss";
+
+.faq {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: $primaryText;
+    font-family: $bodyFont;
+
+    .faq-title {
+        width: 15%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        box-sizing: border-box;
+
+        h1 {
+            font-size: 45px;
+            color: $accent;
+            margin-bottom: 1rem;
+        }
+
+        .hr-line {
+            border-bottom: 1px solid $accent;
+            margin-bottom: .75rem;
+            width: 75%;
+           
+        }
+    }
+
+    .faq-container {
+        width: 40%;
+        background-color: rgba(99, 99, 99, 0.45);
+        
+
+        .faq-text{
+            max-width: 100%;
+            padding: 2rem;
+
+            h4 {
+                font-size: 25px;
+                font-family: $headerFont;
+                margin-bottom: 2rem;
+                color: $accent;
+            }
+            p {
+                font-size: 18px;
+              
+            }
+        }
+    }
+    .faq-image {
+        max-width: 25%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
