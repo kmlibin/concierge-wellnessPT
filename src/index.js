@@ -11,18 +11,20 @@ import "./index.scss";
 import App from "./App";
 import HomeScreen from "./screens/HomeScreen";
 import BioScreen from "./screens/BioScreen";
-import MyStoryScreen from './screens/MyStoryScreen';
+import MyStoryScreen from "./screens/MyStoryScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ServicesScreen from "./screens/ServicesScreen";
+import FAQScreen from "./screens/FAQScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} path="/" element={<HomeScreen />} />
-      <Route path ="/meet" element = {<BioScreen />} />
-      <Route path ="/mystory" element = {<MyStoryScreen />} />
-      <Route path ="/contact" element = {<ContactScreen />} />
-      <Route path ="/services" element = {<ServicesScreen />} />
+      <Route path="/meet" element={<BioScreen />} />
+      <Route path="/mystory" element={<MyStoryScreen />} />
+      <Route path="/contact" element={<ContactScreen />} />
+      <Route path="/services" element={<ServicesScreen />} />
+      <Route path="/faq" element={<FAQScreen />} />
     </Route>
   )
 );
