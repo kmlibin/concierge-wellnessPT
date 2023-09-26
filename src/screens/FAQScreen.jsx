@@ -4,7 +4,8 @@ import pullup from "../assets/pullup.jpg";
 
 const FAQScreen = () => {
   return (
-    <main className="faq">
+    <main className="faq" data-aos="fade-up"
+    data-aos-duration="1000">
       <div className="faq-title">
         <h1>FAQs</h1>
         <span className="hr-line"></span>

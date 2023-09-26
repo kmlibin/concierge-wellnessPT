@@ -8,7 +8,7 @@ const ContactScreen = () => {
   return (
     <main className="contact">
       <div className="image-container"></div>
-      <div className="contact-text">
+      <div className="contact-text" >
         <div className="centered-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

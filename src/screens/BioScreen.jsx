@@ -3,7 +3,8 @@ import "./BioScreen.scss";
 import chickenman from "../assets/chickenman.jpg";
 const BioScreen = () => {
   return (
-    <main className="bio">
+    <main className="bio" data-aos="fade-up"
+    data-aos-duration="1000">
       <div className="bio-container">
         <div className="bio-image-container">
           <img src={chickenman} />

@@ -70,7 +70,8 @@ const ContactForm = () => {
 
   console.log(errors.number);
   return (
-    <div className="contact-form">
+    <div className="contact-form" data-aos="fade-up"
+    data-aos-duration="1000">
       <form onSubmit={handleSubmit}>
         <h2>Let's Connect!</h2>
         <span className="hr-line"></span>

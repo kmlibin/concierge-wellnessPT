@@ -9,7 +9,8 @@ import moreweights from "../assets/moreweights.jpg";
 
 const MyStoryScreen = () => {
   return (
-    <article className="story">
+    <article className="story" data-aos="fade-up"
+    data-aos-duration="1000">
       <div className="story-content">
         <div className="story-title">
           <h2>Why Physical Therapy?</h2>
