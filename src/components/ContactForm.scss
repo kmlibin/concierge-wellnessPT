@@ -48,6 +48,7 @@
    
 
       input {
+        font-family: $bodyFont;
         margin-top: 0.5rem;
         color: $primaryText;
         width: 100%;
@@ -67,6 +68,7 @@
     .select-input {
       width: 45%;
       select {
+        font-family: $bodyFont;
         margin-top: 0.5rem;
         width: 100%;
         padding: 10px;
