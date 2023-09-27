@@ -1,16 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./FAQScreen.scss";
-import pullup from "../assets/pullup.jpg";
+import { TfiEmail } from "react-icons/tfi";
 
 const FAQScreen = () => {
   return (
-    <main className="faq" data-aos="fade-up"
-    data-aos-duration="1000">
-      <div className="faq-title">
+    <main className="faq">
+      <div className="faq-title" data-aos="fade-up" data-aos-duration="1000">
         <h1>FAQs</h1>
         <span className="hr-line"></span>
       </div>
-      <div className="faq-container">
+      <div className="faq-container" data-aos="fade-up" data-aos-duration="1000">
         <div className="faq-text">
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
           <p>
@@ -62,9 +62,17 @@ const FAQScreen = () => {
           </p>
         </div>
       </div>
-      {/* <div className="faq-image">
-        <img src = {pullup}/>
-      </div> */}
+      <div className="faq-questions-container">
+        <div className="faq-content" data-aos="fade-up" data-aos-duration="1000">
+        <div className="icon-container">
+            <TfiEmail  className="icon"/>
+         </div>
+          <p>
+            Still don't have the answers you're looking for? Submit a question on our <Link to="/contact">Contact</Link> page,
+            or email Concierge Wellness at email@email.com
+          </p>
+        </div>
+      </div>
     </main>
   );
 };
