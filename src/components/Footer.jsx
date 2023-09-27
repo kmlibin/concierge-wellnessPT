@@ -15,11 +15,12 @@ const Footer = () => {
         href="https://www.instagram.com/cw_pllc/"
         target="_blank"
         rel="noopener noreferrer"
+        style={{marginBottom: "2rem"}}
       >
         <BsInstagram className="instagram" />
       </a>
 
-      <p>Concierge Wellness &copy; {currentYear}</p>
+      <p >Concierge Wellness &copy; {currentYear}</p>
     </footer>
   );
 };
