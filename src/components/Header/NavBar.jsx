@@ -1,7 +1,10 @@
 import React from "react";
-import "./NavBar.scss";
+//rrd
 import { Link } from "react-router-dom";
+//styles
+import "./NavBar.scss";
 
+//routes for the links
 const navRoutes = [
   {
     name: "Home",

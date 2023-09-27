@@ -1,6 +1,9 @@
 import React from "react";
+//styles
 import "./Footer.scss";
+//libraries 
 import { BsInstagram } from "react-icons/bs";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
