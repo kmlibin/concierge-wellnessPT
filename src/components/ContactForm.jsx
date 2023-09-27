@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./ContactForm.scss";
-import { toHaveErrorMessage } from "@testing-library/jest-dom/matchers";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
@@ -61,18 +62,39 @@ const ContactForm = () => {
     setErrors(errors);
     return formIsValid;
   };
-
+  console.log(errors);
   const handleSubmit = (e) => {
     e.preventDefault();
-    validateForm();
-    console.log(formData);
-  };
+   const isValid = validateForm();
+   if(isValid) {
+
+      try {
+        emailjs
+          .sendForm(
+            ,
+            "template_m2bhs6m",
+            form.current,
+            "dsnGVaDSR6V73PTwC"
+          )
+          .then((result) => {
+            console.log(result.text);
+            //add success, redirect to home page
+          });
+      } catch (error) {
+        console.log(error.text);
+        //display error message to user
+        //setError('failed to send email. please try again later)
+      }
+    
+  } else {
+    console.log('form validation failed')
+  }
+}
 
   console.log(errors.number);
   return (
-    <div className="contact-form" data-aos="fade-up"
-    data-aos-duration="1000">
-      <form onSubmit={handleSubmit}>
+    <div className="contact-form" data-aos="fade-up" data-aos-duration="1000">
+      <form onSubmit={handleSubmit} ref={form}>
         <h2>Let's Connect!</h2>
         <span className="hr-line"></span>
         <div className="name-lastname-container">
