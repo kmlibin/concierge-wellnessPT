@@ -2,8 +2,16 @@ import React, { useState, useRef } from "react";
 import "./ContactForm.scss";
 import emailjs from "@emailjs/browser";
 
+import Modal from "./Modal";
+
 const ContactForm = () => {
   const form = useRef();
+  const [showModal, setShowModal] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState({
+    heading: "Success",
+    message:
+      "Thanks for your email. Christian will respond within the next 24 hours",
+  });
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
@@ -12,7 +20,7 @@ const ContactForm = () => {
     preferredContactMethod: "phone",
     message: "",
   });
-  const [errors, setErrors] = useState({});
+  const [formErrors, setFormErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -59,39 +67,59 @@ const ContactForm = () => {
       errors["message"] = "*Please provide information";
     }
 
-    setErrors(errors);
+    setFormErrors(errors);
     return formIsValid;
   };
-  console.log(errors);
+  console.log(formErrors);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-   const isValid = validateForm();
-   if(isValid) {
-
+    const isValid = validateForm();
+    if (isValid) {
       try {
         emailjs
           .sendForm(
-            ,
+            process.env.REACT_APP_SERVICE_ID,
             "template_m2bhs6m",
             form.current,
-            "dsnGVaDSR6V73PTwC"
+            process.env.REACT_APP_PUBLIC_KEY
           )
           .then((result) => {
             console.log(result.text);
-            //add success, redirect to home page
+            setSubmissionStatus({
+              heading: "Success",
+              message:
+                "Thanks for your email. Christian will respond within the next 24 hours",
+            });
+
+            setShowModal(true);
+            setFormData({
+              name: "",
+              lastName: "",
+              email: "",
+              phone: "",
+              preferredContactMethod: "phone",
+              message: "",
+            });
           });
       } catch (error) {
         console.log(error.text);
-        //display error message to user
-        //setError('failed to send email. please try again later)
+        setSubmissionStatus({
+          heading: "Error",
+          message:
+            "Error sending email. Please try again later or email email@email directly",
+        });
+        setShowModal(true);
       }
-    
-  } else {
-    console.log('form validation failed')
-  }
-}
-
-  console.log(errors.number);
+    } else {
+      console.log("form validation failed");
+      setShowModal(true);
+      setSubmissionStatus({
+        heading: "Error",
+        message: "Form Validation Failed",
+      });
+    }
+  };
   return (
     <div className="contact-form" data-aos="fade-up" data-aos-duration="1000">
       <form onSubmit={handleSubmit} ref={form}>
@@ -102,7 +130,7 @@ const ContactForm = () => {
             <label htmlFor="name">
               Name:
               <input
-                className={`${errors.username ? "red-border" : ""}`}
+                className={`${formErrors.username ? "red-border" : ""}`}
                 type="text"
                 id="name"
                 name="name"
@@ -111,6 +139,7 @@ const ContactForm = () => {
                 required
               />
             </label>
+            <div className="error-message">{formErrors.userName}</div>
           </div>
           <div className="lastname-input">
             <label htmlFor="lastname">
@@ -131,7 +160,7 @@ const ContactForm = () => {
             <label htmlFor="email">
               Email:
               <input
-                className={`${errors.email ? "red-border" : ""}`}
+                className={`${formErrors.email ? "red-border" : ""}`}
                 type="email"
                 id="email"
                 name="email"
@@ -140,14 +169,13 @@ const ContactForm = () => {
                 required
               />
             </label>
-            <div className="error-message">{errors.email}</div>
           </div>
 
           <div className="phone-input">
             <label htmlFor="phone">
               Phone:
               <input
-                className={`${errors.number ? "red-border" : ""}`}
+                className={`${formErrors.number ? "red-border" : ""}`}
                 type="tel"
                 id="phone"
                 name="phone"
@@ -156,7 +184,7 @@ const ContactForm = () => {
                 required
               />
             </label>
-            <div className="error-message">{errors.number}</div>
+            <div className="error-message">{formErrors.number}</div>
           </div>
         </div>
         <div className="select-input">
@@ -172,14 +200,14 @@ const ContactForm = () => {
               <option value="email">Email</option>
             </select>
           </label>
-          <div className="error-message">{errors.contactMethod}</div>
+          <div className="error-message">{formErrors.contactMethod}</div>
         </div>
 
         <div className="message-container">
           <label htmlFor="message">
             Message <span className="regular-font">(max 500 characters)</span>:
             <textarea
-              className={`${errors.message ? "red-border" : ""}`}
+              className={`${formErrors.message ? "red-border" : ""}`}
               id="message"
               name="message"
               value={formData.message}
@@ -188,12 +216,19 @@ const ContactForm = () => {
               required
             />
           </label>
-          <div className="error-message">{errors.message}</div>
+          <div className="error-message">{formErrors.message}</div>
         </div>
         <div className="button-container">
           <button type="submit">Submit</button>
         </div>
       </form>
+      {showModal && (
+        <Modal
+          setIsOpen={setShowModal}
+          submissionStatus={submissionStatus}
+          setSubmissionStatus={setSubmissionStatus}
+        />
+      )}
     </div>
   );
 };
