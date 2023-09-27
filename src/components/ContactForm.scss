@@ -45,6 +45,7 @@
     .email-input,
     .phone-input {
       width: 45%;
+   
 
       input {
         margin-top: 0.5rem;
@@ -53,6 +54,7 @@
         padding: 10px;
         border-radius: 5px;
         box-sizing: border-box;
+        color: $blackText;
       }
     }
 
