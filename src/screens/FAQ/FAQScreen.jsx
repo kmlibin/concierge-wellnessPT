@@ -67,12 +67,12 @@ const FAQScreen = () => {
         </div>
       </div>
       <div className="faq-questions-container">
-        <div className="faq-content" data-aos="fade-up" data-aos-duration="1000">
+        <div className="faq-content" >
         <div className="icon-container">
             <TfiEmail  className="icon"/>
          </div>
           <p>
-            Still don't have the answers you're looking for? Submit a question on our <Link to="/contact">Contact</Link> page,
+            <span className="bold">Still don't have the answers you're looking for?</span> Submit a question on our <Link to="/contact">Contact</Link> page,
             or email Concierge Wellness at email@email.com
           </p>
         </div>
