@@ -1,0 +1,107 @@
+@import "../variables/variables.scss";
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  font-family: $bodyFont;
+  width: 250px;
+  height: 200px;
+  background: $primaryText;
+  z-index: 5;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+}
+
+.modal-header {
+  height: 50px;
+  background: $primaryText;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.heading {
+  margin: 0;
+  padding: 10px;
+  color: $blackText;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+
+.modal-content {
+  font-style: italic;
+  padding: 10px;
+  font-size: 15px;
+  color: $blackText;
+  text-align: center;
+}
+
+//
+.actions-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.top-close-btn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  color: $primaryText;
+  background: $accent;
+  transition: all 0.25s ease;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  margin-top: -7px;
+  margin-right: -7px;
+}
+
+.top-close-btn:hover {
+  transform: scale(110%);
+}
+
+.close-btn {
+  font-family: $bodyFont;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 11px 28px;
+  border-radius: 12px;
+  border: none;
+  color: $primaryText;
+  background: $accent;
+  transition: all 0.25s ease;
+}
+
+.close-btn:hover {
+  box-shadow: 0 10px 20px -10px $accent;
+  transform: translateY(-5px);
+  background: $darkAccent;
+}
