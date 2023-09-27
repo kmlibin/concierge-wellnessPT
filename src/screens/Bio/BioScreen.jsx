@@ -1,6 +1,6 @@
 import React from "react";
 import "./BioScreen.scss";
-import chickenman from "../assets/chickenman.jpg";
+import chickenman from '../../assets/chickenman.jpg'
 const BioScreen = () => {
   return (
     <main className="bio" data-aos="fade-up"

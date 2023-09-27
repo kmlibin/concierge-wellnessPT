@@ -1,4 +1,4 @@
-@import "../variables/variables.scss";
+@import "../../variables/variables.scss";
 
 .contact-form {
   font-family: $bodyFont;
@@ -41,7 +41,7 @@
     flex-direction: column;
 
     .name-input,
-    .lastname-input,
+    .lastName-input,
     .email-input,
     .phone-input {
       width: 45%;

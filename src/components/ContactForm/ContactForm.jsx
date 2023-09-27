@@ -1,17 +1,22 @@
 import React, { useState, useRef } from "react";
+
+//styles
 import "./ContactForm.scss";
+
+//libraries
 import emailjs from "@emailjs/browser";
 
-import Modal from "./Modal";
+//helpers
+import validateForm from "./validateForm";
+
+//components
+import Modal from "../Modal/Modal.jsx";
+import InputField from "./InputField";
 
 const ContactForm = () => {
   const form = useRef();
-  const [showModal, setShowModal] = useState(false);
-  const [submissionStatus, setSubmissionStatus] = useState({
-    heading: "Success",
-    message:
-      "Thanks for your email. Christian will respond within the next 24 hours",
-  });
+  const [showModal, setShowModal] = useState();
+  const [submissionStatus, setSubmissionStatus] = useState({});
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
@@ -22,6 +27,7 @@ const ContactForm = () => {
   });
   const [formErrors, setFormErrors] = useState({});
 
+  //track inputs from form
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -30,51 +36,10 @@ const ContactForm = () => {
     });
   };
 
-  const validateForm = () => {
-    let errors = {};
-    let formIsValid = true;
-
-    if (!formData.name) {
-      formIsValid = false;
-      errors["username"] = "*Please enter your name";
-    }
-
-    if (!formData.email) {
-      formIsValid = false;
-      errors["email"] = "*Please enter your email";
-    }
-
-    if (formData.email) {
-      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-      const isValidEmail = emailPattern.test(formData.email);
-      if (!isValidEmail) {
-        formIsValid = false;
-        errors["email"] = "*Please enter a valid email";
-      }
-    }
-
-    if (!formData.phone) {
-      formIsValid = false;
-      errors["number"] = "*Please enter your phone number";
-    }
-
-    if (!formData.preferredContactMethod) {
-      formIsValid = false;
-      errors["contactMethod"] = "*Please make a selection";
-    }
-
-    if (!formData.message) {
-      errors["message"] = "*Please provide information";
-    }
-
-    setFormErrors(errors);
-    return formIsValid;
-  };
-  console.log(formErrors);
-
+  //validate data, submit data to emailJS, reset form state
   const handleSubmit = (e) => {
     e.preventDefault();
-    const isValid = validateForm();
+    const isValid = validateForm(formData, setFormErrors);
     if (isValid) {
       try {
         emailjs
@@ -103,7 +68,6 @@ const ContactForm = () => {
             });
           });
       } catch (error) {
-        console.log(error.text);
         setSubmissionStatus({
           heading: "Error",
           message:
@@ -112,80 +76,55 @@ const ContactForm = () => {
         setShowModal(true);
       }
     } else {
-      console.log("form validation failed");
       setShowModal(true);
       setSubmissionStatus({
         heading: "Error",
-        message: "Form Validation Failed",
+        message:
+          "Form Validation Failed. Please make sure information is correct or email email@email.com",
       });
     }
   };
+
   return (
     <div className="contact-form" data-aos="fade-up" data-aos-duration="1000">
       <form onSubmit={handleSubmit} ref={form}>
         <h2>Let's Connect!</h2>
         <span className="hr-line"></span>
         <div className="name-lastname-container">
-          <div className="name-input">
-            <label htmlFor="name">
-              Name:
-              <input
-                className={`${formErrors.username ? "red-border" : ""}`}
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <div className="error-message">{formErrors.userName}</div>
-          </div>
-          <div className="lastname-input">
-            <label htmlFor="lastname">
-              Last Name:
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
-            </label>
-          </div>
+          <InputField
+            type="text"
+            label="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            error={formErrors.userName}
+          />
+          <InputField
+            type="text"
+            label="Last Name"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            error={formErrors.lastName}
+          />
         </div>
         <div className="email-phone-container">
-          <div className="email-input">
-            <label htmlFor="email">
-              Email:
-              <input
-                className={`${formErrors.email ? "red-border" : ""}`}
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </label>
-          </div>
-
-          <div className="phone-input">
-            <label htmlFor="phone">
-              Phone:
-              <input
-                className={`${formErrors.number ? "red-border" : ""}`}
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <div className="error-message">{formErrors.number}</div>
-          </div>
+          <InputField
+            type="email"
+            label="Email Address"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            error={formErrors.email}
+          />
+          <InputField
+            type="tel"
+            label="Phone"
+            name="phone"
+            value={formData.number}
+            onChange={handleChange}
+            error={formErrors.number}
+          />
         </div>
         <div className="select-input">
           <label htmlFor="preferredContactMethod">

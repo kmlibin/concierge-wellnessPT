@@ -1,5 +1,4 @@
-@import "../variables/variables.scss";
-
+@import "../../variables/variables.scss";
 .faq {
   min-height: 90vh;
   width: 100%;
@@ -7,6 +6,7 @@
   flex-direction: row;
   color: $primaryText;
   font-family: $bodyFont;
+
 
   .faq-title {
     width: 15%;
@@ -52,11 +52,12 @@
   }
   .faq-questions-container {
     max-width: 45%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
 
     .faq-content {
       background-color: $primaryText;

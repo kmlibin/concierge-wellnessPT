@@ -9,12 +9,12 @@ import {
 import "./index.scss";
 
 import App from "./App";
-import HomeScreen from "./screens/HomeScreen";
-import BioScreen from "./screens/BioScreen";
-import MyStoryScreen from "./screens/MyStoryScreen";
-import ContactScreen from "./screens/ContactScreen";
-import ServicesScreen from "./screens/ServicesScreen";
-import FAQScreen from "./screens/FAQScreen";
+import HomeScreen from "./screens/Home/HomeScreen";
+import BioScreen from "./screens/Bio/BioScreen";
+import MyStoryScreen from "./screens/Story/MyStoryScreen";
+import ContactScreen from "./screens/Contact/ContactScreen";
+import ServicesScreen from "./screens/Services/ServicesScreen";
+import FAQScreen from "./screens/FAQ/FAQScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

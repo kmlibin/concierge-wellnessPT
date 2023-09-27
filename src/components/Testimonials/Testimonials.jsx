@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Testimonials.scss";
-import reviewData from "./data/testimonials";
+import reviewData from "./reviewData";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 const Testimonials = () => {

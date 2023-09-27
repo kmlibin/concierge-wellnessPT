@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+//styles
 import "./FAQScreen.scss";
+
+//libraries
 import { TfiEmail } from "react-icons/tfi";
 
 const FAQScreen = () => {

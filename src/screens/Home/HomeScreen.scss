@@ -1,4 +1,5 @@
-@import "../variables/variables.scss";
+@import "../../variables/variables.scss";
+
 
 .main-container {
   background-color: $background;
@@ -80,7 +81,7 @@
   color: $accent;
 }
 .plx-image1 {
-  background-image: url(../assets/weights.jpg);
+  background-image: url(../../assets/weights.jpg);
   width: 100%;
   height: 40vh;
   background-attachment: fixed;
@@ -174,7 +175,7 @@
 }
 
 .plx-image2{
-  background-image: url(../assets/bands.jpg);
+  background-image: url(../../assets/bands.jpg);
   width: 100%;
   height: 40vh;
   background-attachment: fixed;

@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./MyStoryScreen.scss";
-import chickenman from "../assets/chickenman.jpg";
-import bands from "../assets/bands.jpg";
-import weights from "../assets/weights.jpg";
-import running from "../assets/running.jpg";
-import fitness from "../assets/fitness.jpg";
-import moreweights from "../assets/moreweights.jpg";
+import chickenman from "../../assets/chickenman.jpg";
+import bands from "../../assets/bands.jpg";
+import weights from "../../assets/weights.jpg";
+import running from "../../assets/running.jpg";
+import fitness from "../../assets/fitness.jpg";
+import moreweights from "../../assets/moreweights.jpg";
 
 const MyStoryScreen = () => {
   return (
-    <article className="story" data-aos="fade-up"
-    data-aos-duration="1000">
+    <article className="story" data-aos="fade-up" data-aos-duration="1000">
       <div className="story-content">
         <div className="story-title">
           <h2>Why Physical Therapy?</h2>
@@ -20,16 +19,17 @@ const MyStoryScreen = () => {
           Cras ornare arcu dui vivamus arcu felis. Morbi non arcu risus quis
           varius. Proin fermentum leo vel orci. Ac turpis egestas maecenas
           pharetra convallis posuere morbi leo urna. Risus in hendrerit gravida
-          rutrum quisque non tellus orci. Cras ornare arcu dui vivamus arcu felis. Morbi non arcu risus quis
-          varius. Proin fermentum leo vel orci. Ac turpis egestas maecenas
-          pharetra convallis posuere morbi leo urna. Risus in hendrerit gravida
-          rutrum quisque non tellus orci. Cras ornare arcu dui vivamus arcu felis. Morbi non arcu risus quis
-          varius. Proin fermentum leo vel orci. Ac turpis egestas maecenas
-          pharetra convallis posuere morbi leo urna. Risus in hendrerit gravida
-          rutrum quisque non tellus orci.Cras ornare arcu dui vivamus arcu felis. Morbi non arcu risus quis
-          varius. Proin fermentum leo vel orci. Ac turpis egestas maecenas
-          pharetra convallis posuere morbi leo urna. Risus in hendrerit gravida
-          rutrum quisque non tellus orci.{" "}
+          rutrum quisque non tellus orci. Cras ornare arcu dui vivamus arcu
+          felis. Morbi non arcu risus quis varius. Proin fermentum leo vel orci.
+          Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.
+          Risus in hendrerit gravida rutrum quisque non tellus orci. Cras ornare
+          arcu dui vivamus arcu felis. Morbi non arcu risus quis varius. Proin
+          fermentum leo vel orci. Ac turpis egestas maecenas pharetra convallis
+          posuere morbi leo urna. Risus in hendrerit gravida rutrum quisque non
+          tellus orci.Cras ornare arcu dui vivamus arcu felis. Morbi non arcu
+          risus quis varius. Proin fermentum leo vel orci. Ac turpis egestas
+          maecenas pharetra convallis posuere morbi leo urna. Risus in hendrerit
+          gravida rutrum quisque non tellus orci.{" "}
         </p>
         <img src={moreweights} className="story-image" />
 
@@ -38,14 +38,15 @@ const MyStoryScreen = () => {
           pellentesque elit ullamcorper dignissim. Tellus elementum sagittis
           vitae et leo duis. Vulputate odio ut enim blandit volutpat maecenas
           volutpat blandit aliquam. Libero volutpat sed cras ornare arcu dui.
-          Ultrices tincidunt arcu non sodales neque. Cras ornare arcu dui vivamus arcu felis. Morbi non arcu risus quis
-          varius. Proin fermentum leo vel orci. Ac turpis egestas maecenas
-          pharetra convallis posuere morbi leo urna. Risus in hendrerit gravida
-          rutrum quisque non tellus orci.
+          Ultrices tincidunt arcu non sodales neque. Cras ornare arcu dui
+          vivamus arcu felis. Morbi non arcu risus quis varius. Proin fermentum
+          leo vel orci. Ac turpis egestas maecenas pharetra convallis posuere
+          morbi leo urna. Risus in hendrerit gravida rutrum quisque non tellus
+          orci.
         </p>
         <div className="multiple-images">
-        <img src={running} className="story-image" />
-        <img src={running} className="story-image" />
+          <img src={running} className="story-image" />
+          <img src={running} className="story-image" />
         </div>
 
         <p>

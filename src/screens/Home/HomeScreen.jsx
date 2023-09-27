@@ -1,10 +1,10 @@
 import React from "react";
 import "./HomeScreen.scss";
-import Testimonials from "../components/Testimonials";
-import logo from "../assets/logo.png";
-import fitness from "../assets/fitness.jpg";
-import running from "../assets/running.jpg";
-import moreweights from "../assets/moreweights.jpg";
+import Testimonials from "../../components/Testimonials/Testimonials.jsx";
+import logo from "../../assets/logo.png";
+import fitness from "../../assets/fitness.jpg";
+import running from "../../assets/running.jpg";
+import moreweights from "../../assets/moreweights.jpg";
 
 const HomeScreen = () => {
   return (
