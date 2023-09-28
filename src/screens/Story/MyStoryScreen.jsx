@@ -12,7 +12,7 @@ const MyStoryScreen = () => {
     <article className="story" data-aos="fade-up" data-aos-duration="1000">
       <div className="story-content">
         <div className="story-title">
-          <h2>Why Physical Therapy?</h2>
+          <h1>Why Physical Therapy?</h1>
           <span className="hr-line"></span>
         </div>
         <p>

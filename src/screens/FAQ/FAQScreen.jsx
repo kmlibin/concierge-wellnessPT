@@ -16,7 +16,7 @@ const FAQScreen = () => {
       </div>
       <div className="faq-container" data-aos="fade-up" data-aos-duration="1000">
         <div className="faq-text">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
           <p>
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
@@ -26,7 +26,7 @@ const FAQScreen = () => {
           </p>
         </div>
         <div className="faq-text">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
           <p>
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
@@ -36,7 +36,7 @@ const FAQScreen = () => {
           </p>
         </div>
         <div className="faq-text">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
           <p>
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
@@ -46,7 +46,7 @@ const FAQScreen = () => {
           </p>
         </div>
         <div className="faq-text">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
           <p>
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
@@ -56,7 +56,7 @@ const FAQScreen = () => {
           </p>
         </div>
         <div className="faq-text">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
           <p>
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non

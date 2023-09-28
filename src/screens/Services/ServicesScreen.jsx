@@ -26,7 +26,7 @@ const ServicesScreen = () => {
           </div>
           <div className="services-main">
             <div className="services-text">
-              <h2>Services</h2>
+              <h1>Services</h1>
               <h4>Some Text Here About How Cool They Are</h4>
               <span className="hr-line"></span>
               <p>

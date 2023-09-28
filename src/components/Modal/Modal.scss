@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  width: $fullWidth;
   height: 100vh;
   z-index: 0;
   top: 50%;
@@ -21,15 +21,15 @@
   font-family: $bodyFont;
   width: 250px;
   height: 200px;
-  background: $primaryText;
+  background: $whiteColor;
   z-index: 5;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: $darkBoxShadow;
 }
 
 .modal-header {
   height: 50px;
-  background: $primaryText;
+  background: $whiteColor;
   overflow: hidden;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -70,7 +70,7 @@
   border-radius: 8px;
   border: none;
   font-size: 18px;
-  color: $primaryText;
+  color: $whiteColor;
   background: $accent;
   transition: all 0.25s ease;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);

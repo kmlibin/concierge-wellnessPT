@@ -1,9 +1,8 @@
 @import "../../variables/variables.scss";
 
 .navbar {
-  width: 100%;
+  width: $fullWidth;
   background-color: $background;
-  // position: fixed;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
   .navbar-links {
@@ -22,19 +21,19 @@
         font-weight: bold;
         display: inline-block;
         padding: .75rem;
-        border-radius: 5px;
+        border-radius: $standard;
         text-align: center;
-        background-color: $primaryText;
+        background-color: $whiteColor;
         transition: all .2s ease-in;
 
        &:hover {
-        color: $primaryText;
+        color: $whiteColor;
         background-color: $darkAccent;
       }   
     }
 
       :hover {
-        color: $primaryText;
+        color: $whiteColor;
         background-color: $accent;
       }
       
@@ -48,8 +47,7 @@
         text-decoration: none;
         color: $primaryText;
         font-family: $bodyFont;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding: 1rem 0;
         transition: color 0.3s ease, border-bottom 0.3s ease;
       }
 

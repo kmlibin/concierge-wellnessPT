@@ -7,11 +7,11 @@ footer {
   align-items: center;
   font-family: $bodyFont;
   color: $primaryText;
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid $lightGrey;
 
 
-  h5 {
-    font-size: 20px;
+  h4 {
+    font-size: $h4Font;
     margin: 33px 0 16px;
   }
 
@@ -24,8 +24,8 @@ footer {
 
   .instagram {
     color: $accent;
-    margin-top: 1rem;
-    padding-bottom: 0.5rem;
+    margin-top: $small;
+    padding-bottom: $xsmall;
     height: 30px;
     width: 30px;
     transition: color 0.3s ease;

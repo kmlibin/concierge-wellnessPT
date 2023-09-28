@@ -3,9 +3,17 @@
 * {
   margin: 0;
   padding: 0;
+  // box-sizing: border-box;
 }
 
 body {
   background-color: $background;
 
+}
+
+
+.hr-line {
+  border-bottom: 1px solid $accent;
+  margin-bottom: $small;
+  width: 50%;
 }

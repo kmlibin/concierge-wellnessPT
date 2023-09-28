@@ -8,7 +8,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <h5>Concierge Wellness</h5>
+      <h4>Concierge Wellness</h4>
       <p>1315 Lords Hill Dr</p>
       <p>Fountain, Colorado 80817</p>
       <p>YourEmail@email.com</p>

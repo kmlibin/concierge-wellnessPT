@@ -1,8 +1,7 @@
 @import "../../variables/variables.scss";
 .faq {
-  min-height: 100vh;
-
-  width: 100%;
+  min-height: $minH;
+  width: $fullWidth;
   display: flex;
   flex-direction: row;
   color: $primaryText;
@@ -19,36 +18,30 @@
     box-sizing: border-box;
 
     h1 {
-      font-size: 45px;
+      font-size: $h1Font;
       color: $primaryText;
       margin-bottom: 1rem;
-    }
-
-    .hr-line {
-      border-bottom: 1px solid $accent;
-      margin-bottom: 0.75rem;
-      width: 60%;
     }
   }
 
   .faq-container {
     width: 40%;
     height: 100%;
-    background-color: rgba(99, 99, 99, 0.45);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    background-color: $mediumGreyRGBA;
+    box-shadow: $darkBoxShadow;
 
     .faq-text {
       max-width: 100%;
       padding: 2rem;
 
-      h4 {
-        font-size: 25px;
+      h3 {
+        font-size: $h3Font;
         font-family: $headerFont;
-        margin-bottom: 2rem;
+        margin-bottom: $medium;
         color: $accent;
       }
       p {
-        font-size: 18px;
+        font-size: $pFont;
       }
     }
   }
@@ -56,14 +49,13 @@
     width: 45%;
     min-height: 100vh;
     display: flex;
-
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
 
     .faq-content {
-      background-color: $primaryText;
-      background-color: rgba(243, 243, 243, 1);
+      
+      background-color: $whiteColor;
       border-radius: 5px 0 0 5px;
       position: sticky;
       max-height: 40%;
@@ -90,15 +82,15 @@
           color: $primaryText;
           width: 100%;
           height: 100%;
-          margin: 1rem;
-          box-shadow: none;
+          margin: 1.5rem;
         }
       }
 
       p {
         padding: 2rem;
-        padding-left: 3.2rem;
+        padding-left: 3.5rem;
         color: $blackText;
+        font-size: $pFont;
         text-align: center;
       }
 

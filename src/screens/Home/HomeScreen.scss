@@ -4,31 +4,15 @@
 .main-container {
   background-color: $background;
   color: $primaryText;
-  width: 100%;
+  width: $fullWidth;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .location {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: $bodyFont;
-    font-size: 35px;
-    margin-top: 5rem;
-
-    h2 {
-      margin-top: 2rem;
-      margin-bottom: 7rem;
-    }
-  }
-}
 .logo-container {
-  width: 100%;
-  min-height: 90vh;
+  width: $fullWidth;
+  min-height: $minH;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -37,6 +21,7 @@
     width: 35%;
     height: 50%;
   }
+
   .brand-text {
     width: 33%;
     height: 50%;
@@ -44,24 +29,24 @@
     flex-direction: column;
     align-items: flex-end;
     font-family: $bodyFont;
-    margin-right: 1rem;
+    margin-right: $small;
 
-    p {
+    h3{
       letter-spacing: 1px;
       text-align: right;
       font-weight: bold;
-      font-size: 25px;
+      font-size: $h3Font;
       margin-bottom: 0;
       font-family: $headerFont;
     }
 
-    h2 {
+    h1 {
       text-align: right;
-      font-size: 45px;
+      font-size: $h1Font;
       font-weight: 200;
       font-style: italic;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: $small;
+      margin-bottom: $small;
 
       .blue-color {
         color: $accent;
@@ -71,7 +56,7 @@
     h4 {
       text-align: right;
       margin-top: 0;
-      font-size: 20px;
+      font-size: $h4Font;
       width: 70%;
       color: $mediumGrey;
     }
@@ -92,9 +77,9 @@
 
 .process-container {
   font-family: $bodyFont;
-  font-size: 35px;
+  font-size: $h2Font;
   min-height: 70vh;
-  width: 100%;
+  width: $fullWidth;
   display: flex;
   margin-top: 4.5rem;
   flex-direction: column;
@@ -102,22 +87,22 @@
 
   h2 {
     margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: $small;
   }
 
 
   h4 {
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: $xsmall;
     text-align: center;
-    font-size: 20px;
+    font-size: $h4Font;
     width: 70%;
     color: $mediumGrey;
     font-style: italic;
   }
 
   p {
-    font-size: 18px;
+    font-size: $pFont;
     margin: 0;
     margin-bottom: 2rem;
   }
@@ -130,22 +115,22 @@
     padding: 5rem;
     height: 80%;
     width: 80%;
-    background-color: rgba(99, 99, 99, 0.95);
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    background-color: $greyRGBA;
+    box-shadow: $insetShadow;
+    border-radius: $standard;;
 
     .process-info {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $blackRGBA;
       display: flex;
       padding: 3px;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: $boxShadow;
       // border: 1px solid $lightGrey;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       width: 32%;
       height: auto;
-      font-size: 20px;
+   
 
       img {
         height: auto;
@@ -153,22 +138,21 @@
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
       }
       h4 {
+        font-size: $h4Font;
         color: $accent;
-        padding-top: 1rem;
-        margin: 0;
+        padding-top: $small;
+      
       }
 
       ul {
+        font-size: $pFont;
         margin: 20px 0;
-        padding: 0;
       }
 
       p {
+        font-size: $pFont;
         text-align: center;
-        padding-left: 0.75rem;
-        padding-right: .75rem;
-        margin: 0;
-        padding-bottom: 1rem;
+        padding: 0 0.75rem 1rem;
       }
     }
   }
@@ -176,10 +160,27 @@
 
 .plx-image2{
   background-image: url(../../assets/bands.jpg);
-  width: 100%;
+  width:$fullWidth;
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.location {
+  width: $fullWidth;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $bodyFont;
+  font-size: 35px;
+  margin-top: 5rem;
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+  }
+}
 }

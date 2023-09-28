@@ -4,52 +4,45 @@ $headerFont: "Mate SC", serif;
 $bodyFont: "Montserrat", sans-serif;
 
 //font sizes
-$h2Font: 28px;
+$h1Font: 45px;
+$h2Font: 35px;
 $h3Font: 25px;
-$h4Font: 18px;
-$pFont: 14px;   
-$statusFont: 10px;
-$nothingToSee: 28px;
+$h4Font: 20px;
+$pFont: 18px;   
+
+
+//height and width: 
+$minH: 90vh;
+$fullWidth: 100%;
 
 //text-colors:
-$primaryText: #F2F2F2;
+$primaryText: rgb(242,242,242);
 $blackText: rgba(40, 40, 40, 0.9);
+$mediumGrey: rgb(99, 99, 99);
 
 //colors
-$background: rgba(0, 0, 0);
-$mediumGrey: rgba(99, 99, 99);
-$lightGrey: rgba(176, 176, 176);
-$whiteColor: #F2F2F2;
+$background: rgb(0, 0, 0);
+$mediumGrey: rgb(99, 99, 99);
+$lightGrey: rgb(176, 176, 176);
+$whiteColor: rgb(242, 242, 242);
 $accent: rgb(17, 163, 213);
-$darkAccent: #0d82aa;
- 
+$darkAccent: rgb(13, 130, 170);
+
+//background colors rgba
+$greyRGBA: rgba(99, 99, 99, 0.95);
+$mediumGreyRGBA: rgba(99, 99, 99, 0.45);
+$lightGreyRGBA: rgba(176, 176, 176, 0.25);
+$blackRGBA: rgba(0, 0, 0, 0.5);
+
+//background-shadow
+$insetShadow: inset 0 0 4px rgba(0, 0, 0, 0.5); 
+$boxShadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+$darkBoxShadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+
 //spacing (padding and margin):
-$xsmall: 3px;
-$small: 5px;
-$medium: 10px;
+$xsmall: 0.5rem;
+$small: 1rem;
+$medium: 2rem;
 
 //border-radius
 $standard: 5px;
-
-//mixins
-@mixin mediumBlue($opacity) {
-  background-color: rgba(123, 197, 230, $opacity);
-}
-
-@mixin button($radius) {
-  background-color: $lightestBlue;
-  font-family: $bodyFont;
-  border-radius: $radius;
-  transition: background-color 0.5s ease-out;
-}
-
-@mixin btnHover($transform) {
-  cursor: pointer;
-  transform: $transform;
-  background-color: $mediumBlue;
-}
-
-@mixin btnActive($transform) {
-  transform: $transform;
-  box-shadow: 0 0px 5px 0px $darkBlue inset;
-}

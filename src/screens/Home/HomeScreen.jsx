@@ -17,11 +17,11 @@ const HomeScreen = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <p>Dr.Christian Wade</p>
-            <h2>
+            <h3>Dr.Christian Wade</h3>
+            <h1>
               <span className="blue-color">Lorem ipsum </span>dolor sit amet,{" "}
               <span className="blue-color">consectetuer </span>adipiscing elit.
-            </h2>
+            </h1>
             <h4>
               Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar
             </h4>
