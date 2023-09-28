@@ -40,6 +40,7 @@ const HomeScreen = () => {
           <h2>
             The <span className="blue-color">Concierge</span> Process
           </h2>
+          <span className="hr-line"></span>
           <h4>
             Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar
           </h4>
@@ -104,7 +105,8 @@ const HomeScreen = () => {
         ></div>
         
         <div className="location">
-          <h2>Location</h2>
+          <h2>Our Location</h2>
+          <span className="hr-line"></span>
           <iframe
             title="Google Map"
             src="https://storage.googleapis.com/maps-solutions-xk6pj5ttcx/locator-plus/7rd4/locator-plus.html"
