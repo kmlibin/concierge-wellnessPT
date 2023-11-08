@@ -6,13 +6,14 @@ import weights from "../../assets/weights.jpg";
 import running from "../../assets/running.jpg";
 import fitness from "../../assets/fitness.jpg";
 import moreweights from "../../assets/moreweights.jpg";
+import content from "../../constants/content";
 
 const MyStoryScreen = () => {
   return (
     <article className="story" data-aos="fade-up" data-aos-duration="1000">
       <div className="story-content">
         <div className="story-title">
-          <h1>Why Physical Therapy?</h1>
+          <h1>{content.myStory.header}</h1>
           <span className="hr-line"></span>
         </div>
         <p>

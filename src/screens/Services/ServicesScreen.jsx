@@ -14,6 +14,7 @@ import health from "../../assets/health.png";
 import kettlebell from '../../assets/kettlebell.png'
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
 import Imagegalltest from "../../components/ImageGallery/imagegalltest";
+import content from '../../constants/content';
 
 const ServicesScreen = () => {
   return (
@@ -30,7 +31,7 @@ const ServicesScreen = () => {
           </div>
           <div className="services-main">
             <div className="services-text">
-              <h1>Services</h1>
+              <h1>{content.services.header}</h1>
               <h4>Some Text Here About How Cool They Are</h4>
               <span className="hr-line"></span>
               <p>
@@ -75,8 +76,8 @@ const ServicesScreen = () => {
           </div>
         </div>
       </main>
-      {/* <ImageGallery /> */}
-     <Imagegalltest />
+      <ImageGallery />
+     {/* <Imagegalltest /> */}
     </>
   );
 };
