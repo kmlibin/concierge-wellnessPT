@@ -4,10 +4,11 @@
   background-color: transparent;
   position: relative;
   width: $fullWidth;
-  height: $minH;
+  min-height: $minH;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-end;
 
   .image-container {
     position: absolute;
@@ -44,6 +45,7 @@
       font-family: $bodyFont;
       font-size: $pFont;
       box-sizing: border-box;
+      margin-bottom: 1rem;
     }
 
     .hr-line {

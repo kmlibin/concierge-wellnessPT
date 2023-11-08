@@ -19,8 +19,7 @@ const reviewData = [
         everything down, ensuring I understood every step of my treatment. This
         not only helped me physically but gave me peace of mind.
         <br />
-        <br />
-        I can't express enough how grateful I am for Christian's
+        <br />I can't express enough how grateful I am for Christian's
         dedication and expertise. If you're considering physical therapy, look
         no further than Concierge Wellness. It's not just about the therapy;
         it's about the personal touch and genuine care.
@@ -41,21 +40,21 @@ const reviewData = [
         up with a nasty case of IT Band Syndrome. As an active person and avid
         trail runner, I was itching to get back to training as soon as possible
         and I wouldn't have been able to do it without Christian's guidance and
-        expertise. He pinpointed some weaknesses and gave me
-        recommendations and exercises to correct imbalances so that I would
-        rehab correctly. Christian recommended Dry Needling for my knee,
-        and even though I was a little nervous about it (I mean, needles, come
-        on) the relief was almost immediate.
+        expertise. He pinpointed some weaknesses and gave me recommendations and
+        exercises to correct imbalances so that I would rehab correctly.
+        Christian recommended Dry Needling for my knee, and even though I was a
+        little nervous about it (I mean, needles, come on) the relief was almost
+        immediate.
         <br />
         <br />
         The most impressive thing about working with Christian is his
-        willingness to collaborate and learn. As I said, my ITB syndrome was
-        particularly stubborn and he went out of his way to dig into more
-        material about what could be causing my pain and how it could be
-        corrected. He also talked to other running specialists and PTs to help
-        him make the best decisions about my rehab. I can't tell you how much I
-        appreciate this humility. He's clearly committed to patient care and
-        learning as much as he can about his field!
+        willingness to collaborate and learn. He went out of his way to dig into
+        more material about what could be causing my knee pain and how it could
+        be corrected. He also talked to other running specialists and PTs to
+        help him make the best decisions about my rehab. I can't tell you how
+        much I appreciate this humility. Plus, he made it very easy to schedule
+        and he provides in-home treatment. He's clearly committed to patient
+        care and learning as much as he can about his field!
       </div>
     ),
   },
