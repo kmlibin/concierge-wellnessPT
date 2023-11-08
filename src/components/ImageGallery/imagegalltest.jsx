@@ -67,28 +67,20 @@
 //   );
 // };
 
-import React, { useState, useEffect } from 'react';
-import './im.scss'; // Import your CSS file for styling
+import React, { useState, useEffect } from "react";
+import "./im.scss"; // Import your CSS file for styling
 
 import running from "../../assets/running.jpg";
 import bands from "../../assets/bands.jpg";
 import weights from "../../assets/weights.jpg";
 import fitness from "../../assets/fitness.jpg";
 import moreweights from "../../assets/moreweights.jpg";
+import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 const Imagegalltest = () => {
   const [currentCard, setCurrentCard] = useState(0);
-  const cardData = [
-    running,
-    weights,
-    bands,
-    bands,
-    moreweights,
-    running,
-    // Add paths to other images here
-  ];
+  const cardData = [running, weights, bands, bands, moreweights, running];
   const numCards = cardData.length;
-
 
   const handlePrevClick = () => {
     setCurrentCard((currentCard) => (currentCard - 2 + numCards) % numCards);
@@ -98,29 +90,41 @@ const Imagegalltest = () => {
     setCurrentCard((currentCard) => (currentCard + 2) % numCards);
   };
 
+  //auto scroll
   useEffect(() => {
-    const interval = setInterval(handleNextClick, 3000); // Change images every 3 seconds
+    const interval = setInterval(handleNextClick, 3000);
     return () => clearInterval(interval);
   }, [currentCard]);
-   return (
-    <div className="wrapper">
-      <i id="left" className="fa-solid fa-angle-left" onClick={handlePrevClick}></i>
-      <div className="carousel">
-        <div className="card-container" style={{ transform: `translateX(-${currentCard * (100 / numCards)}%)` }}>
-          {cardData.map((imgPath, index) => (
-            <div
-              className={`card`}
-              key={index}
-            >
-              <div className="img">
-                <img src={imgPath} alt="img" draggable="false" />
+
+  return (
+    <>
+      <div className="wrapper">
+        <div className="carousel">
+          <div
+            className="card-container"
+            style={{
+              transform: `translateX(-${currentCard * (100 / numCards)}%)`,
+            }}
+          >
+            {cardData.map((imgPath, index) => (
+              <div className={`card`} key={index}>
+                <div className="img">
+                  <img src={imgPath} alt="img" draggable="false" />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-      <i id="right" className="fa-solid fa-angle-right" onClick={handleNextClick}></i>
-    </div>
+      <div className="controls">
+        <button onClick={handlePrevClick}>
+          <BsChevronCompactLeft className="button-icon" />
+        </button>
+        <button onClick={handleNextClick}>
+          <BsChevronCompactRight className="button-icon" />
+        </button>
+      </div>
+    </>
   );
 };
 
