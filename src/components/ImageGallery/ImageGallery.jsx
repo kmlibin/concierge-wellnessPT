@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react";
-import  './ImageGallery.scss'
+import React, { useEffect, useState } from "react";
+import "./ImageGallery.scss";
 import chickenman from "../../assets/chickenman.jpg";
 import bands from "../../assets/bands.jpg";
 import weights from "../../assets/weights.jpg";
@@ -34,10 +34,9 @@ const ImageGallery = () => {
     const nextIndex = (currentIndex + 1) % images.length;
     setCurrentIndex(nextIndex);
   };
-
+  //auto scrolling 
   useEffect(() => {
     const intervalId = setInterval(autoScroll, 3000);
-
     return () => clearInterval(intervalId);
   }, [currentIndex]);
 
@@ -48,13 +47,15 @@ const ImageGallery = () => {
     visibleImages.push(images[index]);
   }
   return (
-    <div className="image-gallery">
-      <div className="image-list">
-        {visibleImages.map((image, index) => (
-          <div className="image">
-            <img src={image} alt="Gallery" />
-          </div>
-        ))}
+    <>
+      <div className="image-gallery">
+        <div className="image-list">
+          {visibleImages.map((image, index) => (
+            <div className="image">
+              <img src={image} alt="Gallery" />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="controls">
         <button onClick={handlePrevClick}>
@@ -64,7 +65,7 @@ const ImageGallery = () => {
           <BsChevronCompactRight className="button-icon" />
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

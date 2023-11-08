@@ -10,11 +10,13 @@
   max-height: 50%;
   overflow: hidden;
 
+
   .image-list {
     display: flex;
     width: 120%;
     height: 400px;
     margin: 0 -10px;
+ 
   }
 
   .image {
@@ -23,6 +25,7 @@
     // border: 2px solid #ddd;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     opacity: 0.35;
+ 
   }
 
   .image:nth-child(3) {
@@ -40,7 +43,7 @@
   }
 
   img {
-    width: 100%;
+    width: auto;
     height: 100%;
     display: block;
   }
