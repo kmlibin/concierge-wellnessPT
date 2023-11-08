@@ -6,6 +6,7 @@
   width: $fullWidth;
   min-height: 60vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   font-family: $bodyFont;
 
@@ -86,6 +87,11 @@
       }
     }
   }
+
+  .responsive-buttons {
+    display: none;
+  }
+
   .testimonial-btn-container {
     display: flex;
     width: 50%;
@@ -132,3 +138,51 @@
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .testimonials .testimonial-item-container .testimonial-item .content-wrapper {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .testimonials .testimonial-item-container .testimonial-dots {
+    position: relative;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .testimonials .testimonial-btn-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .testimonials .responsive-buttons {
+    display: flex;
+  }
+}
+
+//   .testimonial-btn-container {
+//     flex-direction: column;
+//   }
+// }
+
+// @media screen and (min-width: 577px) and (max-width: 992px) {
+//   .responsive-cards {
+//     min-width: 45%;
+//   }
+// }
+
+// @media screen and (min-width: 993px) {
+//   .responsive-cards {
+//     width: 31%;
+//   }
+// }
