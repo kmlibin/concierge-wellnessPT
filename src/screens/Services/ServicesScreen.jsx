@@ -8,8 +8,12 @@ import snip4 from "../../assets/snip4.jpg";
 import yoga from "../../assets/yoga-pose.png";
 import dumbbell from "../../assets/dumbbell.png";
 import bike from "../../assets/stationary-bike.png";
+import dumbbellheart from '../../assets/dumbbellheart.png'
 import report from "../../assets/report.png";
+import health from "../../assets/health.png";
+import kettlebell from '../../assets/kettlebell.png'
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
+import Imagegalltest from "../../components/ImageGallery/imagegalltest";
 
 const ServicesScreen = () => {
   return (
@@ -54,15 +58,15 @@ const ServicesScreen = () => {
             <span className="hr-line"></span>
             <div className="services-icons">
               <div className="img-container">
-                <img src={dumbbell} />
+                <img src={report} />
               </div>
               {/* <img src = {snip1} /> */}
               <div className="img-container">
-                <img src={bike} />
+                <img src={kettlebell} />
               </div>
 
               <div className="img-container">
-                <img src={report} />
+                <img src={health} />
               </div>
               {/* <div className="img-container">
           <img src = {yoga} />
@@ -71,7 +75,8 @@ const ServicesScreen = () => {
           </div>
         </div>
       </main>
-      <ImageGallery />
+      {/* <ImageGallery /> */}
+     <Imagegalltest />
     </>
   );
 };
