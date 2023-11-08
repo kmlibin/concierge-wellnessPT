@@ -81,6 +81,26 @@ const Testimonials = () => {
               <BsChevronCompactRight className="button-icon" />
             </button>
           </div>
+          <div className="responsive-buttons controls">
+            <button
+              onClick={() =>
+                handleClick(
+                  currentIndex === 0 ? reviewData.length - 1 : currentIndex - 1
+                )
+              }
+            >
+              <BsChevronCompactLeft className="button-icon" />
+            </button>
+            <button
+              onClick={() =>
+                handleClick(
+                  currentIndex === reviewData.length - 1 ? 0 : currentIndex + 1
+                )
+              }
+            >
+              <BsChevronCompactRight className="button-icon" />
+            </button>
+          </div>
         </>
       )}
     </div>
