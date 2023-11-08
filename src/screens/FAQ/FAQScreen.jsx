@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import faqData from "./faqData";
+
 //styles
 import "./FAQScreen.scss";
 
@@ -14,66 +16,29 @@ const FAQScreen = () => {
         <h1>FAQs</h1>
         <span className="hr-line"></span>
       </div>
-      <div className="faq-container" data-aos="fade-up" data-aos-duration="1000">
-        <div className="faq-text">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-          <p>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
-            quam lacus. Mattis vulputate enim nulla aliquet porttitor lacus
-            luctus accumsan. Faucibus nisl tincidunt eget nullam non. Aliquam id
-            diam maecenas ultricies mi eget mauris.{" "}
-          </p>
-        </div>
-        <div className="faq-text">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-          <p>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
-            quam lacus. Mattis vulputate enim nulla aliquet porttitor lacus
-            luctus accumsan. Faucibus nisl tincidunt eget nullam non. Aliquam id
-            diam maecenas ultricies mi eget mauris.{" "}
-          </p>
-        </div>
-        <div className="faq-text">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-          <p>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
-            quam lacus. Mattis vulputate enim nulla aliquet porttitor lacus
-            luctus accumsan. Faucibus nisl tincidunt eget nullam non. Aliquam id
-            diam maecenas ultricies mi eget mauris.{" "}
-          </p>
-        </div>
-        <div className="faq-text">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-          <p>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
-            quam lacus. Mattis vulputate enim nulla aliquet porttitor lacus
-            luctus accumsan. Faucibus nisl tincidunt eget nullam non. Aliquam id
-            diam maecenas ultricies mi eget mauris.{" "}
-          </p>
-        </div>
-        <div className="faq-text">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-          <p>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
-            quam lacus. Mattis vulputate enim nulla aliquet porttitor lacus
-            luctus accumsan. Faucibus nisl tincidunt eget nullam non. Aliquam id
-            diam maecenas ultricies mi eget mauris.{" "}
-          </p>
-        </div>
+      <div
+        className="faq-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        {faqData.map((faq) => (
+          <div className="faq-text">
+            <h3>{faq.question}</h3>
+            <p>{faq.answer}</p>
+          </div>
+        ))}
       </div>
       <div className="faq-questions-container">
-        <div className="faq-content" >
-        <div className="icon-container">
-            <TfiEmail  className="icon"/>
-         </div>
+        <div className="faq-content">
+          <div className="icon-container">
+            <TfiEmail className="icon" />
+          </div>
           <p>
-            <span className="bold">Still don't have the answers you're looking for?</span> Submit a question on our <Link to="/contact">Contact</Link> page,
-            or email Concierge Wellness at email@email.com
+            <span className="bold">
+              Still don't have the answers you're looking for?
+            </span>{" "}
+            Submit a question on our <Link to="/contact">Contact</Link> page, or
+            email Concierge Wellness at email@email.com
           </p>
         </div>
       </div>
