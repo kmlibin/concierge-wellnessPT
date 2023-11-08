@@ -23,7 +23,7 @@ const Footer = () => {
         <BsInstagram className="instagram" />
       </a>
 
-      <p >Concierge Wellness &copy; {currentYear}</p>
+      <p >Concierge Wellness &copy; 2022</p>
     </footer>
   );
 };
