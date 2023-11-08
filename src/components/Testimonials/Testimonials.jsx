@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Testimonials.scss";
 import reviewData from "./reviewData";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
@@ -6,6 +6,7 @@ import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [opacity, setOpacity] = useState(1);
+  const [isHovered, setIsHovered] = useState(false);
 
   //will show one testimonial at a time, based on index
   const review = reviewData[currentIndex];
@@ -18,6 +19,17 @@ const Testimonials = () => {
       setOpacity(1);
     }, 500);
   };
+  //auto scrolls on 6 seconds, but can stop if user hovers in the testimonials container
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isHovered) {
+        handleClick(
+          currentIndex === reviewData.length - 1 ? 0 : currentIndex + 1
+        );
+      }
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [currentIndex, reviewData, isHovered]);
 
   const renderDots = () => {
     return reviewData.map((item, index) => (
@@ -30,7 +42,11 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials">
+    <div
+      className="testimonials"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {reviewData?.length && (
         <>
           <div className="testimonial-btn-container">
