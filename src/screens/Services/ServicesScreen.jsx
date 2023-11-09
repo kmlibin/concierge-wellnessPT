@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ServicesScreen.scss";
 import services from "../../assets/services.jpg";
-import snip1 from "../../assets/snip1.jpg";
-import snip2 from "../../assets/snip2.jpg";
-import snip3 from "../../assets/snip3.jpg";
-import snip4 from "../../assets/snip4.jpg";
-import yoga from "../../assets/yoga-pose.png";
-import dumbbell from "../../assets/dumbbell.png";
-import bike from "../../assets/stationary-bike.png";
-import dumbbellheart from '../../assets/dumbbellheart.png'
 import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from '../../assets/kettlebell.png'
