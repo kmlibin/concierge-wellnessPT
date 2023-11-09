@@ -11,7 +11,7 @@ const HomeScreen = () => {
     <>
       <main className="main-container">
         <div className="logo-container">
-          <img src={logo} />
+          <img src={logo} alt="logo" />
           <div
             className="brand-text"
             data-aos="fade-right"
@@ -53,7 +53,7 @@ const HomeScreen = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              <img src={running}></img>
+              <img src={running} alt="running"></img>
               <h4>Heading</h4>
               <ul>
                 <li>thing one is this long</li>
@@ -70,7 +70,7 @@ const HomeScreen = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              <img src={fitness}></img>
+              <img src={fitness} alt="fitness"></img>
               <p>
                 Rhoncus dolor purus non enim praesent elementum facilisis leo.
                 Dolor sit amet consectetur adipiscing elit pellentesque.
@@ -84,7 +84,7 @@ const HomeScreen = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              <img src={moreweights}></img>
+              <img src={moreweights} alt="weights"></img>
               <h4>Heading</h4>
               <ul>
                 <li>thing one is this long</li>

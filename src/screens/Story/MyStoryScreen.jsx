@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./MyStoryScreen.scss";
-import chickenman from "../../assets/chickenman.jpg";
-import bands from "../../assets/bands.jpg";
-import weights from "../../assets/weights.jpg";
+
 import running from "../../assets/running.jpg";
-import fitness from "../../assets/fitness.jpg";
+
 import pullup from "../../assets/pullup.jpg";
 import content from "../../constants/content";
 

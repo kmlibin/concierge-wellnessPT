@@ -17,3 +17,33 @@ body {
   margin-bottom: $small;
   width: 50%;
 }
+
+.controls {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    .button-icon {
+      font-size: 50px;
+      color: $primaryText;
+      transition: color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease all;
+        color: $accent;
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+}

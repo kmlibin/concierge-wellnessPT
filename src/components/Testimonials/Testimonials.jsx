@@ -29,7 +29,7 @@ const Testimonials = () => {
       }
     }, 6000);
     return () => clearInterval(interval);
-  }, [currentIndex, reviewData, isHovered]);
+  }, [currentIndex, isHovered]);
 
   const renderDots = () => {
     return reviewData.map((item, index) => (

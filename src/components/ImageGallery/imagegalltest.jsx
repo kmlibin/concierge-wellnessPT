@@ -5,7 +5,6 @@ import "./im.scss";
 import running from "../../assets/running.jpg";
 import bands from "../../assets/bands.jpg";
 import weights from "../../assets/weights.jpg";
-import fitness from "../../assets/fitness.jpg";
 import moreweights from "../../assets/moreweights.jpg";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 

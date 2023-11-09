@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./ServicesScreen.scss";
 import services from "../../assets/services.jpg";
 import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from '../../assets/kettlebell.png'
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
-import Imagegalltest from "../../components/ImageGallery/imagegalltest";
+// import Imagegalltest from "../../components/ImageGallery/imagegalltest";
 import content from '../../constants/content';
 
 const ServicesScreen = () => {
@@ -18,7 +18,7 @@ const ServicesScreen = () => {
           data-aos-duration="1000"
         >
           <div className="image-container">
-            <img className="main-photo" src={services} />
+            <img className="main-photo" src={services} alt="services"/>
             <div className="overlapping"></div>
           </div>
           <div className="services-main">
@@ -51,15 +51,15 @@ const ServicesScreen = () => {
             <span className="hr-line"></span>
             <div className="services-icons">
               <div className="img-container">
-                <img src={report} />
+                <img src={report} alt="report"/>
               </div>
               {/* <img src = {snip1} /> */}
               <div className="img-container">
-                <img src={kettlebell} />
+                <img src={kettlebell} alt="kettlebell"/>
               </div>
 
               <div className="img-container">
-                <img src={health} />
+                <img src={health} alt="health"/>
               </div>
               {/* <div className="img-container">
           <img src = {yoga} />
