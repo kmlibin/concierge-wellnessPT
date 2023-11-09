@@ -25,13 +25,12 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+        // align-items: flex-start;
+        // justify-content: flex-start;
        
 
     img {
         margin-right: $small;
-        margin-top: 22%;
         max-height: 90%;
         max-width: 90%;
         box-shadow: $darkBoxShadow;
@@ -47,6 +46,7 @@
         max-width: 40%;
         font-family: $bodyFont;
         margin-left: $small;
+        
 
         h2 {
             font-family: $headerFont;

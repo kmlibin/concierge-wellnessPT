@@ -15,6 +15,7 @@
   min-height: $minH;
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   img {
@@ -23,11 +24,11 @@
   }
 
   .brand-text {
-    width: 33%;
+    width:100%;
     height: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     font-family: $bodyFont;
     margin-right: $small;
 
@@ -41,11 +42,11 @@
     }
 
     h1 {
-      text-align: right;
+      text-align: center;
       font-size: $h1Font;
       font-weight: 200;
       font-style: italic;
-      margin-top: $small;
+      margin-top: 4rem;
       margin-bottom: $small;
 
       .blue-color {
@@ -54,8 +55,8 @@
     }
 
     h4 {
-      text-align: right;
-      margin-top: 0;
+      text-align: center;
+      margin-top: .5rem;
       font-size: $h4Font;
       width: 70%;
       color: $mediumGrey;

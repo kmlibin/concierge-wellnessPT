@@ -9,25 +9,26 @@ import moreweights from "../../assets/moreweights.jpg";
 const HomeScreen = () => {
   return (
     <>
-      <main className="main-container" >
+      <main className="main-container">
         <div className="logo-container">
+          <img src={logo} />
           <div
             className="brand-text"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <h3>Dr.Christian Wade</h3>
-            <h1>
-              <span className="blue-color">Lorem ipsum </span>dolor sit amet,{" "}
-              <span className="blue-color">consectetuer </span>adipiscing elit.
-            </h1>
-            <h4>
+            {/* <h3>Dr.Christian Wade</h3> */}
+            {/* <h4>
               Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar
+            </h4> */}
+            <h1>
+              <span className="blue-color">Physical Therapy </span>and{" "}<span className="blue-color">Wellness Coaching </span> <br/>
+              at your own convenience.</h1>
+            <h4>
+              In home services available
             </h4>
           </div>
-
-          <img src={logo} />
         </div>
 
         <Testimonials />
@@ -103,7 +104,7 @@ const HomeScreen = () => {
           title="Weight Lifter"
           alt="Photo by Victor Freitas on Unsplash "
         ></div>
-        
+
         <div className="location">
           <h2>Our Location</h2>
           <span className="hr-line"></span>
