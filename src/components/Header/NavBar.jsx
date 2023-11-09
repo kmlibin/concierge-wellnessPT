@@ -20,7 +20,6 @@ const navRoutes = [
     name: "My Story",
     route: "/mystory",
   },
-  ,
   {
     name: "Services",
     route: "/services",
@@ -32,7 +31,7 @@ const navRoutes = [
   {
     name: "Contact",
     route: "/contact",
-  },
+  }
 ];
 
 const NavBar = () => {

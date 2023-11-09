@@ -13,7 +13,7 @@ const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
           </div>
           <button
             className="top-close-btn"
-            onClick={() => (setIsOpen(false), setSubmissionStatus(null))}
+            onClick={() => {setIsOpen(false); setSubmissionStatus(null)}}
           >
             <IoClose style={{ marginBottom: "-3px" }} />
           </button>
@@ -22,7 +22,7 @@ const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
           <div className="actions-container">
             <button
               className="close-btn"
-              onClick={() => (setIsOpen(false), setSubmissionStatus(null))}
+              onClick={() => {setIsOpen(false); setSubmissionStatus(null)}}
             >
               Close
             </button>

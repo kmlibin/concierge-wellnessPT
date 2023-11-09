@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./ImageGallery.scss";
 import chickenman from "../../assets/chickenman.jpg";
 import bands from "../../assets/bands.jpg";
@@ -29,16 +29,16 @@ const ImageGallery = () => {
     const prevIndex = (currentIndex - 1 + images.length) % images.length;
     setCurrentIndex(prevIndex);
   };
-
-  const autoScroll = () => {
+  const autoScroll = useCallback(() => {
     const nextIndex = (currentIndex + 1) % images.length;
     setCurrentIndex(nextIndex);
-  };
+  }, [currentIndex, images.length]);
+  
   //auto scrolling 
   useEffect(() => {
     const intervalId = setInterval(autoScroll, 3000);
     return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  }, [autoScroll]);
 
   //determine images present in the array (in what order) based on index
   const visibleImages = [];
