@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import "./ContactScreen.scss";
-import { TfiEmail } from "react-icons/tfi";
+// import { TfiEmail } from "react-icons/tfi";
 
 const ContactScreen = () => {
   return (

@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from "react";
 import "./im.scss"; 
-
 import running from "../../assets/running.jpg";
 import bands from "../../assets/bands.jpg";
 import weights from "../../assets/weights.jpg";

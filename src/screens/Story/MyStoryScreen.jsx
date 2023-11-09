@@ -16,13 +16,13 @@ const MyStoryScreen = () => {
         </div>
         <div className="story-image-container">
           <p>{content.myStory.contentOne}</p>
-          <img src={pullup} className="story-image" />
+          <img src={pullup} className="story-image" alt="story"/>
         </div>
         {/* <div className="story-image-container">      */}
         <p style={{width: "80%", marginTop: "1.5rem"}}>{content.myStory.contentTwo}</p>
           <div className="multiple-images">
-          <img src={running} className="story-image" />
-          <img src={running} className="story-image" />
+          <img src={running} className="story-image" alt="story" />
+          <img src={running} className="story-image" alt="story" />
         </div>
      
           {/* <img src={running}  className="story-image" /> */}

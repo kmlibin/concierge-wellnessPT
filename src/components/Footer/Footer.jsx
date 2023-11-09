@@ -5,7 +5,7 @@ import "./Footer.scss";
 import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   return (
     <footer>
       <h4>Concierge Wellness</h4>

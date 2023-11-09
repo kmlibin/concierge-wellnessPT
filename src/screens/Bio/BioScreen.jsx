@@ -7,7 +7,7 @@ const BioScreen = () => {
     data-aos-duration="1000">
       <div className="bio-container">
         <div className="bio-image-container">
-          <img src={chickenman} />
+          <img src={chickenman} alt="chickenman"/>
         </div>
         <div className="bio-container-text">
           <h2>Dr. Christian Wade</h2>
