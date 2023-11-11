@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./im.scss"; 
 import running from "../../assets/running.jpg";
 import bands from "../../assets/bands.jpg";
@@ -16,15 +16,15 @@ const Imagegalltest = () => {
     setCurrentCard((currentCard) => (currentCard - 2 + numCards) % numCards);
   };
 
-  const handleNextClick = () => {
+  const handleNextClick = useCallback(() => {
     setCurrentCard((currentCard) => (currentCard + 2) % numCards);
-  };
+  }, [numCards]);
 
   //auto scroll
   useEffect(() => {
     const interval = setInterval(handleNextClick, 3000);
     return () => clearInterval(interval);
-  }, [currentCard]);
+  }, [currentCard, handleNextClick]);
 
   return (
     <>
