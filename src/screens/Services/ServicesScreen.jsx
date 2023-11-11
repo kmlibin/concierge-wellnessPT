@@ -5,7 +5,7 @@ import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from '../../assets/kettlebell.png'
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
-// import Imagegalltest from "../../components/ImageGallery/imagegalltest";
+import Imagegalltest from "../../components/ImageGallery/imagegalltest";
 import content from '../../constants/content';
 
 const ServicesScreen = () => {
@@ -69,7 +69,7 @@ const ServicesScreen = () => {
         </div>
       </main>
       <ImageGallery />
-     {/* <Imagegalltest /> */}
+     <Imagegalltest />
     </>
   );
 };
