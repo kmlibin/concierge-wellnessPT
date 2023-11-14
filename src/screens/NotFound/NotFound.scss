@@ -1,0 +1,41 @@
+@import "../../variables/variables.scss";
+
+.notFound {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound-wrapper {
+  height: 90%;
+  width: 75%;
+  border-radius: $standard;
+  color: $primaryText;
+  font-family: $bodyFont;
+  background-color: $mediumGreyRGBA;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 3rem;
+    color: $accent;
+    font-size: $h1Font;
+  }
+
+  p {
+    font-size: $pFont;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    padding: 2rem;
+    font-size: $pFont;
+    color: $accent;
+  }
+}

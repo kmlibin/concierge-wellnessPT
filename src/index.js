@@ -15,6 +15,7 @@ import MyStoryScreen from "./screens/Story/MyStoryScreen";
 import ContactScreen from "./screens/Contact/ContactScreen";
 import ServicesScreen from "./screens/Services/ServicesScreen";
 import FAQScreen from "./screens/FAQ/FAQScreen";
+import NotFoundScreen from "./screens/NotFound/NotFoundScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<ContactScreen />} />
       <Route path="/services" element={<ServicesScreen />} />
       <Route path="/faq" element={<FAQScreen />} />
+      <Route path ="*" element={<NotFoundScreen />} />
     </Route>
   )
 );
