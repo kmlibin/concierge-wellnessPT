@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeScreen.scss";
 import Testimonials from "../../components/Testimonials/Testimonials.jsx";
-import logo from "../../assets/logo.png";
+import logo2 from "../../assets/logo2.jpg";
 import fitness from "../../assets/fitness.jpg";
 import running from "../../assets/running.jpg";
 import moreweights from "../../assets/moreweights.jpg";
@@ -11,7 +11,7 @@ const HomeScreen = () => {
     <>
       <main className="main-container">
         <div className="logo-container">
-          <img src={logo} alt="logo" />
+          <img src={logo2} alt="logo" style={{height: "40%", width: "auto"}}/>
           <div
             className="brand-text"
             data-aos="fade-right"
