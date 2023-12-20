@@ -31,7 +31,7 @@ const navRoutes = [
   {
     name: "Contact",
     route: "/contact",
-  }
+  },
 ];
 
 const NavBar = () => {
@@ -42,13 +42,17 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logosmall} alt="logo" />
+        <Link to="/">
+          <img src={logosmall} alt="logo" />
+        </Link>
       </div>
       <ul className="navbar-links">
         {navRoutes.map((item) =>
           item.name === "Contact" ? (
-            <li className="contact-link" key={`link-${item.name}`}>
-              <Link to={item.route}>{item.name}</Link>
+            <li key={`link-${item.name}`}>
+              <Link className="contact-link nav-contact-link" to={item.route}>
+                {item.name}
+              </Link>
             </li>
           ) : (
             <li className="nav-link" key={`link-${item.name}`}>

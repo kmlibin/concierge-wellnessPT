@@ -13,13 +13,17 @@
     display: flex;
     align-items: center;
     padding-left: 1.2rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-top: 1.2rem;
     padding-bottom: 1rem;
 
     img {
       width: 75px;
       height: auto;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
@@ -33,30 +37,6 @@
     margin: 1rem 0;
     padding: 0 2rem;
 
-    .contact-link {
-      a {
-        color: $accent;
-        text-decoration: none;
-        font-family: $bodyFont;
-        font-weight: bold;
-        display: inline-block;
-        padding: 0.75rem;
-        border-radius: $standard;
-        text-align: center;
-        background-color: $whiteColor;
-        transition: all 0.2s ease-in;
-
-        :hover {
-          color: $whiteColor;
-          background-color: $darkAccent;
-        }
-      }
-
-      :hover {
-        color: $whiteColor;
-        background-color: $accent;
-      }
-    }
 
     .nav-link {
       cursor: pointer;
