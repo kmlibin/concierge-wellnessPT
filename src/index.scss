@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  // box-sizing: border-box;
 }
 
 body {
@@ -11,13 +10,14 @@ body {
 
 }
 
-
+//blue line beneath page headings
 .hr-line {
   border-bottom: 1px solid $accent;
   margin-bottom: $small;
   width: 50%;
 }
 
+//controls for sliding through testimonials and image gallery
 .controls {
   margin: 16px 0;
   display: flex;
@@ -45,5 +45,25 @@ body {
         transform: translateY(2px);
       }
     }
+  }
+}
+
+//styles for contact link in nav and call button
+
+.contact-link {
+  color: $accent;
+  text-decoration: none;
+  font-family: $bodyFont;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.75rem;
+  border-radius: $standard;
+  text-align: center;
+  background-color: $whiteColor;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $whiteColor;
+    background-color: $darkAccent;
   }
 }
