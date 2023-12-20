@@ -54,7 +54,7 @@ const ContactForm = () => {
             setSubmissionStatus({
               heading: "Success",
               message:
-                "Thanks for your email. Christian will respond within the next 24 hours",
+                "Thanks for your email. Christian will respond within the next 24 hours.",
             });
 
             setShowModal(true);
