@@ -3,43 +3,39 @@
   background-color: rgba(0, 0, 0, 0.7);
   width: $fullWidth;
   height: 100vh;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 .centered {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 21;
   transform: translate(-50%, -50%);
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
   font-family: $bodyFont;
+  padding: 2rem;
   width: 250px;
   height: 200px;
   background: $whiteColor;
-  z-index: 5;
   border-radius: 15px;
   box-shadow: $darkBoxShadow;
-}
-
-.modal-header {
-  height: 50px;
-  background: $whiteColor;
-  overflow: hidden;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 
 .heading {
   margin: 0;
   padding: 10px;
   color: $blackText;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 25px;
   text-align: center;
 }
@@ -47,15 +43,14 @@
 .modal-content {
   font-style: italic;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   color: $blackText;
   text-align: center;
 }
 
-//
 .actions-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 2px;
