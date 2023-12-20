@@ -188,4 +188,34 @@
     margin-bottom: 7rem;
   }
 }
+
+.contact-link {
+    color: $accent;
+    text-decoration: none;
+    font-family: $bodyFont;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: $standard;
+    text-align: center;
+    background-color: $whiteColor;
+    transition: all 0.2s ease-in;
+
+    :hover {
+      color: $whiteColor;
+      background-color: $darkAccent;
+    }
+ 
+
+  :hover {
+    color: $whiteColor;
+    background-color: $accent;
+  }
+}
+
+.call {
+margin-bottom: 3rem;
+  position: absolute;
+  bottom: 0;
+}
 }
