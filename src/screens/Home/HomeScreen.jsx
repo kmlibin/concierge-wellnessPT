@@ -1,17 +1,22 @@
 import React from "react";
 import "./HomeScreen.scss";
 import Testimonials from "../../components/Testimonials/Testimonials.jsx";
-import logo2 from "../../assets/logo2.jpg";
+import logo2 from "../../assets/logo2.png";
 import fitness from "../../assets/fitness.jpg";
 import running from "../../assets/running.jpg";
 import moreweights from "../../assets/moreweights.jpg";
+// import logosmall from '../../assets/logosmall.png'
 
 const HomeScreen = () => {
   return (
     <>
       <main className="main-container">
         <div className="logo-container">
-          <img src={logo2} alt="logo" style={{height: "40%", width: "auto"}}/>
+          <img
+            src={logo2}
+            alt="logo"
+            style={{ height: "auto", width: "50%"}}
+          />
           <div
             className="brand-text"
             data-aos="fade-right"
@@ -23,12 +28,14 @@ const HomeScreen = () => {
               Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar
             </h4> */}
             <h1>
-              <span className="blue-color">Physical Therapy </span>and{" "}<span className="blue-color">Wellness Coaching </span> <br/>
-              at your own convenience.</h1>
-            <h4>
-              In home services available
-            </h4>
+              <span className="blue-color">Physical Therapy </span>and{" "}
+              <span className="blue-color">Wellness Coaching </span> <br />
+              at your own convenience.
+            </h1>
+            <h4>In home services available</h4>
+            
           </div>
+          <a className="contact-link call" target="blank" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true" >Book FREE Discovery Call!</a>
         </div>
 
         <Testimonials />
@@ -53,7 +60,7 @@ const HomeScreen = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              <img src={running} alt="running"></img>
+              <img src={running} loading="lazy" alt="running"></img>
               <h4>Heading</h4>
               <ul>
                 <li>thing one is this long</li>
@@ -70,7 +77,7 @@ const HomeScreen = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              <img src={fitness} alt="fitness"></img>
+              <img src={fitness} loading="lazy" alt="fitness"></img>
               <p>
                 Rhoncus dolor purus non enim praesent elementum facilisis leo.
                 Dolor sit amet consectetur adipiscing elit pellentesque.
@@ -84,7 +91,7 @@ const HomeScreen = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              <img src={moreweights} alt="weights"></img>
+              <img src={moreweights} loading="lazy" alt="weights"></img>
               <h4>Heading</h4>
               <ul>
                 <li>thing one is this long</li>
@@ -119,6 +126,14 @@ const HomeScreen = () => {
             }}
             loading="lazy"
           ></iframe>
+        </div>
+
+        <div className="schedule" style={{ width: "100%", display: "flex", justifyContent: "center", margin: "1rem"}}>
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true"
+            title= "Google Scheduling Calendar"
+            style={{ border: "0", width: "80%", height: "600px", frameborder: "0", background: "rgb(242,242,242)", borderRadius: "5px"}}
+          ></iframe>"
         </div>
       </main>
     </>

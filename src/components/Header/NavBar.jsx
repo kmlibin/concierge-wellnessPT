@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 
-import logo1 from "../../assets/logo1.png";
+import logosmall from "../../assets/logosmall.png";
 //routes for the links
 const navRoutes = [
   {
@@ -42,7 +42,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logo1} alt="logo" />
+        <img src={logosmall} alt="logo" />
       </div>
       <ul className="navbar-links">
         {navRoutes.map((item) =>
