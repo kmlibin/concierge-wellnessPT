@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./HomeScreen.scss";
 import Testimonials from "../../components/Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
-import logo2 from "../../assets/logo2.png";
+// import logo2 from "../../assets/logo2.png";
 import fitness from "../../assets/fitness.jpg";
 import running from "../../assets/running.jpg";
 import moreweights from "../../assets/moreweights.jpg";
 import logowithoutwords from "../../assets/logowithoutwords.png";
+import Modal from "../../components/Modal/Modal.jsx";
 // import logosmall from '../../assets/logosmall.png'
 
 const HomeScreen = () => {
+  const [submissionStatus, setSubmissionStatus] = useState({
+    heading: "Welcome",
+    message: "Book a FREE Discovery Call with Dr. Wade!",
+    link: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true'
+  });
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    //2 seconds
+    const timeoutId = setTimeout(() => {
+      setIsOpen(true);
+    }, 2000);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <>
       <main className="main-container">
@@ -128,9 +144,14 @@ const HomeScreen = () => {
             loading="lazy"
           ></iframe>
         </div>
-
-        
       </main>
+      {isOpen && (
+        <Modal
+          setIsOpen={isOpen}
+          submissionStatus={submissionStatus}
+          setSubmissionStatus={setSubmissionStatus}
+        />
+      )}
     </>
   );
 };
