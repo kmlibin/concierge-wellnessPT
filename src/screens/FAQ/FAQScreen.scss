@@ -6,6 +6,8 @@
   flex-direction: row;
   color: $primaryText;
   font-family: $bodyFont;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
   .faq-title {
     width: 15%;

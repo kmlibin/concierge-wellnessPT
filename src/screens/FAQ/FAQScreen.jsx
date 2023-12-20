@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Calendar from "../../components/GoogleCalendar/Calendar";
 
 import faqData from "./faqData";
 
@@ -11,6 +12,7 @@ import { TfiEmail } from "react-icons/tfi";
 
 const FAQScreen = () => {
   return (
+    <>
     <main className="faq">
       <div className="faq-title" data-aos="fade-up" data-aos-duration="1000">
         <h1>FAQs</h1>
@@ -41,8 +43,11 @@ const FAQScreen = () => {
             email Concierge Wellness at email@email.com
           </p>
         </div>
-      </div>
+      </div> 
+  
     </main>
+       <Calendar />
+       </>
   );
 };
 
