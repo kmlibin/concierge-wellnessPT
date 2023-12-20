@@ -5,6 +5,7 @@ import logo2 from "../../assets/logo2.png";
 import fitness from "../../assets/fitness.jpg";
 import running from "../../assets/running.jpg";
 import moreweights from "../../assets/moreweights.jpg";
+import logowithoutwords from "../../assets/logowithoutwords.png";
 // import logosmall from '../../assets/logosmall.png'
 
 const HomeScreen = () => {
@@ -13,9 +14,9 @@ const HomeScreen = () => {
       <main className="main-container">
         <div className="logo-container">
           <img
-            src={logo2}
+            src={logowithoutwords}
             alt="logo"
-            style={{ height: "auto", width: "50%"}}
+            style={{ height: "auto", width: "50%" }}
           />
           <div
             className="brand-text"
@@ -33,9 +34,14 @@ const HomeScreen = () => {
               at your own convenience.
             </h1>
             <h4>In home services available</h4>
-            
           </div>
-          <a className="contact-link call" target="blank" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true" >Book FREE Discovery Call!</a>
+          <a
+            className="contact-link call"
+            target="blank"
+            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true"
+          >
+            Book FREE Discovery Call!
+          </a>
         </div>
 
         <Testimonials />
@@ -128,12 +134,28 @@ const HomeScreen = () => {
           ></iframe>
         </div>
 
-        <div className="schedule" style={{ width: "100%", display: "flex", justifyContent: "center", margin: "1rem"}}>
+        <div
+          className="schedule"
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            margin: "1rem",
+          }}
+        >
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true"
-            title= "Google Scheduling Calendar"
-            style={{ border: "0", width: "80%", height: "600px", frameborder: "0", background: "rgb(242,242,242)", borderRadius: "5px"}}
-          ></iframe>"
+            title="Google Scheduling Calendar"
+            style={{
+              border: "0",
+              width: "80%",
+              height: "600px",
+              frameborder: "0",
+              background: "rgb(242,242,242)",
+              borderRadius: "5px",
+            }}
+          ></iframe>
+          "
         </div>
       </main>
     </>
