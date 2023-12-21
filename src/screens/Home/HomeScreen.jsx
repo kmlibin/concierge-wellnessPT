@@ -147,7 +147,7 @@ const HomeScreen = () => {
       </main>
       {isOpen && (
         <Modal
-          setIsOpen={isOpen}
+          setIsOpen={setIsOpen}
           submissionStatus={submissionStatus}
           setSubmissionStatus={setSubmissionStatus}
         />
