@@ -9,6 +9,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 
   .image-container {
     position: absolute;
@@ -19,6 +23,7 @@
     background-position: left;
     opacity: 0.5;
   }
+
   .contact-text {
     color: $primaryText;
     display: flex;
@@ -26,6 +31,10 @@
     height: 75%;
     width: 35%;
     z-index: 2;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
 
     .centered-text {
       display: flex;

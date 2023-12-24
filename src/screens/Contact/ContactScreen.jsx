@@ -2,6 +2,7 @@ import React from "react";
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import "./ContactScreen.scss";
 // import { TfiEmail } from "react-icons/tfi";
+import content from "../../constants/content.js";
 
 const ContactScreen = () => {
   return (
@@ -10,11 +11,7 @@ const ContactScreen = () => {
       <div className="contact-text" >
         <div className="centered-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus
-            sed turpis tincidunt id. Vel quam elementum pulvinar etiam non quam
-            lacus. Mattis vulputate enim nulla aliquet porttitor lacus luctus
-            accumsan. Faucibus nisl tincidunt eget nullam non.
+            {content.contact.blurb}
           </p>
         </div>
       </div>
