@@ -4,9 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: $minH;
+    min-height: $minH;
     width: $fullWidth;;
     color: $primaryText;
+  
 
     .bio-container {
         background-color: $mediumGreyRGBA;
@@ -15,16 +16,23 @@
         width: 90%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         border-radius: $standard;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+          }
+       
   
 
     .bio-image-container {
         flex-grow: 1;
         max-width: 40%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        margin-top: 2rem;
+        // display: flex;
+        // // flex-direction: column;
         // align-items: flex-start;
         // justify-content: flex-start;
        
@@ -34,6 +42,12 @@
         max-height: 90%;
         max-width: 90%;
         box-shadow: $darkBoxShadow;
+
+        
+        @media screen and (max-width: 1024px) {
+           margin-right: 0;
+           max-width: 100%;
+          }
     }    
     }
     
@@ -46,6 +60,12 @@
         max-width: 40%;
         font-family: $bodyFont;
         margin-left: $small;
+
+        
+        @media screen and (max-width: 1024px) {
+            max-width: 90%;
+            text-align: center;
+          }
         
 
         h2 {
@@ -72,3 +92,4 @@
     }
 }
 }
+
