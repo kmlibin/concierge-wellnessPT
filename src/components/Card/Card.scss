@@ -1,0 +1,46 @@
+@import "../../variables/variables.scss";
+
+.card-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+.process-info {
+    background-color: $blackRGBA;
+    display: flex;
+    padding: 3px;
+    box-shadow: $boxShadow;
+    border: 3px solid $mediumGrey;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+
+    img {
+      height: auto;
+      width: 90%;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+      margin-top: $small;
+      border-radius: 5px;
+    }
+    h3 {
+      color: $accent;
+      padding-top: $small;
+      font-style: italic;
+    }
+
+    ul {
+      font-size: $pFont;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: $pFont;
+      text-align: center;
+      padding: 0 0.75rem 1rem;
+    }
+  }
+
+}
