@@ -10,6 +10,8 @@
   max-height: 50%;
   overflow: hidden;
 
+
+
   .image-list {
     display: flex;
     width: 180%;
@@ -71,5 +73,25 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .image-gallery {
+   height: 80vh;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .image-list {
+    width: 100vw;
+    overflow-x: auto;;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .image {
+    flex: 0 0 100% !important;
+    margin: 0 10px;
   }
 }
