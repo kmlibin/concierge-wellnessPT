@@ -1,6 +1,7 @@
 import React from "react";
 //styles
 import "./Footer.scss";
+import content from "../../constants/content";
 //libraries 
 import { BsInstagram } from "react-icons/bs";
 
@@ -8,14 +9,13 @@ const Footer = () => {
   // const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <h4>Concierge Wellness</h4>
-      <p>1315 Lords Hill Dr</p>
-      <p>Fountain, Colorado 80817</p>
-      <p>YourEmail@email.com</p>
-      <p>1234 567 8901</p>
+      <h4>{content.footer.business}</h4>
+      <p>{content.footer.address1}</p>
+      <p>{content.footer.address2}</p>
+      <p>{content.footer.email}</p>
 
       <a
-        href="https://www.instagram.com/cw_pllc/"
+        href={content.footer.insta}
         target="_blank"
         rel="noopener noreferrer"
         style={{marginBottom: "2rem"}}

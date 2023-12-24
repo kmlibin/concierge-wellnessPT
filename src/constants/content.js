@@ -124,6 +124,13 @@ const content = {
       "Group fitness classes",
     ],
   },
+  footer: {
+    business: "Concierge Wellness",
+    address1: "1315 Lords Hill Dr",
+    address2: "Fountain, Colorado 80817",
+    email: "christian@conciergewellnessandpt.com",
+    insta: "https://www.instagram.com/cw_pllc/"
+  }
 };
 
 export default content;
