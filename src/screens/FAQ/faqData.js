@@ -1,13 +1,5 @@
 const faqData = [
   {
-    question: `What do you specialize in?`,
-    answer: ` sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lacus sed turpis tincidunt id. Vel quam elementum pulvinar etiam non
-        quam lacus. Mattis vulputate enim nulla aliquet porttitor lacus
-        luctus accumsan. Faucibus nisl tincidunt eget nullam non. Aliquam id
-        diam maecenas ultricies mi eget mauris.`,
-  },
-  {
     question: `Do I need a referral from my Doctor?`,
     answer: `This will depend on your state but Colorado has direct access meaning you do NOT need a referral 
     to see a Doctor of Physical Therapy. If you have questions about your specific state just contact us and 
