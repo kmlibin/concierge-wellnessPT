@@ -31,7 +31,7 @@ const Imagegalltest = () => {
       <div className="wrapper">
         <div className="carousel">
           <div
-            className="card-container"
+            className="imgcard-container"
             style={{
               transform: `translateX(-${currentCard * (100 / numCards)}%)`,
             }}

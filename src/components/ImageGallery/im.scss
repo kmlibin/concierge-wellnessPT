@@ -18,8 +18,9 @@
     width: 100%; 
   }
   
-  .card-container {
+  .imgcard-container {
     display: flex;
+    flex-direction: row;
     transition: transform 0.5s ease-in-out;
     width: 100%; 
     scroll-snap-type: x mandatory;
