@@ -111,7 +111,7 @@
       height: 80%;
       width: 80%;
       background-color: $greyRGBA;
-      box-shadow: $insetShadow;
+      box-shadow: 0 0 10px $accent;
       border-radius: $standard;
     }
   }
@@ -147,11 +147,12 @@
     }
 
     .map-container {
+      box-shadow: 0 0 10px $accent;
       width: 90%;
       display: flex;
       justify-content: center;
       background: $greyRGBA;
-      box-shadow: $insetShadow;
+      // box-shadow: $insetShadow;
       border-radius: $standard;
     }
   }
@@ -186,22 +187,41 @@
       margin-bottom: 2rem;
       height: 80%;
       width: 80%;
-      box-shadow: $insetShadow;
-      border-radius: $standard;
     }
 
     .partner-card {
-      text-align: center;
+      display: flex;
+      border: 3px solid $mediumGrey;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
       flex: 0 0 auto;
-      background-color: $mediumGrey;
+      background-color: $whiteColor;
       padding: 0.5rem;
       margin: 1rem;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      transition:  transform 0.3s ease, box-shadow 0.3s ease;
 
+      &:hover {
+        transform: scale(1.1);
+        // border: 3px solid rgba(17, 163, 213, 0.5);
+        box-shadow: 0 0 70px $accent;
+      }
+      
       img {
-        width: 100px;
-        height: auto;
+        width: 90px;
+        max-height: 90px;
         border-radius: 5px;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        color: $blackText;
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
       }
     }
   }
