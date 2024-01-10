@@ -14,7 +14,7 @@ const navRoutes = [
   },
   {
     name: "Meet Your PT",
-    route: "/meet",
+    route: "/about",
   },
   {
     name: "My Story",
