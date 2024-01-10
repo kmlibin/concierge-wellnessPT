@@ -11,6 +11,7 @@ import Modal from "../../components/Modal/Modal.jsx";
 import Card from "../../components/Card/Card.jsx";
 // import logosmall from '../../assets/logosmall.png'
 import partners from "../../constants/partners.js";
+import content from "../../constants/content.js";
 import { Helmet } from "react-helmet-async";
 
 const HomeScreen = () => {
@@ -59,7 +60,7 @@ const HomeScreen = () => {
               <span className="blue-color">Wellness Coaching </span> <br />
               at your own convenience.
             </h1>
-            <h4>In home services available</h4>
+            <h4>In home services and telehealth available</h4>
           </div>
           <CallButton />
         </div>
@@ -76,7 +77,12 @@ const HomeScreen = () => {
 
         {/* the process/cards section */}
 
-        <div className="process-container">
+        <div
+          className="process-container"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
           <h2>
             The <span className="blue-color">Concierge</span> Process
           </h2>
@@ -89,18 +95,21 @@ const HomeScreen = () => {
               alt="runners"
               heading="Recovery"
               duration="800"
+              bulletpoints={content.home.bulletpointsOne}
             />
             <Card
               image={fitness}
               alt="weight lifter"
               heading="Performance"
               duration="1000"
+              bulletpoints={content.home.bulletpointsTwo}
             />
             <Card
               image={moreweights}
               alt="someone using a weight machine"
               heading="Wellness"
               duration="1200"
+              bulletpoints={content.home.bulletpointsThree}
             />
           </div>
         </div>
@@ -117,14 +126,19 @@ const HomeScreen = () => {
 
         {/* google map */}
 
-        <div className="location">
+        <div
+          className="location"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
           <h2>Our Location</h2>
           <span className="hr-line"></span>
           <div className="map-container">
             <iframe
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4687427470762!2d-104.68597982346914!3d38.70704587176526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87136a96367f2c61%3A0xcb5f3e14715d0214!2s1315%20Lords%20Hill%20Dr%2C%20Fountain%2C%20CO%2080817!5e0!3m2!1sen!2sus!4v1703458236397!5m2!1sen!2sus"
-              width="80%"
+              width="90%"
               height="500"
               allowfullscreen=""
               loading="lazy"
@@ -134,7 +148,12 @@ const HomeScreen = () => {
           </div>
         </div>
 
-        <div className="partners">
+        <div
+          className="partners"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
           <h2>Proud Partners</h2>
           <span className="hr-line"></span>
           <div className="partner-card-container">
