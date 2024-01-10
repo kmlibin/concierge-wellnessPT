@@ -62,7 +62,7 @@ const HomeScreen = () => {
             </h1>
             <h4>In home services and telehealth available</h4>
           </div>
-          <CallButton />
+        
         </div>
 
         <Testimonials />
