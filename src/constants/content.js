@@ -1,5 +1,24 @@
 const content = {
-  home: {},
+  home: {
+    bulletpointsOne: [
+      "calm down current symptoms",
+      "restore pain free mobility",
+      "benefit from passive recovery tools",
+      "learn active recovery strategies"
+    ],
+    bulletpointsTwo: [
+      "build resiliency in tissues",
+      "adapt an exercise routine",
+      "increase overall fitness",
+      "better than your baseline"
+    ],
+    bulletpointsThree: [
+      "create a sustainable lifestyle",
+      "long-term exercise programming",
+      "personal coaching to your goals",
+      "living out your health and wellness plan"
+    ]
+  },
   about: {
     header: "Dr. Christian Wade",
     subheading: "Owner of Concierge Wellness",
