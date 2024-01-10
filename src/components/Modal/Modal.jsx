@@ -30,6 +30,7 @@ const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
                   <a
                     style={{ fontWeight: "bold" }}
                     href={submissionStatus.link}
+                    target="blank"
                   >
                     Click Here to Schedule!
                   </a>
