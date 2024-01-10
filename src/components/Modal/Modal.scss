@@ -17,10 +17,20 @@
   transform: translate(-50%, -50%);
 }
 
+.background-color {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  padding: 2rem;
+  background-color: $mediumGrey;
+  border-radius: 15px;
+  box-shadow: $darkBoxShadow;
+}
 .modal {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   font-family: $bodyFont;
   padding: 2rem;
@@ -28,7 +38,7 @@
   height: 200px;
   background: $whiteColor;
   border-radius: 15px;
-  box-shadow: $darkBoxShadow;
+  box-shadow: $boxShadow;
 }
 
 .heading {
