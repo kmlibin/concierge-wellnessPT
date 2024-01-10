@@ -44,11 +44,14 @@ const HomeScreen = () => {
             src={logowithoutwords}
             alt="logo"
             style={{ height: "auto", width: "50%" }}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
           />
           <div
             className="brand-text"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="1200"
             data-aos-easing="ease-in-out"
           >
             <h1>
