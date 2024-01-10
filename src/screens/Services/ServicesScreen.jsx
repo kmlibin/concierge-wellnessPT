@@ -8,10 +8,18 @@ import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
 import Imagegalltest from "../../components/ImageGallery/imagegalltest";
 import Calendar from "../../components/GoogleCalendar/Calendar.jsx";
 import content from "../../constants/content";
+import { Helmet } from "react-helmet-async";
 
 const ServicesScreen = () => {
   return (
     <>
+      <Helmet>
+        <title>Services Provided by Concierge Wellness Physical Therapy</title>
+        <meta
+          name="description"
+          content="Offering myofascial decompression, joint mobilization, in-home services, therapeautic massage, corrective exercise prescription, trigger point dry needling, spinal manipulation, wellness coaching, corporate wellness, ergonomic assessments, group fitness classes"
+        />
+      </Helmet>
       <main className="services">
         <div
           className="services-container"
@@ -27,14 +35,12 @@ const ServicesScreen = () => {
               <h1>{content.services.header}</h1>
               <h4>{content.services.subheading}</h4>
               <span className="hr-line"></span>
-              <p>
-                {content.services.summary}
-              </p>
+              <p>{content.services.summary}</p>
               <div className="service-list">
                 <ul>
                   {content.services.listOne.map((service) => (
                     <li>{service}</li>
-                  ))}   
+                  ))}
                   {content.services.listTwo.map((service) => (
                     <li>{service}</li>
                   ))}

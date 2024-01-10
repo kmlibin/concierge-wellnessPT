@@ -11,6 +11,7 @@ import Modal from "../../components/Modal/Modal.jsx";
 import Card from "../../components/Card/Card.jsx";
 // import logosmall from '../../assets/logosmall.png'
 import partners from "../../constants/partners.js";
+import { Helmet } from "react-helmet-async";
 
 const HomeScreen = () => {
   const [submissionStatus, setSubmissionStatus] = useState({
@@ -30,6 +31,13 @@ const HomeScreen = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Concierge Wellness Physical Therapy</title>
+        <meta
+          name="description"
+          content="Offering personalized and expert physical therapy services with a focus on your well-being. Located in Colorado Springs, Colorado"
+        />
+      </Helmet>
       <main className="main-container">
         <div className="logo-container">
           <img
@@ -110,16 +118,16 @@ const HomeScreen = () => {
           <h2>Our Location</h2>
           <span className="hr-line"></span>
           <div className="map-container">
-          <iframe
-          title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4687427470762!2d-104.68597982346914!3d38.70704587176526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87136a96367f2c61%3A0xcb5f3e14715d0214!2s1315%20Lords%20Hill%20Dr%2C%20Fountain%2C%20CO%2080817!5e0!3m2!1sen!2sus!4v1703458236397!5m2!1sen!2sus"
-            width="80%"
-            height="500"
-            allowfullscreen=""
-            loading="lazy"
-            style={{padding: "5rem", border: "none"}}
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            <iframe
+              title="Google Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4687427470762!2d-104.68597982346914!3d38.70704587176526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87136a96367f2c61%3A0xcb5f3e14715d0214!2s1315%20Lords%20Hill%20Dr%2C%20Fountain%2C%20CO%2080817!5e0!3m2!1sen!2sus!4v1703458236397!5m2!1sen!2sus"
+              width="80%"
+              height="500"
+              allowfullscreen=""
+              loading="lazy"
+              style={{ padding: "5rem", border: "none" }}
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
