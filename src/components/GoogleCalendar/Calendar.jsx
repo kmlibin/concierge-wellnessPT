@@ -3,7 +3,12 @@ import "./Calendar.scss";
 
 const Calendar = () => {
   return (
-    <div className="schedule">
+    <div
+      className="schedule"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+    >
       <iframe
         src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true"
         title="Google Scheduling Calendar"
