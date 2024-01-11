@@ -4,6 +4,7 @@ import services from "../../assets/services.jpg";
 import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from "../../assets/kettlebell.png";
+import tippybird from '../../assets/tippybird.jpg'
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
 import Imagegalltest from "../../components/ImageGallery/imagegalltest";
 import Calendar from "../../components/GoogleCalendar/Calendar.jsx";
@@ -27,8 +28,11 @@ const ServicesScreen = () => {
           data-aos-duration="1000"
         >
           <div className="image-container">
-            <img className="main-photo" src={services} alt="services" />
-            <div className="overlapping"></div>
+            <img className="main-photo" src={tippybird} alt="Dr. Wade helps a patient achieve proper form with a kettlebell exercise" />
+            <div className="overlapping" 
+         
+
+            ></div>
           </div>
           <div className="services-main">
             <div className="services-text">
