@@ -11,7 +11,7 @@ const Map = () => {
         height="500"
         allowfullscreen=""
         loading="lazy"
-        style={{ padding: "5rem", border: "none" }}
+        style={{ padding: "5rem", border: "none", filter: "invert(90%)" }}
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
