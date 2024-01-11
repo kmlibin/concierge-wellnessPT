@@ -1,6 +1,5 @@
 import React from "react";
 import "./ServicesScreen.scss";
-import services from "../../assets/services.jpg";
 import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from "../../assets/kettlebell.png";

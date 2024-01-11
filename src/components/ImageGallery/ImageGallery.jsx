@@ -5,7 +5,6 @@ import gymweights from "../../assets/gymweights.jpg";
 import gym from "../../assets/gym.jpg";
 import foot from "../../assets/foot.jpg";
 import assessment from "../../assets/assessment.jpg";
-import manipulation from "../../assets/manipulation.jpg";
 import stretch from "../../assets/stretch.jpg";
 import treatment1 from "../../assets/treatment1.jpg";
 import cords from "../../assets/cords.JPG";

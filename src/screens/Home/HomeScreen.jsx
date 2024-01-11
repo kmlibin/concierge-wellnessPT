@@ -3,14 +3,14 @@ import "./HomeScreen.scss";
 import Testimonials from "../../components/Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 // import logo2 from "../../assets/logo2.png";
-import fitness from "../../assets/fitness.jpg";
-import running from "../../assets/running.jpg";
-import moreweights from "../../assets/moreweights.jpg";
+
 import logowithoutwords from "../../assets/logowithoutwords.png";
 import Modal from "../../components/Modal/Modal.jsx";
 import Card from "../../components/Card/Card.jsx";
+import gymweights from '../../assets/gymweights.jpg';
+import foamroller from '../../assets/foamroller.jpg';
+import livewell from '../../assets/livewell.jpg';
 // import logosmall from '../../assets/logosmall.png'
-import partners from "../../constants/partners.js";
 import content from "../../constants/content.js";
 import { Helmet } from "react-helmet-async";
 import Map from "../../components/GoogleMap/Map.jsx";
@@ -24,6 +24,7 @@ const HomeScreen = () => {
   });
   const [isOpen, setIsOpen] = useState(false);
 
+  //controls modal pop up
   useEffect(() => {
     //2 seconds
     const timeoutId = setTimeout(() => {
@@ -95,22 +96,22 @@ const HomeScreen = () => {
           <p> Recovery | Performance | Wellness</p>
           <div className="process-info-container">
             <Card
-              image={running}
-              alt="runners"
+              image={foamroller}
+              alt="A man using a foam roller"
               heading="Recovery"
               duration="800"
               bulletpoints={content.home.bulletpointsOne}
             />
             <Card
-              image={fitness}
-              alt="weight lifter"
+              image={gymweights}
+              alt="Dr. Wade helps a patient with a deadlift"
               heading="Performance"
               duration="1000"
               bulletpoints={content.home.bulletpointsTwo}
             />
             <Card
-              image={moreweights}
-              alt="someone using a weight machine"
+              image={livewell}
+              alt="Acrabble tiles that say live well"
               heading="Wellness"
               duration="1200"
               bulletpoints={content.home.bulletpointsThree}

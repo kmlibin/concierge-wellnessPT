@@ -1,7 +1,7 @@
 import React from "react";
 import "./BioScreen.scss";
-import chickenman from "../../assets/chickenman.jpg";
 import content from "../../constants/content";
+import christian from '../../assets/christian.jpg'
 import { Helmet } from "react-helmet-async";
 const BioScreen = () => {
   return (
@@ -16,7 +16,7 @@ const BioScreen = () => {
     <main className="bio" data-aos="fade-up" data-aos-duration="1000">
       <div className="bio-container">
         <div className="bio-image-container">
-          <img src={chickenman} alt="chickenman" />
+          <img src={christian} alt="Dr. Christian Wade" />
         </div>
         <div className="bio-container-text">
           <h2>{content.about.header}</h2>
