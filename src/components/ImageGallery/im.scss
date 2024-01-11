@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 
 :root {
-    --num-cards: 3; 
+    --num-cards: 3.9; 
   }
   
   .wrapper {
@@ -23,15 +23,16 @@
     flex-direction: row;
     transition: transform 0.5s ease-in-out;
     width: 100%; 
-    
+    margin-left: 1rem;
     scroll-snap-type: x mandatory;
-    margin-right: 1rem;
+    // margin-right: 1rem;
   }
   
   .card {
     scroll-snap-align: start;
     min-width: calc(100% / var(--num-cards));
     margin-right: 1rem;
+    //not last child, fix this
   ;
   }
   

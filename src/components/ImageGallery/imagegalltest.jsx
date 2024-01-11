@@ -20,7 +20,7 @@ const Imagegalltest = () => {
   };
 
   const handleNextClick = useCallback(() => {
-    setCurrentCard((currentCard) => (currentCard + 2) % numCards);
+    setCurrentCard((currentCard) => (currentCard + 1) % numCards);
   }, [numCards]);
 
   //auto scroll
