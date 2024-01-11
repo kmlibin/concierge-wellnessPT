@@ -10,7 +10,7 @@ const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
         <div className="background-color" data-aos="flip-up" data-aos-duration="500">
           <div className="modal">
             <div className="modal-header">
-              <h5 className="heading">{submissionStatus.heading}</h5>
+              <h5 className="heading">{submissionStatus?.heading}</h5>
             </div>
             <button
             className="top-close-btn"
