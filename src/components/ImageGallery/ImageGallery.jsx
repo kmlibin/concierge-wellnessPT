@@ -1,21 +1,24 @@
 import React, { useEffect, useState, useCallback } from "react";
 import "./ImageGallery.scss";
-import chickenman from "../../assets/chickenman.jpg";
-import bands from "../../assets/bands.jpg";
-import weights from "../../assets/weights.jpg";
-import running from "../../assets/running.jpg";
-import fitness from "../../assets/fitness.jpg";
-import moreweights from "../../assets/moreweights.jpg";
+
+import gymweights from "../../assets/gymweights.jpg";
+import gym from "../../assets/gym.jpg";
+import foot from "../../assets/foot.jpg";
+import assessment from "../../assets/assessment.jpg";
+import manipulation from "../../assets/manipulation.jpg";
+import stretch from "../../assets/stretch.jpg";
+import treatment1 from "../../assets/treatment1.jpg";
+import cords from "../../assets/cords.JPG";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 const ImageGallery = () => {
   const images = [
-    chickenman,
-    chickenman,
-    bands,
-    weights,
-    running,
-    fitness,
-    moreweights,
+    gym,
+    gymweights,
+    foot,
+    assessment,
+    stretch,
+    treatment1,
+    cords,
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesPerPage = 5;
@@ -33,8 +36,8 @@ const ImageGallery = () => {
     const nextIndex = (currentIndex + 1) % images.length;
     setCurrentIndex(nextIndex);
   }, [currentIndex, images.length]);
-  
-  //auto scrolling 
+
+  //auto scrolling
   useEffect(() => {
     const intervalId = setInterval(autoScroll, 3000);
     return () => clearInterval(intervalId);

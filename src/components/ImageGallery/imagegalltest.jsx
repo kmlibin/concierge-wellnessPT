@@ -1,15 +1,18 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import "./im.scss"; 
-import running from "../../assets/running.jpg";
-import bands from "../../assets/bands.jpg";
-import weights from "../../assets/weights.jpg";
-import moreweights from "../../assets/moreweights.jpg";
+import gymweights from "../../assets/gymweights.jpg";
+import gym from "../../assets/gym.jpg";
+import foot from "../../assets/foot.jpg";
+import assessment from "../../assets/assessment.jpg";
+import stretch from "../../assets/stretch.jpg";
+import treatment1 from "../../assets/treatment1.jpg";
+import cords from "../../assets/cords.JPG";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 const Imagegalltest = () => {
   const [currentCard, setCurrentCard] = useState(0);
-  const cardData = [running, weights, bands, bands, moreweights, running];
+  const cardData = [gym, gymweights, foot, assessment, stretch, treatment1, cords];
   const numCards = cardData.length;
 
   const handlePrevClick = () => {
