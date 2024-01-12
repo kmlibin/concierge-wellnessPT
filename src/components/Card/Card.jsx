@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.scss";
 
-const Card = ({ image, alt, heading, duration, bulletpoints }) => {
+const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
   return (
     <div
       className="card-border"
@@ -20,6 +20,7 @@ const Card = ({ image, alt, heading, duration, bulletpoints }) => {
                 <li>{point}</li>
               ))}
             </ul>
+            <p>{tagline}</p>
           </div>
         </div>
       </div>

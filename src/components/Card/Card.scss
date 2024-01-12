@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 
 .card-border {
-  width: 30%;
+  min-width: 32%;
   min-height: 100%;
   box-shadow: $boxShadow;
   background-color: $blackRGBA;
@@ -29,8 +29,7 @@
       height: 100%;
 
       img {
-        min-height: 240px;
-        max-height: 240px;
+        min-height: 250px;
         width: 95%;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
         margin-top: $small;
@@ -44,13 +43,13 @@
         font-style: italic;
       }
 
-   
       .card-text {
         background-color: $lightGreyRGBA;
         box-shadow: 0 0 4px $accent;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         border-radius: $standard;
         width: 95%;
         height: 100%;
@@ -73,6 +72,13 @@
             margin-top: 0.75rem;
           }
         }
+      }
+      p {
+        box-sizing: border-box;
+        font-style: italic;
+        margin: 0;
+        text-align: center;
+        width: 90%;
       }
     }
   }
