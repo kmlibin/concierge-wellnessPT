@@ -7,9 +7,9 @@ import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 import logowithoutwords from "../../assets/logowithoutwords.png";
 import Modal from "../../components/Modal/Modal.jsx";
 import Card from "../../components/Card/Card.jsx";
-import gymweights from '../../assets/gymweights.jpg';
-import foamroller from '../../assets/foamroller.jpg';
-import livewell from '../../assets/livewell.jpg';
+import gymweights from "../../assets/gymweights.jpg";
+import twist from "../../assets/twist.jpg";
+import livewell from "../../assets/livewell.jpg";
 // import logosmall from '../../assets/logosmall.png'
 import content from "../../constants/content.js";
 import { Helmet } from "react-helmet-async";
@@ -29,7 +29,7 @@ const HomeScreen = () => {
     //2 seconds
     const timeoutId = setTimeout(() => {
       setIsOpen(true);
-    }, 2000);
+    }, 7000);
     return () => clearTimeout(timeoutId);
   }, []);
 
@@ -96,11 +96,13 @@ const HomeScreen = () => {
           <p> Recovery | Performance | Wellness</p>
           <div className="process-info-container">
             <Card
-              image={foamroller}
+              image={twist}
               alt="A man using a foam roller"
               heading="Recovery"
               duration="800"
               bulletpoints={content.home.bulletpointsOne}
+              tagline={`Whether you're overcoming an injury or seeking post-operative care, 
+              our expert guidance will help you regain strength and flexibility, ensuring a swift and effective recovery.`}
             />
             <Card
               image={gymweights}
@@ -108,6 +110,7 @@ const HomeScreen = () => {
               heading="Performance"
               duration="1000"
               bulletpoints={content.home.bulletpointsTwo}
+              tagline={` Tailored to your unique goals, our programs enhance endurance, optimize movement mechanics, and empower you to achieve peak performance.`}
             />
             <Card
               image={livewell}
@@ -115,6 +118,8 @@ const HomeScreen = () => {
               heading="Wellness"
               duration="1200"
               bulletpoints={content.home.bulletpointsThree}
+              tagline={` Our holistic approach integrates physical therapy and wellness coaching to promote a balanced and healthy lifestyle, 
+              fostering long-term vitality and resilience`}
             />
           </div>
         </div>
