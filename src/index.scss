@@ -10,6 +10,10 @@ body {
 
 }
 
+.blue-color {
+  color: $accent;
+}
+
 //blue line beneath page headings
 .hr-line {
   border-bottom: 1px solid $accent;
