@@ -36,7 +36,7 @@ const content = {
         Choosing a path away from traditional medication-based
         solutions, Dr. Wade found his calling in physical therapy after
         personally experiencing the benefits following an injury. His
-        educational journey culminated in the attainment of a Doctorate from TWU
+        educational journey culminated in the attainment of a Doctorate from Texas Women's University in
         Dallas. Eager to broaden his perspective, he embarked on a two-year
         journey, working in five different states across over 10 physical
         therapy clinics. 
@@ -147,8 +147,9 @@ const content = {
     business: "Concierge Wellness",
     address1: "1315 Lords Hill Dr",
     address2: "Fountain, Colorado 80817",
+    phone: "1234556789",
     email: "christian@conciergewellnessandpt.com",
-    insta: "https://www.instagram.com/cw_pllc/"
+    insta: "https://www.instagram.com/conciergewellnessandpt/"
   }
 };
 
