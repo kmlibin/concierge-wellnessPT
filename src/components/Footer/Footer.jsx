@@ -12,6 +12,8 @@ const Footer = () => {
       <h4>{content.footer.business}</h4>
       <p>{content.footer.address1}</p>
       <p>{content.footer.address2}</p>
+      <p>{content.footer.phone}</p>
+      <br></br>
       <p>{content.footer.email}</p>
 
       <a
