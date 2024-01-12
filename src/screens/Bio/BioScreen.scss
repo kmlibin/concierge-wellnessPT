@@ -5,8 +5,10 @@
     justify-content: center;
     align-items: center;
     min-height: $minH;
-    width: $fullWidth;;
+    width: $fullWidth;
     color: $primaryText;
+    margin-bottom: $medium;
+    margin-top: $medium;
   
 
     .bio-container {
