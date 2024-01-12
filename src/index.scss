@@ -17,6 +17,12 @@ body {
   width: 50%;
 }
 
+.grey-hr-line {
+  border-bottom: 1px solid $lightGreyRGBA;
+  margin-bottom: $small;
+  width: 50%;
+}
+
 //controls for sliding through testimonials and image gallery
 .controls {
   margin: 16px 0;
