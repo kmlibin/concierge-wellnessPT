@@ -3,10 +3,9 @@ import "./ServicesScreen.scss";
 import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from "../../assets/kettlebell.png";
-import tippybird from '../../assets/tippybird.jpg'
+import tippybird from "../../assets/tippybird.jpg";
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
-import Imagegalltest from "../../components/ImageGallery/imagegalltest";
-import Calendar from "../../components/GoogleCalendar/Calendar.jsx";
+import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 import content from "../../constants/content";
 import { Helmet } from "react-helmet-async";
 
@@ -26,13 +25,17 @@ const ServicesScreen = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
+          {/* image and grey rectangle underneath */}
           <div className="image-container">
-            <img className="main-photo" src={tippybird} alt="Dr. Wade helps a patient achieve proper form with a kettlebell exercise" />
-            <div className="overlapping" 
-         
-
-            ></div>
+            <img
+              className="main-photo"
+              src={tippybird}
+              alt="Dr. Wade helps a patient achieve proper form with a kettlebell exercise"
+            />
+            <div className="overlapping"></div>
           </div>
+
+          {/* text of services screen */}
           <div className="services-main">
             <div className="services-text">
               <h1>{content.services.header}</h1>
@@ -48,19 +51,17 @@ const ServicesScreen = () => {
                     <li>{service}</li>
                   ))}
                 </ul>
-                {/* <ul>
-                {content.services.listTwo.map((service) => (
-                    <li>{service}</li>
-                  ))}
-                </ul> */}
               </div>
             </div>
             <span className="hr-line"></span>
+
+            {/* three icons at the bottom of services text */}
+
             <div className="services-icons">
               <div className="img-container">
                 <img src={report} alt="report" />
               </div>
-              {/* <img src = {snip1} /> */}
+
               <div className="img-container">
                 <img src={kettlebell} alt="kettlebell" />
               </div>
@@ -68,16 +69,15 @@ const ServicesScreen = () => {
               <div className="img-container">
                 <img src={health} alt="health" />
               </div>
-              {/* <div className="img-container">
-          <img src = {yoga} />
-          </div> */}
             </div>
           </div>
         </div>
       </main>
+
       <ImageGallery />
-      <Imagegalltest />
-      <Calendar />
+      <div className="call-button-container">
+        <CallButton />
+      </div>
     </>
   );
 };

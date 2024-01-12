@@ -11,7 +11,7 @@
   background-image: url("../../assets/fitness.jpg");
   background-size: cover;
   z-index: -2;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .services-container {
@@ -166,4 +166,9 @@
       }
     }
   }
+}
+
+.call-button-container {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
