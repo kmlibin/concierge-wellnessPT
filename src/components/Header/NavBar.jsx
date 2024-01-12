@@ -39,11 +39,16 @@ const NavBar = () => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  const handleLinkClick = () => {
+    setToggle(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src={logosmall} alt="logo" />
+          <img src={logosmall} alt="Concierge Wellness Logo" as="image" />
         </Link>
       </div>
       <ul className="navbar-links">
@@ -76,11 +81,15 @@ const NavBar = () => {
               {navRoutes.map((item) =>
                 item.name === "Contact" ? (
                   <li className="contact-link" key={`link-${item.name}`}>
-                    <Link to={item.route}>{item.name}</Link>
+                    <Link to={item.route} className="blue-color" onClick={handleLinkClick}>
+                      {item.name}
+                    </Link>
                   </li>
                 ) : (
                   <li className="nav-link" key={`link-${item.name}`}>
-                    <Link to={item.route}>{item.name}</Link>
+                    <Link to={item.route} onClick={handleLinkClick}>
+                      {item.name}
+                    </Link>
                   </li>
                 )
               )}
