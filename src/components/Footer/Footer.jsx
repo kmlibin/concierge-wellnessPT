@@ -9,7 +9,7 @@ const Footer = () => {
   // const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <h4>{content.footer.business}</h4>
+      <h4 className="blue-color">{content.footer.business}</h4>
       <p>{content.footer.address1}</p>
       <p>{content.footer.address2}</p>
       <p>{content.footer.phone}</p>
@@ -25,7 +25,7 @@ const Footer = () => {
         <BsInstagram className="instagram" />
       </a>
 
-      <p >Concierge Wellness &copy; 2022</p>
+      <p>Concierge Wellness &copy; 2022</p>
     </footer>
   );
 };
