@@ -3,9 +3,9 @@
   "name": "Concierge Wellness |  Dr. Christian Wade",
   "icons": [
     {
-      "src": "health.png",
-      "sizes": "10 x 10",
-      "type": "image/png"
+      "src": "cwicon.jpg",
+      "sizes": "1o x 10",
+      "type": "image/jpg"
     }
   ],
   "start_url": ".",
