@@ -11,6 +11,10 @@ import "./FAQScreen.scss";
 import { TfiEmail } from "react-icons/tfi";
 
 const FAQScreen = () => {
+
+  const sendEmail = () => {
+    window.location.href = "mailto:christian@conciergewellnessandpt.com";
+  };
   return (
     <>
       <Helmet>
@@ -51,8 +55,10 @@ const FAQScreen = () => {
             </p>
           </div>
         </div>
+        <div className="show" onClick={sendEmail}>
+          <TfiEmail className="icon" />
+        </div>
       </main>
-      <Calendar />
     </>
   );
 };

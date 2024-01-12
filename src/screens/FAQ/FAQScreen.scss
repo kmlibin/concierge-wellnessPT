@@ -6,8 +6,7 @@
   flex-direction: row;
   color: $primaryText;
   font-family: $bodyFont;
-  margin-bottom: 5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: $medium;
 
   .faq-title {
     width: 15%;
@@ -31,6 +30,7 @@
     height: 100%;
     background-color: $mediumGreyRGBA;
     box-shadow: $darkBoxShadow;
+    border-radius: $standard;
 
     .faq-text {
       max-width: 100%;
@@ -55,8 +55,10 @@
     align-items: flex-end;
     position: relative;
 
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
     .faq-content {
-      
       background-color: $whiteColor;
       border-radius: 5px 0 0 5px;
       position: sticky;
@@ -78,14 +80,6 @@
         width: 30%;
         border-radius: 50%;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-
-        .icon {
-          box-sizing: border-box;
-          color: $primaryText;
-          width: 100%;
-          height: 100%;
-          margin: 1.5rem;
-        }
       }
 
       p {
@@ -105,5 +99,57 @@
         text-decoration: none;
       }
     }
+  }
+}
+
+.show {
+  display: none;
+
+  @media screen and (max-width: 950px) {
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: $darkAccent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    min-width: 85px;
+    border-radius: 50%;
+    box-shadow: $darkBoxShadow;
+
+    .icon {
+      height: 50%;
+      width: 50%;
+    }
+  }
+}
+.icon {
+  box-sizing: border-box;
+  color: $primaryText;
+  width: 100%;
+  height: 100%;
+  margin: 1.5rem;
+}
+
+@media screen and (max-width: 950px) {
+  .faq {
+    flex-direction: column;
+    width:  100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-title {
+    min-width: 100%;
+  }
+
+  .faq-container {
+    min-width: 90%;;
+  }
+
+  .faq-questions-container {
+    display: none;
   }
 }
