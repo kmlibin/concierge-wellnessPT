@@ -89,7 +89,7 @@ const HomeScreen = () => {
           data-aos-easing="ease-in-out"
         >
           <h2>
-            The <span className="blue-color">Concierge</span> Process
+          <span className="blue-color">Movement</span> is <span className="blue-color">Medicine</span>
           </h2>
           <span className="hr-line"></span>
           <h4>Dr. Wade and Concierge Wellness will elevate your well-being</h4>
