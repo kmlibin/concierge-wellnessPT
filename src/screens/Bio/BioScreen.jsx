@@ -15,7 +15,7 @@ const BioScreen = () => {
       </Helmet>
     <main className="bio" data-aos="fade-up" data-aos-duration="1000">
       <div className="bio-container">
-        <div className="bio-image-container">
+        <div className="bio-image-container" data-aos="fade-right" data-aos-duration="1200">
           <img src={christian} alt="Dr. Christian Wade" />
         </div>
         <div className="bio-container-text">
