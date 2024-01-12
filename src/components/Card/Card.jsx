@@ -12,6 +12,7 @@ const Card = ({ image, alt, heading, duration, bulletpoints }) => {
       <div className="card-container">
         <div className="process-info">
           <h3>{heading}</h3>
+          <hr className="grey-hr-line"></hr>
           <img src={image} loading="lazy" alt={alt}></img>
           <div className="card-text">
             <ul>

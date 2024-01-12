@@ -29,17 +29,22 @@
       height: 100%;
 
       img {
+        min-height: 240px;
         max-height: 240px;
         width: 95%;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
         margin-top: $small;
         border-radius: 5px;
+        box-shadow: 0 0 4px $accent;
       }
       h3 {
         color: $accent;
         padding-top: $small;
+        margin-bottom: $small;
         font-style: italic;
       }
+
+   
       .card-text {
         background-color: $lightGreyRGBA;
         box-shadow: 0 0 4px $accent;
