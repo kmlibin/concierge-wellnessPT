@@ -20,6 +20,7 @@ const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
                 <li>{point}</li>
               ))}
             </ul>
+            <hr className="hr-line"></hr>
             <p>{tagline}</p>
           </div>
         </div>
