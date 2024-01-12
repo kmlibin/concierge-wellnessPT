@@ -106,10 +106,12 @@
 
     .process-info-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin: 5rem 0;
-      padding: 5rem;
-      height: 80%;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       width: 80%;
       background-color: $greyRGBA;
       box-shadow: 0 0 10px $accent;
