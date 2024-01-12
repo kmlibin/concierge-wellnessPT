@@ -1,22 +1,22 @@
 const content = {
   home: {
     bulletpointsOne: [
-      "calm down current symptoms",
-      "restore pain free mobility",
-      "benefit from passive recovery tools",
-      "learn active recovery strategies"
+      "Calm down current symptoms",
+      "Restore pain free mobility",
+      "Benefit from passive recovery tools",
+      "Learn active recovery strategies"
     ],
     bulletpointsTwo: [
-      "build resiliency in tissues",
-      "adapt an exercise routine",
-      "increase overall fitness",
-      "better than your baseline"
+      "Build resiliency in tissues",
+      "Adapt an exercise routine",
+      "Increase overall fitness",
+      "Better than your baseline"
     ],
     bulletpointsThree: [
-      "create a sustainable lifestyle",
-      "long-term exercise programming",
-      "personal coaching to your goals",
-      "living out your health and wellness plan"
+      "Create a sustainable lifestyle",
+      "Long-term exercise programming",
+      "Personal coaching to your goals",
+      "Living out your health and wellness plan"
     ]
   },
   about: {
