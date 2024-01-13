@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Calendar from "../../components/GoogleCalendar/Calendar";
 import { Helmet } from "react-helmet-async";
 import faqData from "./faqData";
 

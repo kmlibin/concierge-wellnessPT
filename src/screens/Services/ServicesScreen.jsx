@@ -75,6 +75,7 @@ const ServicesScreen = () => {
       </main>
 
       <ImageGallery />
+
       <div className="call-button-container">
         <CallButton />
       </div>
