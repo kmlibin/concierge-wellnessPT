@@ -22,7 +22,7 @@ const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
             <IoClose style={{ marginBottom: "-3px" }} />
           </button>
             <div className="modal-content">
-              {submissionStatus.link ? (
+              {submissionStatus?.link ? (
                 <p>
                   {submissionStatus.message}
                   <br />
