@@ -39,6 +39,11 @@
         margin-top: $small;
         border-radius: 5px;
         box-shadow: 0 0 4px $accent;
+
+        @media screen and (max-width: 900px) {
+          min-height: auto;
+          width: 90%
+        }
       }
 
       h3 {
