@@ -9,6 +9,10 @@
   padding: 1rem;
   margin: 0.5rem;
 
+  @media screen and (max-width: 900px) {
+    min-width: 100%;
+  }
+
   .card-container {
     display: flex;
     flex-direction: column;
@@ -36,6 +40,7 @@
         border-radius: 5px;
         box-shadow: 0 0 4px $accent;
       }
+
       h3 {
         color: $accent;
         padding-top: $small;
@@ -55,31 +60,63 @@
         height: 100%;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-      }
+        max-height: 500px; // Adjust the maximum height as needed
+        overflow: hidden;
+        transition: max-height 0.3s ease;
 
-      ul {
-        font-size: $pFont;
-        margin: 20px 0;
-        display: block;
-        width: 85%;
-        padding-left: 2rem;
-        list-style-position: inside;
+        @media screen and (max-width: 900px) {
+          display: none;
 
-        li {
-          text-indent: -1.5rem;
-
-          &:not(:first-child) {
-            margin-top: 0.75rem;
+          &.open {
+            display: flex;
+            margin-top: 0;
           }
         }
+
+        ul {
+          font-size: $pFont;
+          margin: 20px 0;
+          display: block;
+          width: 85%;
+          padding-left: 2rem;
+          list-style-position: inside;
+
+          li {
+            text-indent: -1.5rem;
+
+            &:not(:first-child) {
+              margin-top: 0.75rem;
+            }
+          }
+        }
+
+        p {
+          box-sizing: border-box;
+          font-style: italic;
+          margin: 0;
+          text-align: center;
+          width: 90%;
+          margin-bottom: $small;
+        }
       }
-      p {
-        box-sizing: border-box;
-        font-style: italic;
-        margin: 0;
-        text-align: center;
-        width: 90%;
-        margin-bottom: $small;
+      .accordion-indicator {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 900px) {
+          display: none;
+        }
+
+        svg {
+          transition: transform 0.3s ease;
+        }
+
+        &.open {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
       }
     }
   }
