@@ -20,6 +20,10 @@
     img {
       width: 35%;
       height: 50%;
+
+      @media screen and (max-width: 900px) {
+        width: 90% !important;
+      }
     }
 
     .brand-text {
@@ -74,6 +78,7 @@
   }
 
   .process-container {
+    text-align: center;
     font-family: $bodyFont;
     font-size: $h2Font;
     min-height: 70vh;
@@ -116,6 +121,16 @@
       background-color: $greyRGBA;
       box-shadow: 0 0 10px $accent;
       border-radius: $standard;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items:center;
+      }
+
+      @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        align-items:center;
+      }
     }
   }
 
@@ -148,7 +163,6 @@
     .hr-line {
       margin-bottom: 7rem;
     }
-
   }
 
   .partners {
@@ -171,7 +185,5 @@
     .hr-line {
       margin-bottom: 1rem;
     }
-
-    
   }
 }
