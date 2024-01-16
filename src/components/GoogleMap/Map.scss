@@ -1,11 +1,27 @@
 @import "../../variables/variables.scss";
 
 .map-container {
-    box-shadow: 0 0 10px $accent;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    background: $greyRGBA;
-    border-radius: $standard;
+  box-shadow: 0 0 10px $accent;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background: $greyRGBA;
+  border-radius: $standard;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 0;
   }
 
+  .google-map {
+    padding: 2rem;
+    border: none;
+    filter: invert(90%);
+    width: 100%;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}
