@@ -8,11 +8,10 @@
   max-height: 60%;
   margin-bottom: 2rem;
   overflow: hidden;
-  
+
   .image-list {
     display: flex;
     margin-right: 40px;
-
   }
 
   .image {
@@ -25,7 +24,6 @@
     align-items: center;
     height: 450px;
     min-width: 700px;
-  
   }
 
   .image:nth-child(3) {
@@ -50,6 +48,7 @@
 
   @media screen and (max-width: 520px) {
     .image-gallery {
+      width: 120%;
       height: 70vh;
       display: flex;
       justify-content: center;
@@ -57,23 +56,20 @@
       min-width: 100%;
     }
 
-    // .image-list {
-      
-    //   // overflow-x: hidden;
-    //   display: flex;
-      
-    // }
+    .image-list {
+      overflow-x: hidden;
+      margin: 0;
+    }
 
     .image {
-      flex: 0 0 100% !important;
+      flex: 0 0 100%;
       border: none;
       opacity: 1;
       max-height: 300px;
       min-width: 100%;
     }
-    // img {
-    //   object-fit: cover;
-  
-    // }
+    img {
+      object-fit: cover;
+    }
   }
 }
