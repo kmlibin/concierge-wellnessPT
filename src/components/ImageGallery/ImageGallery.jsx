@@ -3,16 +3,16 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./ImageGallery.scss";
 
 //images
-import gymbrand from '../../assets/gymbrand.jpg'
+import gymbrand from "../../assets/gymbrand.jpg";
 import gymweights from "../../assets/gymweights.jpg";
 import gym from "../../assets/gym.jpg";
 import foot from "../../assets/foot.jpg";
 import assessment from "../../assets/assessment.jpg";
-import looking from '../../assets/looking.jpg';
+import looking from "../../assets/looking.jpg";
 import stretch from "../../assets/stretch.jpg";
-import squarehips from '../../assets/squarehips.jpg';
-import device from '../../assets/device.jpg';
-import manipulation from '../../assets/manipulation.jpg';
+import squarehips from "../../assets/squarehips.jpg";
+import device from "../../assets/device.jpg";
+import manipulation from "../../assets/manipulation.jpg";
 import treatment1 from "../../assets/treatment1.jpg";
 import cords from "../../assets/cords.JPG";
 
@@ -69,7 +69,10 @@ const ImageGallery = () => {
         <div className="image-list">
           {visibleImages.map((image, index) => (
             <div className="image">
-              <img src={image} alt="Gallery" />
+              <img
+                src={image}
+                alt="Dr. Wade providing guidance and treatment"
+              />
             </div>
           ))}
         </div>
