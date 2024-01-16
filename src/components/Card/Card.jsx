@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaCaretDown, FaCaretUp } from "react-icons/fa";
+import { FaCaretDown } from "react-icons/fa";
 import "./Card.scss";
 
 const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
@@ -12,9 +12,9 @@ const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
   return (
     <div
       className={`card-border ${isAccordionOpen ? "accordion-mode" : ""}`}
-      // data-aos="zoom-in-right"
-      // data-aos-duration={duration}
-      // data-aos-easing="ease-in-out"
+      data-aos="zoom-in-right"
+      data-aos-duration={duration}
+      data-aos-easing="ease-in-out"
     >
       <div className="card-container">
         <div className="process-info">

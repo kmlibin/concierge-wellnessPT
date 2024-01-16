@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 //styles
 import "./NavBar.scss";
-import { HiMenuAlt4, HiX, HiArrowLeft } from "react-icons/hi";
+import { HiMenuAlt4, HiArrowLeft } from "react-icons/hi";
 
 import logosmall from "../../assets/logosmall.png";
 //routes for the links
