@@ -34,6 +34,11 @@
       align-items: center;
       font-family: $bodyFont;
 
+      @media screen and (max-width: 900px) {
+        width:90%;
+           }
+
+
       h1 {
         text-align: center;
         font-size: $h2Font;
@@ -45,6 +50,11 @@
         .blue-color {
           color: $accent;
         }
+
+        @media screen and (max-width: 900px) {
+     font-size: 24px;
+        }
+        
       }
 
       h4 {
@@ -53,6 +63,10 @@
         font-size: $h4Font;
         width: 70%;
         color: $mediumGrey;
+
+        @media screen and (max-width: 900px) {
+          font-size: 16px;
+             }
       }
     }
     // .call {
