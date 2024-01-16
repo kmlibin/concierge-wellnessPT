@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 //styles
 import "./NavBar.scss";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { HiMenuAlt4, HiX, HiArrowLeft } from "react-icons/hi";
 
 import logosmall from "../../assets/logosmall.png";
 //routes for the links
@@ -44,6 +44,7 @@ const NavBar = () => {
     setToggle(false);
   };
 
+  console.log(toggle);
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -67,36 +68,42 @@ const NavBar = () => {
         )}
       </ul>
       <div className="navbar-menu">
-        <HiMenuAlt4 onClick={handleToggle} />
-
-        {toggle && (
-          <div
-            className="navbar-menu-content"
-            data-aos="fade-in-right"
-            data-aos-duration="1000"
-          >
-            <HiX onClick={handleToggle} />
-
-            <ul>
-              {navRoutes.map((item) =>
-                item.name === "Contact" ? (
-                  <li className="contact-link" key={`link-${item.name}`}>
-                    <Link to={item.route} className="blue-color" onClick={handleLinkClick}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ) : (
-                  <li className="nav-link" key={`link-${item.name}`}>
-                    <Link to={item.route} onClick={handleLinkClick}>
-                      {item.name}
-                    </Link>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-        )}
+        <HiMenuAlt4 className="open-nav" onClick={handleToggle} />
       </div>
+      {toggle && (
+        <div
+          className="navbar-menu-content"
+          data-aos="fade-in-right"
+          data-aos-duration="1000"
+        >
+          {toggle ? (
+            <HiArrowLeft className="close-nav" onClick={handleToggle} />
+          ) : null}
+
+          <ul>
+            {navRoutes.map((item) =>
+              item.name === "Contact" ? (
+                <li className="contact-link" key={`link-${item.name}`}>
+                  <Link
+                    to={item.route}
+                    className="blue-color"
+                    style={{fontWeight: "bold"}}
+                    onClick={handleLinkClick}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ) : (
+                <li className="nav-link" key={`link-${item.name}`}>
+                  <Link to={item.route} onClick={handleLinkClick}>
+                    {item.name}
+                  </Link>
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
