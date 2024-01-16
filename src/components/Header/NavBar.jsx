@@ -74,7 +74,7 @@ const NavBar = () => {
         <div
           className="navbar-menu-content"
           data-aos="fade-in-right"
-          data-aos-duration="1000"
+          data-aos-duration="500"
         >
           {toggle ? (
             <HiArrowLeft className="close-nav" onClick={handleToggle} />
@@ -87,7 +87,7 @@ const NavBar = () => {
                   <Link
                     to={item.route}
                     className="blue-color"
-                    style={{fontWeight: "bold"}}
+                    style={{ fontWeight: "bold" }}
                     onClick={handleLinkClick}
                   >
                     {item.name}
