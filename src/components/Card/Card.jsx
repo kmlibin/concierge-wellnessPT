@@ -6,22 +6,21 @@ const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [shouldAnimate, setShouldAnimate] = useState(true);
 
+  //on responsive screens, the animation messes with the accordion toggle. when toggled, the whole card just disappears. need
+  //to check screen size before implementing animation. 
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    setShouldAnimate(screenWidth > 900); 
+    setShouldAnimate(screenWidth > 900);
   }, []);
 
-
   const toggleAccordion = () => {
-    setIsAccordionOpen(!isAccordionOpen);
+    setIsAccordionOpen((prev) => !prev);
   };
-
-
 
   return (
     <div
       className={`card-border ${isAccordionOpen ? "accordion-mode" : ""}`}
-      data-aos={shouldAnimate ? "zoom-in-right" : ""}
+      {...(shouldAnimate ? { "data-aos": "zoom-in-right" } : {})}
       data-aos-duration={duration}
       data-aos-easing="ease-in-out"
     >

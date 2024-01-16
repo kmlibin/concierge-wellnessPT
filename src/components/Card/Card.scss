@@ -65,7 +65,7 @@
         height: 100%;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-        max-height: 500px; // Adjust the maximum height as needed
+        max-height: 500px;
         overflow: hidden;
         transition: max-height 0.3s ease;
 
@@ -124,7 +124,7 @@
         width: 90%;
         margin: 0.5rem 0;
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 901px) {
           display: none;
         }
 
