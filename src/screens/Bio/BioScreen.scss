@@ -1,107 +1,96 @@
 @import "../../variables/variables.scss";
 
 .bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $minH;
+  width: $fullWidth;
+  color: $primaryText;
+  margin-bottom: $medium;
+  margin-top: $medium;
+
+  .bio-container {
+    background-color: $mediumGreyRGBA;
+    padding: 1rem 0;
+    min-height: 90%;
+    width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: $minH;
-    width: $fullWidth;
-    color: $primaryText;
-    margin-bottom: $medium;
-    margin-top: $medium;
-  
+    align-items: flex-start;
+    border-radius: $standard;
 
-    .bio-container {
-        background-color: $mediumGreyRGBA;
-        padding: 1rem 0;
-        min-height: 90%;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        border-radius: $standard;
-
-        @media screen and (max-width: 1024px) {
-            flex-direction: column;
-            align-items: center;
-          }
-       
-  
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .bio-image-container {
-        flex-grow: 1;
-        max-width: 40%;
-        height: 100%;
-        margin-top: 2rem;
-        // display: flex;
-        // // flex-direction: column;
-        // align-items: flex-start;
-        // justify-content: flex-start;
+      flex-grow: 1;
+      max-width: 40%;
+      height: 100%;
+      margin-top: 2rem;
 
-        @media screen and (max-width: 1024px) {
-            max-width: 80%;
-            height: auto;
-          }
-       
-       
 
-    img {
+      @media screen and (max-width: 500px) {
+        max-width: 80%;
+        height: auto;
+      }
+
+      img {
         margin-right: $small;
         max-height: 90%;
         max-width: 90%;
         box-shadow: $darkBoxShadow;
         border: 1px solid rgba(17, 163, 213, 0.5);
 
-
-        
         @media screen and (max-width: 1024px) {
-           margin-right: 0;
-           max-width: 100%;
-          }
-    }    
+          margin-right: 0;
+          max-width: 100%;
+        }
+      }
     }
-    
 
     .bio-container-text {
-        display: flex;
-        flex-grow: 1;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 40%;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 40%;
+      font-family: $bodyFont;
+      margin-left: $small;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 90%;
+        align-items: center;
+      }
+
+      h2 {
         font-family: $bodyFont;
-        margin-left: $small;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        font-size: $h2Font;
+        color: $accent;
+        margin-bottom: $xsmall;
 
-        
         @media screen and (max-width: 1024px) {
-            max-width: 90%;
-            align-items: center;
-          }
-        
+          text-align: center;
+        }
+      }
+      h4 {
+        font-size: $pFont;
+        margin-bottom: $xsmall;
+        font-style: italic;
+        color: $lightGrey;
+      }
+      h5 {
+        margin-bottom: 2rem;
+      }
 
-        h2 {
-            font-family: $bodyFont;
-            font-size: $h2Font;
-            color: $accent;
-            margin-bottom: $xsmall;
-        }
-        h4 {
-            font-size: $pFont;
-            margin-bottom: $xsmall;
-            font-style: italic;
-            color: $lightGrey;
-        }
-        h5 {
-            margin-bottom: 2rem;
-        }
-
-        p {
-            font-family: $bodyFont;
-            font-size: $pFont;
-         
-        }
+      p {
+        font-family: $bodyFont;
+        font-size: $pFont;
+      }
     }
+  }
 }
-}
-
