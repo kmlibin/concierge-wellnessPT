@@ -24,19 +24,19 @@ const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
             <div className="modal-content">
               {submissionStatus?.link ? (
                 <p>
-                  {submissionStatus.message}
+                  {submissionStatus?.message}
                   <br />
                   <br />
                   <a
                     style={{ fontWeight: "bold" }}
-                    href={submissionStatus.link}
+                    href={submissionStatus?.link}
                     target="blank"
                   >
                     Click Here to Schedule!
                   </a>
                 </p>
               ) : (
-                <p>{submissionStatus.message}</p>
+                <p>{submissionStatus?.message}</p>
               )}
             </div>
 
