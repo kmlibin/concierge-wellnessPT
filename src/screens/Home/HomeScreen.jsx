@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./HomeScreen.scss";
-import Testimonials from "../../components/Testimonials/Testimonials.jsx";
+import Testimonials from "./Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 // import logo2 from "../../assets/logo2.png";
 
 import logowithoutwords from "../../assets/logowithoutwords.png";
 import Modal from "../../components/Modal/Modal.jsx";
-import Card from "./Card.jsx";
+import Card from "./Card/Card.jsx";
 import gymweights from "../../assets/gymweights.jpg";
 import twist from "../../assets/twist.jpg";
 import livewell from "../../assets/livewell.jpg";
