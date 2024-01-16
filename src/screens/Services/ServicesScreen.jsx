@@ -4,7 +4,7 @@ import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from "../../assets/kettlebell.png";
 import tippybird from "../../assets/tippybird.jpg";
-import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
+import ImageGallery from "./ImageGallery.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 import content from "../../constants/content";
 import { Helmet } from "react-helmet-async";
