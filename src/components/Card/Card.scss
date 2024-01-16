@@ -42,7 +42,7 @@
 
         @media screen and (max-width: 900px) {
           min-height: auto;
-          width: 90%
+          width: 90%;
         }
       }
 
@@ -75,6 +75,7 @@
           &.open {
             display: flex;
             margin-top: 0;
+            width: 90%;
           }
         }
 
@@ -85,10 +86,21 @@
           width: 85%;
           padding-left: 2rem;
           list-style-position: inside;
+          @media screen and (max-width: 900px) {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            list-style-position: initial;
+            text-align: left;
+            padding-left: 1rem;
+          }
 
           li {
             text-indent: -1.5rem;
-
+            @media screen and (max-width: 900px) {
+              text-indent: 0;
+            }
             &:not(:first-child) {
               margin-top: 0.75rem;
             }
@@ -107,7 +119,10 @@
       .accordion-indicator {
         cursor: pointer;
         display: flex;
+        justify-content: center;
         align-items: center;
+        width: 90%;
+        margin: 0.5rem 0;
 
         @media screen and (min-width: 900px) {
           display: none;

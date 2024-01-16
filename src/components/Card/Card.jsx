@@ -1,18 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaCaretDown } from "react-icons/fa";
 import "./Card.scss";
 
 const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+  const [shouldAnimate, setShouldAnimate] = useState(true);
+
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+    setShouldAnimate(screenWidth > 900); 
+  }, []);
+
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
   };
 
+
+
   return (
     <div
       className={`card-border ${isAccordionOpen ? "accordion-mode" : ""}`}
-      data-aos="zoom-in-right"
+      data-aos={shouldAnimate ? "zoom-in-right" : ""}
       data-aos-duration={duration}
       data-aos-easing="ease-in-out"
     >
