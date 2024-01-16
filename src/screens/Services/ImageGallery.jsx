@@ -3,18 +3,18 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./ImageGallery.scss";
 
 //images
-import gymbrand from "../../assets/gymbrand.jpg";
-import gymweights from "../../assets/gymweights.jpg";
-import gym from "../../assets/gym.jpg";
-import foot from "../../assets/foot.jpg";
-import assessment from "../../assets/assessment.jpg";
-import looking from "../../assets/looking.jpg";
-import stretch from "../../assets/stretch.jpg";
-import squarehips from "../../assets/squarehips.jpg";
-import device from "../../assets/device.jpg";
-import manipulation from "../../assets/manipulation.jpg";
-import treatment1 from "../../assets/treatment1.jpg";
-import cords from "../../assets/cords.JPG";
+import gymbrand from './GalleryPhotos/gymbrand.jpg'
+import gymweights from './GalleryPhotos/gymweights.jpg'
+import gym from './GalleryPhotos/gym.jpg'
+import foot from './GalleryPhotos/foot.jpg'
+import assessment from './GalleryPhotos/assessment.jpg'
+import looking from './GalleryPhotos/looking.jpg'
+import stretch from './GalleryPhotos/stretch.jpg'
+import squarehips from './GalleryPhotos/squarehips.jpg'
+import device from './GalleryPhotos/device.jpg'
+import manipulation from './GalleryPhotos/manipulation.jpg'
+import treatment1 from './GalleryPhotos/treatment1.jpg'
+import cords from './GalleryPhotos/cords.JPG'
 
 //l/r icons
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
