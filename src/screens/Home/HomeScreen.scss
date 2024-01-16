@@ -7,8 +7,15 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
+  justify-content: center !important;
+  
 
+  @media screen and (max-width: 500px) {
+    margin: 0 auto;
+    width: 80%;
+ 
+  }
   .logo-container {
     width: $fullWidth;
     min-height: $minH;
@@ -16,6 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
     img {
       width: 35%;
@@ -62,7 +70,7 @@
         width: 70%;
         color: $mediumGrey;
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 500px) {
           font-size: 16px;
         }
       }
@@ -77,6 +85,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 500px) {
+      width: 130%;
+    
+     }
   }
 
   .process-container {
@@ -124,9 +137,15 @@
       box-shadow: 0 0 10px $accent;
       border-radius: $standard;
 
+
       @media screen and (max-width: 950px) {
         flex-direction: column;
         align-items: center;
+      }
+
+      @media screen and (max-width: 500px) {
+       padding: 2rem 3rem;
+        width: 80%;
       }
     }
   }
@@ -140,6 +159,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 500px) {
+      width: 130%;
+     }
   }
 
   .location {
@@ -160,6 +183,11 @@
     .hr-line {
       margin-bottom: 7rem;
     }
+
+    @media screen and (max-width: 500px) {
+       width: 110%;
+       text-align: center;
+     }
   }
 
   .partners {

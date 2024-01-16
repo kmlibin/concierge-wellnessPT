@@ -1,4 +1,4 @@
-@import "../../variables/variables.scss";
+@import "../../../variables/variables.scss";
 
 .contact-form {
   font-family: $bodyFont;
@@ -120,8 +120,11 @@
       width: 100%;
       display: flex;
       justify-content: center;
+
       button {
         width: 35%;
+        display: flex;
+        justify-content: center;
         background-color: $accent;
         color: $primaryText;
         border: none;
@@ -150,5 +153,10 @@
     border-color: red;
     border-style: none;
     border: 2px solid red;
+  }
+
+  .center-modal {
+    min-width: 100%;
+    position: fixed;
   }
 }

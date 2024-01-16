@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 import validateForm from "./validateForm";
 
 //components
-import Modal from "../Modal/Modal.jsx";
+import Modal from "../../../components/Modal/Modal.jsx";
 import InputField from "./InputField";
 
 const ContactForm = () => {

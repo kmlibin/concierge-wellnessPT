@@ -6,7 +6,7 @@ import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 
 import logowithoutwords from "../../assets/logowithoutwords.png";
 import Modal from "../../components/Modal/Modal.jsx";
-import Card from "../../components/Card/Card.jsx";
+import Card from "./Card.jsx";
 import gymweights from "../../assets/gymweights.jpg";
 import twist from "../../assets/twist.jpg";
 import livewell from "../../assets/livewell.jpg";
@@ -89,7 +89,8 @@ const HomeScreen = () => {
           data-aos-easing="ease-in-out"
         >
           <h2>
-          <span className="blue-color">Movement</span> IS <span className="blue-color">Medicine</span>
+            <span className="blue-color">Movement</span> IS{" "}
+            <span className="blue-color">Medicine</span>
           </h2>
           <span className="hr-line"></span>
           <h4>Dr. Wade and Concierge Wellness will elevate your well-being</h4>
@@ -159,17 +160,16 @@ const HomeScreen = () => {
           <span className="hr-line"></span>
           <Partners />
         </div>
+
+        {/* pop up  */}
+        {isOpen && (
+          <Modal
+            setIsOpen={setIsOpen}
+            submissionStatus={submissionStatus}
+            setSubmissionStatus={setSubmissionStatus}
+          />
+        )}
       </main>
-
-      {/* pop up  */}
-
-      {isOpen && (
-        <Modal
-          setIsOpen={setIsOpen}
-          submissionStatus={submissionStatus}
-          setSubmissionStatus={setSubmissionStatus}
-        />
-      )}
     </>
   );
 };
