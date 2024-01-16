@@ -15,6 +15,10 @@
   left: 50%;
   z-index: 21;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 500px) {
+    transform: translate(-58%, -55%);
+  }
 }
 
 .background-color {
@@ -26,6 +30,11 @@
   background-color: $mediumGrey;
   border-radius: 15px;
   box-shadow: $darkBoxShadow;
+
+  @media screen and (max-width: 900px) {
+    width: 225px;
+    height: 275px;
+  }
 }
 .modal {
   display: flex;
