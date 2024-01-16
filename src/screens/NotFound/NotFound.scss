@@ -1,7 +1,7 @@
 @import "../../variables/variables.scss";
 
 .notFound {
-  height: 50vh;
+  min-height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,13 +9,14 @@
 }
 
 .notFound-wrapper {
-  height: 90%;
+  text-align: center;
+  min-height: 90%;
   width: 75%;
   border-radius: $standard;
   color: $primaryText;
   font-family: $bodyFont;
   background-color: $mediumGreyRGBA;
-  padding: 1rem 0;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
