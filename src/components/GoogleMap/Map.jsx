@@ -1,4 +1,6 @@
 import React from "react";
+
+//styles
 import "./Map.scss";
 
 const Map = () => {

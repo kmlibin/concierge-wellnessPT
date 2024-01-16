@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+
 //rrd
 import { Link } from "react-router-dom";
+
 //styles
 import "./NavBar.scss";
+
+//react icons
 import { HiMenuAlt4, HiArrowLeft } from "react-icons/hi";
 
+//images
 import logosmall from "../../assets/logosmall.png";
+
+
 //routes for the links
 const navRoutes = [
   {
@@ -44,7 +51,7 @@ const NavBar = () => {
     setToggle(false);
   };
 
-  console.log(toggle);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">

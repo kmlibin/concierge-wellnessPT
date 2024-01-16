@@ -1,5 +1,7 @@
 import React from "react";
+//rrd
 import { Link } from "react-router-dom";
+//styles
 import "./NotFound.scss";
 
 const NotFoundScreen = () => {

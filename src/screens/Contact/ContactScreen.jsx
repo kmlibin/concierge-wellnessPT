@@ -1,9 +1,17 @@
 import React from "react";
-import ContactForm from "../Contact/ContactForm/ContactForm.jsx";
-import "./ContactScreen.scss";
-// import { TfiEmail } from "react-icons/tfi";
-import contactcontent from './contactcontent.js'
+
+//libraries
 import { Helmet } from "react-helmet-async";
+
+//styles
+import "./ContactScreen.scss";
+
+//components
+import ContactForm from "../Contact/ContactForm/ContactForm.jsx";
+
+//content
+import contactcontent from './contactcontent.js'
+
 
 const ContactScreen = () => {
   return (

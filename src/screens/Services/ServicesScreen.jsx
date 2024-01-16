@@ -1,13 +1,23 @@
 import React from "react";
+
+//libraries
+import { Helmet } from "react-helmet-async";
+
+//styles
 import "./ServicesScreen.scss";
+
+//images and content
 import report from "../../assets/report.png";
 import health from "../../assets/health.png";
 import kettlebell from "../../assets/kettlebell.png";
 import tippybird from "../../assets/tippybird.jpg";
+import servicescontent from "./servicescontent.js";
+
+//components
 import ImageGallery from "./ImageGallery.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
-import servicescontent from "./servicescontent.js";
-import { Helmet } from "react-helmet-async";
+
+
 
 const ServicesScreen = () => {
   return (

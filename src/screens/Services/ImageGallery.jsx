@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
+
 //styles
 import "./ImageGallery.scss";
 
@@ -16,7 +17,7 @@ import manipulation from './GalleryPhotos/manipulation.jpg'
 import treatment1 from './GalleryPhotos/treatment1.jpg'
 import cords from './GalleryPhotos/cords.JPG'
 
-//l/r icons
+//libraries
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 const ImageGallery = () => {

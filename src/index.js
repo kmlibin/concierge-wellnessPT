@@ -1,4 +1,6 @@
 import React from "react";
+
+//rrd
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -6,8 +8,11 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
+//styles
 import "./index.scss";
 
+//components
 import App from "./App";
 import HomeScreen from "./screens/Home/HomeScreen";
 import BioScreen from "./screens/Bio/BioScreen";

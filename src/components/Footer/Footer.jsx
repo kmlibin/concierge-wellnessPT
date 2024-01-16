@@ -1,8 +1,10 @@
 import React from "react";
-//styles
+
+//styles and content
 import "./Footer.scss";
 import footercontent from "./footercontent";
-//libraries 
+
+//react icons
 import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {

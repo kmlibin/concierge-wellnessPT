@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
+
+//react icons
 import { FaCaretDown } from "react-icons/fa";
+
+//styles
 import "./Card.scss";
 
 const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {

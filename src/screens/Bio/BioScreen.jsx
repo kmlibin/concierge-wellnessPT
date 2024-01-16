@@ -1,8 +1,15 @@
 import React from "react";
+
+//libraries
+import { Helmet } from "react-helmet-async";
+
+//styles
 import "./BioScreen.scss";
+
+//content and images
 import { about } from "./about";
 import christian from '../../assets/christian.jpg'
-import { Helmet } from "react-helmet-async";
+
 const BioScreen = () => {
   return (
     <>

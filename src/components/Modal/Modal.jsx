@@ -1,5 +1,9 @@
 import React from "react";
+
+//styles
 import "./Modal.scss";
+
+//react icons
 import { IoClose } from "react-icons/io5";
 
 const Modal = ({ setIsOpen, submissionStatus, setSubmissionStatus }) => {
