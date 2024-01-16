@@ -2,7 +2,7 @@ import React from "react";
 import ContactForm from "../Contact/ContactForm/ContactForm.jsx";
 import "./ContactScreen.scss";
 // import { TfiEmail } from "react-icons/tfi";
-import content from "../../constants/content.js";
+import contactcontent from './contactcontent.js'
 import { Helmet } from "react-helmet-async";
 
 const ContactScreen = () => {
@@ -19,7 +19,7 @@ const ContactScreen = () => {
         <div className="image-container"></div>
         <div className="contact-text">
           <div className="centered-text">
-            <p>{content.contact.blurb}</p>
+            <p>{contactcontent.blurb}</p>
           </div>
         </div>
         <ContactForm />

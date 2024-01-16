@@ -3,7 +3,7 @@ import "./HomeScreen.scss";
 import Testimonials from "./Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 // import logo2 from "../../assets/logo2.png";
-
+import homecontent from './homecontent.js';
 import logowithoutwords from "../../assets/logowithoutwords.png";
 import Modal from "../../components/Modal/Modal.jsx";
 import Card from "./Card/Card.jsx";
@@ -101,7 +101,7 @@ const HomeScreen = () => {
               alt="A man using a foam roller"
               heading="Recovery"
               duration="800"
-              bulletpoints={content.home.bulletpointsOne}
+              bulletpoints={homecontent.home.bulletpointsOne}
               tagline={`Whether you're overcoming an injury or seeking post-operative care, 
               our expert guidance will help you regain strength and flexibility, ensuring a swift and effective recovery.`}
             />
@@ -110,7 +110,7 @@ const HomeScreen = () => {
               alt="Dr. Wade helps a patient with a deadlift"
               heading="Performance"
               duration="1000"
-              bulletpoints={content.home.bulletpointsTwo}
+              bulletpoints={homecontent.home.bulletpointsTwo}
               tagline={` Tailored to your unique goals, our programs enhance endurance, optimize movement mechanics, and empower you to achieve peak performance.`}
             />
             <Card
@@ -118,7 +118,7 @@ const HomeScreen = () => {
               alt="Acrabble tiles that say live well"
               heading="Wellness"
               duration="1200"
-              bulletpoints={content.home.bulletpointsThree}
+              bulletpoints={homecontent.home.bulletpointsThree}
               tagline={` Our holistic approach integrates physical therapy and wellness coaching to promote a balanced and healthy lifestyle, 
               fostering long-term vitality and resilience`}
             />

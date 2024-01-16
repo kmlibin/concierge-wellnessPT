@@ -6,7 +6,7 @@ import kettlebell from "../../assets/kettlebell.png";
 import tippybird from "../../assets/tippybird.jpg";
 import ImageGallery from "./ImageGallery.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
-import content from "../../constants/content";
+import servicescontent from "./servicescontent.js";
 import { Helmet } from "react-helmet-async";
 
 const ServicesScreen = () => {
@@ -38,16 +38,16 @@ const ServicesScreen = () => {
           {/* text of services screen */}
           <div className="services-main">
             <div className="services-text">
-              <h1>{content.services.header}</h1>
-              <h4>{content.services.subheading}</h4>
+              <h1>{servicescontent.header}</h1>
+              <h4>{servicescontent.subheading}</h4>
               <span className="hr-line"></span>
-              <p>{content.services.summary}</p>
+              <p>{servicescontent.summary}</p>
               <div className="service-list">
                 <ul>
-                  {content.services.listOne.map((service) => (
+                  {servicescontent.listOne.map((service) => (
                     <li>{service}</li>
                   ))}
-                  {content.services.listTwo.map((service) => (
+                  {servicescontent.listTwo.map((service) => (
                     <li>{service}</li>
                   ))}
                 </ul>
@@ -59,7 +59,7 @@ const ServicesScreen = () => {
 
             <div className="services-icons">
               <div className="img-container">
-                <img src={report} alt="report" />
+                <img src={report} alt="health report" />
               </div>
 
               <div className="img-container">
@@ -67,7 +67,7 @@ const ServicesScreen = () => {
               </div>
 
               <div className="img-container">
-                <img src={health} alt="health" />
+                <img src={health} alt="health and wellness images" />
               </div>
             </div>
           </div>

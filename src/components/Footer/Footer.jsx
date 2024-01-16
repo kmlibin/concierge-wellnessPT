@@ -1,23 +1,23 @@
 import React from "react";
 //styles
 import "./Footer.scss";
-import content from "../../constants/content";
+import footercontent from "./footercontent";
 //libraries 
 import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
-  // const currentYear = new Date().getFullYear();
+  
   return (
     <footer>
-      <h4 className="blue-color">{content.footer.business}</h4>
-      <p>{content.footer.address1}</p>
-      <p>{content.footer.address2}</p>
-      <p>{content.footer.phone}</p>
+      <h4 className="blue-color">{footercontent.business}</h4>
+      <p>{footercontent.address1}</p>
+      <p>{footercontent.address2}</p>
+      <p>{footercontent.phone}</p>
       <br></br>
-      <p>{content.footer.email}</p>
+      <p>{footercontent.email}</p>
 
       <a
-        href={content.footer.insta}
+        href={footercontent.insta}
         target="_blank"
         rel="noopener noreferrer"
         style={{marginBottom: "2rem"}}
