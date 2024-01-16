@@ -9,7 +9,7 @@
   padding: 1rem;
   margin: 0.5rem;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 950px) {
     min-width: 100%;
   }
 
@@ -33,7 +33,7 @@
       height: 100%;
 
       img {
-        min-height: 250px;
+        min-height: auto;
         width: 95%;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
         margin-top: $small;
@@ -69,7 +69,7 @@
         overflow: hidden;
         transition: max-height 0.3s ease;
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 950px) {
           display: none;
 
           &.open {
@@ -98,7 +98,7 @@
 
           li {
             text-indent: -1.5rem;
-            @media screen and (max-width: 900px) {
+            @media screen and (max-width: 950px) {
               text-indent: 0;
             }
             &:not(:first-child) {
@@ -124,7 +124,7 @@
         width: 90%;
         margin: 0.5rem 0;
 
-        @media screen and (min-width: 901px) {
+        @media screen and (min-width: 951px) {
           display: none;
         }
 
