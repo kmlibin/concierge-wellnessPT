@@ -1,6 +1,6 @@
 import React from "react";
 import "./BioScreen.scss";
-import content from "../../constants/content";
+import { about } from "./about";
 import christian from '../../assets/christian.jpg'
 import { Helmet } from "react-helmet-async";
 const BioScreen = () => {
@@ -19,11 +19,11 @@ const BioScreen = () => {
           <img src={christian} alt="Dr. Christian Wade" />
         </div>
         <div className="bio-container-text">
-          <h2>{content.about.header}</h2>
-          <h4>{content.about.subheading}</h4>
-          <h5>{content.about.credential}</h5>
+          <h2>{about.header}</h2>
+          <h4>{about.subheading}</h4>
+          <h5>{about.credential}</h5>
           <span className="hr-line"></span>
-          <p>{content.about.content}</p>
+          <p>{about.content}</p>
         </div>
       </div>
     </main>
