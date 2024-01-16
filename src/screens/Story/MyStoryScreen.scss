@@ -30,6 +30,7 @@
   font-family: $bodyFont;
   color: $primaryText;
 
+
   .text-wrap-container {
     position: relative;
     width: 70%;
@@ -39,8 +40,10 @@
     border-radius: $standard;
     padding: 2rem 4rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 900px) {
       width: 90%;
+      padding: 2rem;
+ 
     }
   }
 
@@ -52,6 +55,7 @@
 
     @media screen and (max-width: 500px) {
       float: none;
+      margin: 1rem 0;
     }
   }
 
@@ -60,10 +64,23 @@
     margin: 10px 10px 0 0;
     height: auto;
     width: 500px;
+
+    @media screen and (max-width: 500px) {
+      float: none;
+      width: 300px;
+    }
   }
 
   p {
     margin: 0;
     padding: 0px;
+
+    @media screen and (max-width: 950px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
