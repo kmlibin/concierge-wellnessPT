@@ -1,20 +1,26 @@
 import React, { useState, useEffect } from "react";
+
+//libraries
+import { Helmet } from "react-helmet-async";
+
+//styles
 import "./HomeScreen.scss";
+
+//components
 import Testimonials from "./Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
-// import logo2 from "../../assets/logo2.png";
-import homecontent from './homecontent.js';
-import logowithoutwords from "../../assets/logowithoutwords.png";
-import Modal from "../../components/Modal/Modal.jsx";
 import Card from "./Card/Card.jsx";
-import gymweights from "../../assets/gymweights.jpg";
-import twist from "../../assets/twist.jpg";
-import livewell from "../../assets/livewell.jpg";
-// import logosmall from '../../assets/logosmall.png'
-import content from "../../constants/content.js";
-import { Helmet } from "react-helmet-async";
 import Map from "../../components/GoogleMap/Map.jsx";
 import Partners from "../../components/Partners/Partners.jsx";
+import Modal from "../../components/Modal/Modal.jsx";
+
+//content and images
+import homecontent from './homecontent.js';
+import logowithoutwords from "../../assets/logowithoutwords.png";
+import gymweights from "../Services/GalleryPhotos/gymweights.jpg";
+import twist from "../../assets/twist.jpg";
+import livewell from "../../assets/livewell.jpg";
+
 
 const HomeScreen = () => {
   const [submissionStatus, setSubmissionStatus] = useState({
