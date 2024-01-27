@@ -8,7 +8,7 @@ import "./ServicesScreen.scss";
 
 //images and content
 import report from "../../assets/report.png";
-import health from "../../assets/health.png";
+import food from "../../assets/food.png";
 import kettlebell from "../../assets/kettlebell.png";
 import tippybird from "../../assets/tippybird.jpg";
 import servicescontent from "./servicescontent.js";
@@ -69,15 +69,15 @@ const ServicesScreen = () => {
 
             <div className="services-icons">
               <div className="img-container">
-                <img src={report} alt="health report" />
+                <img src={report} alt="health report" title="report icon from Freepik"/>
               </div>
 
               <div className="img-container">
-                <img src={kettlebell} alt="kettlebell" />
+                <img src={kettlebell} alt="kettlebell" title="kettlebell icon from Freepik" />
               </div>
 
               <div className="img-container">
-                <img src={health} alt="health and wellness images" />
+                <img src={food} alt="health and wellness images" title="food pyramid icon from Freepik" />
               </div>
             </div>
           </div>
