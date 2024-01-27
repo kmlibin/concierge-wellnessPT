@@ -1,5 +1,17 @@
 const faqData = [
   {
+    question: "What do you specialize in?",
+    answer: `Although I confidently treat a wide variety of orthopedic conditions, I tend to gravitate towards action 
+      sport and combat sport athletes. I always enjoyed traditional sports but nothing gave me the rush more 
+      than action sports. I started with skateboarding, then BMX, then motocross all while taking annual trips
+       to snowboard and getting on friend’s boats for a wakeboard session whenever possible. I turned to wrestling 
+       in highschool and went on to boxing my senior year instead of playing football. While I traveled 
+       as a PT I worked with action sport athletes all over the country and now living in CO I have access to 
+       premier ski/snowboard areas and some of the best mountain biking trails around. I feel it’s important to 
+       truly know the sport that your clients are participating in and be able to 
+      relate with the internal drive pushing them towards perfection and that next adrenaline rush.`,
+  },
+  {
     question: `Do you take my insurance?`,
     answer: ` Concierge Wellness operates as an out of network provider with a fee-for-service business model. 
     This allows us to provide the highest quality of care without the restrictions of insurance companies. 
