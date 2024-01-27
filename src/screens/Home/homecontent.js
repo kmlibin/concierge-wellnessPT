@@ -1,24 +1,22 @@
- const homecontent = {
+const homecontent = {
   home: {
     bulletpointsOne: [
       "Calm down current symptoms",
       "Restore pain free mobility",
-      "Benefit from passive recovery tools",
-      "Learn active recovery strategies",
+      "Initiate corrective exercises",
+      // "Learn active recovery strategies",
     ],
     bulletpointsTwo: [
-      "Build resiliency in tissues",
-      "Adapt an exercise routine",
-      "Increase overall fitness",
-      "Better than your baseline",
+      "Adapt a comprehensive exercise program",
+      "Increase overall fitness greater than baseline",
+      "Learn how to manage symptoms if they return",
     ],
     bulletpointsThree: [
-      "Create a sustainable lifestyle",
-      "Long-term exercise programming",
-      "Personal coaching to your goals",
-      "Living out your health and wellness plan",
+      "Create sustainable lifestyle habits",
+      "Individualized coaching towards your goals",
+      "Weekly, bi-weekly, or monthly virtual visits",
     ],
   },
 };
 
-export default homecontent
+export default homecontent;
