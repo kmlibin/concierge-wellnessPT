@@ -41,8 +41,8 @@ const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
           </div>
           <div className={`card-text ${isAccordionOpen ? "open" : ""}`}>
             <ul>
-              {bulletpoints.map((point) => (
-                <li>{point}</li>
+              {bulletpoints.map((point, index) => (
+                <li key={index}>{point}</li>
               ))}
             </ul>
             <hr className="hr-line"></hr>

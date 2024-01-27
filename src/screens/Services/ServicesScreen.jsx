@@ -55,10 +55,10 @@ const ServicesScreen = () => {
               <div className="service-list">
                 <ul>
                   {servicescontent.listOne.map((service) => (
-                    <li>{service}</li>
+                    <li key={service}>{service}</li>
                   ))}
                   {servicescontent.listTwo.map((service) => (
-                    <li>{service}</li>
+                    <li key={service}>{service}</li>
                   ))}
                 </ul>
               </div>

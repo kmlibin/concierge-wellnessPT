@@ -33,8 +33,8 @@ const FAQScreen = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          {faqData.map((faq) => (
-            <div className="faq-text">
+          {faqData.map((faq, index) => (
+            <div className="faq-text" key={index}>
               <h3>{faq.question}</h3>
               <p>{faq.answer}</p>
             </div>

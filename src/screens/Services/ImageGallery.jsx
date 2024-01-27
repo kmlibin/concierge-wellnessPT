@@ -69,7 +69,7 @@ const ImageGallery = () => {
       <div className="image-gallery">
         <div className="image-list">
           {visibleImages.map((image, index) => (
-            <div className="image">
+            <div className="image" key={index}>
               <img
                 src={image}
                 alt="Dr. Wade providing guidance and treatment"
