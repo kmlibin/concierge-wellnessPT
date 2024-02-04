@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 import "./ServicesScreen.scss";
 
 //images and content
-import report from "../../assets/report.png";
+import pt from "../../assets/pt.png";
 import food from "../../assets/food.png";
 import kettlebell from "../../assets/kettlebell.png";
 import tippybird from "../../assets/tippybird.jpg";
@@ -69,7 +69,7 @@ const ServicesScreen = () => {
 
             <div className="services-icons">
               <div className="img-container">
-                <img src={report} alt="health report" title="report icon from Freepik"/>
+                <img src={pt} alt="health report" title="report icon from Freepik"/>
               </div>
 
               <div className="img-container">
