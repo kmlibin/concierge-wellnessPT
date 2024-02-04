@@ -206,5 +206,19 @@
       margin-top: 2.5rem;
       margin-bottom: $small;
     }
+
+    p {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: $h4Font;
+      width: 40%;
+      color: $lightGrey;
+      font-weight: bold;
+
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+        width: 75%;
+      }
+    }
   }
 }

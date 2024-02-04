@@ -15,12 +15,11 @@ import Partners from "../../components/Partners/Partners.jsx";
 import Modal from "../../components/Modal/Modal.jsx";
 
 //content and images
-import homecontent from './homecontent.js';
+import homecontent from "./homecontent.js";
 import logowithoutwords from "../../assets/logowithoutwords.png";
 import gymweights from "../Services/GalleryPhotos/gymweights.jpg";
 import twist from "../../assets/twist.jpg";
 import livewell from "../../assets/livewell.jpg";
-
 
 const HomeScreen = () => {
   const [submissionStatus, setSubmissionStatus] = useState({
@@ -126,7 +125,7 @@ const HomeScreen = () => {
               duration="1200"
               bulletpoints={homecontent.home.bulletpointsThree}
               tagline={` Our holistic approach integrates physical therapy and wellness coaching to promote a balanced and healthy lifestyle, 
-              fostering long-term vitality and resilience`}
+              fostering long-term vitality and resilience.`}
             />
           </div>
         </div>
@@ -163,7 +162,12 @@ const HomeScreen = () => {
           data-aos-easing="ease-in-out"
         >
           <h2>Proud Partners</h2>
-          <span className="hr-line"></span>
+          <span className="hr-line"></span>{" "}
+          <p>
+            Looking to work with link minded small businesses to improve ours
+            community’s health and wellness. Email Concierge Wellness for
+            inquiries
+          </p>
           <Partners />
         </div>
 
