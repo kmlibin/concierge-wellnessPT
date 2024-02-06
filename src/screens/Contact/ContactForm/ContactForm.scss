@@ -88,6 +88,7 @@
         padding: 10px;
         border-radius: $standard;
         box-sizing: border-box;
+        background-color:$whiteColor;
       }
     }
 
@@ -147,6 +148,8 @@
 
   .error-message {
     color: red;
+    background-color: $whiteColor;
+
   }
 
   .red-border {
