@@ -32,10 +32,9 @@
       width: 100%;
       height: 100%;
 
-      img {
+      .img-container {
         min-height: auto;
         width: 95%;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
         margin-top: $small;
         border-radius: 5px;
         box-shadow: 0 0 4px $accent;
@@ -95,6 +94,7 @@
           flex-direction: column;
           align-items: flex-start;
           text-align: left;
+          height: 40%;
     
 
           @media screen and (max-width: 900px) {
@@ -108,6 +108,7 @@
               margin-top: 0.75rem;
             }
           }
+
         }
 
         p {
@@ -118,6 +119,7 @@
           width: 90%;
           box-sizing: border-box;
           padding-bottom: 2rem;
+          height: 40%;
         }
       }
       .accordion-indicator {
@@ -144,4 +146,11 @@
       }
     }
   }
+  .line{
+    box-shadow: none ;
+    margin-top: none;
+    max-width: 50%;
+    margin-bottom: 1rem;
+  }
+
 }
