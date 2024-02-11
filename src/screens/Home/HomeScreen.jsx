@@ -164,7 +164,7 @@ const HomeScreen = () => {
           <h2>Proud Partners</h2>
           <span className="hr-line"></span>{" "}
           <p>
-            Looking to work with link minded small businesses to improve ours
+            Looking to work with like-minded small businesses to improve our
             community’s health and wellness. Email Concierge Wellness for
             inquiries
           </p>
