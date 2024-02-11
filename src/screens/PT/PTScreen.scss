@@ -1,0 +1,156 @@
+@import "../../variables/variables.scss";
+
+.services {
+  min-height: $minH;
+  position: relative;
+  width: $fullWidth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/fitness.jpg");
+  background-size: cover;
+  z-index: -2;
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  width: $fullWidth;
+  min-height: $minH;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+
+  .image-container {
+    position: relative;
+    width: 30%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .overlapping {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+      height: 105%;
+      z-index: 0;
+      padding: 1rem 0;
+      background-color: $lightGrey;
+      box-shadow: $insetShadow;
+      
+    }
+
+    .main-photo {
+      position: relative;
+      max-width: 85%;
+      height: auto;
+      max-height: 90%;
+      box-shadow: $boxShadow;
+      z-index: 1;
+      border: 2px solid rgba(17, 163, 213, 0.5);
+      border-radius: $standard;
+    }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .image-container {
+      display: none;
+    }
+  }
+
+  .services-main {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    color: $blackText;
+    padding: $small;
+    box-shadow: $darkBoxShadow;
+    min-height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border-radius: $standard;
+
+    // border-radius: 5px;
+
+    .services-text {
+      height: 50%;
+      font-family: $bodyFont;
+      display: flex;
+      padding: 1rem 0;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: $h1Font;
+        font-family: $bodyFont;
+        margin-bottom: $xsmall;
+        text-align: center;
+      }
+
+      h4 {
+        font-family: $bodyFont;
+        font-size: $smallpFont;
+        margin-bottom: $small;
+        font-style: italic;
+        color: $mediumGrey;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      p {
+        font-family: $bodyFont;
+        color: $blackText;
+        font-size: 16px;
+        text-align: center;
+        width: 95%;
+       margin-top: 10px;
+       margin-bottom: 10px;
+      }
+
+      .service-list {
+        margin: $small;
+        display: flex;
+        align-items: flex-start;
+        width: 65%;
+        padding: 0 1rem;
+        background-color: $lightGreyRGBA;
+        border-radius: $standard;
+        box-shadow: $boxShadow;
+        ul {
+          font-size: $pFont;
+          font-family: $bodyFont;
+          color: $blackText;
+          margin: 1.5rem;
+
+          li {
+            padding: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .services-main {
+      width: 75%;
+    }
+  }
+
+  
+}
+
+.call-button-container {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
