@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //libraries
 import { Helmet } from "react-helmet-async";
@@ -8,7 +8,7 @@ import "./PTScreen.scss";
 
 //images and content
 import pt from "../../assets/pt.png";
-import report from '../../assets/report.png'
+import report from "../../assets/report.png";
 import kettlebell from "../../assets/kettlebell.png";
 import tippybird from "../../assets/tippybird.jpg";
 import ptcontent from "./ptcontent.js";
@@ -16,8 +16,14 @@ import ptcontent from "./ptcontent.js";
 //components
 import ImageGallery from "./ImageGallery.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
+import IconContainer from "../../components/Icons/IconContainer.jsx";
 
 const PTScreen = () => {
+  const [icons] = useState([
+    { icon: report, alt: "clipboard icon" },
+    { icon: pt, alt: "stretching icon" },
+    { icon: kettlebell, alt: "weight icon" },
+  ]);
   return (
     <>
       <Helmet>
@@ -45,50 +51,38 @@ const PTScreen = () => {
 
           {/* text of services screen */}
           <div className="services-main">
-       <div style={{backgroundColor: "rgba(176, 176, 176, 0.25)", display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "1rem"}}>
-            <div className="services-text" >
-              <h1>{ptcontent.header}</h1>
-              <h4>{ptcontent.subheading}</h4>
+            <div
+              style={{
+                backgroundColor: "rgba(176, 176, 176, 0.25)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                paddingBottom: "1rem",
+              }}
+            >
+              <div className="services-text">
+                <h1>{ptcontent.header}</h1>
+                <h4>{ptcontent.subheading}</h4>
+                <span className="hr-line"></span>
+                <p>{ptcontent.summary}</p>
+                <div className="service-list">
+                  <ul>
+                    {ptcontent.listOne.map((service) => (
+                      <li key={service}>{service}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
               <span className="hr-line"></span>
-              <p>{ptcontent.summary}</p>
-              <div className="service-list">
-                <ul>
-                  {ptcontent.listOne.map((service) => (
-                    <li key={service}>{service}</li>
-                  ))}
-                </ul>
-              </div>
-           
-            </div>
-            <span className="hr-line"></span>
 
-            {/* three icons at the bottom of services text */}
+              {/* three icons at the bottom of services text */}
 
-            <div className="services-icons">
-              <div className="img-container">
-                <img
-                  src={report}
-                  alt="health report"
-                  title="report icon from Freepik"
-                />
-              </div>
-              <div className="img-container">
-                <img
-                  src={pt}
-                  alt="stretching"
-                  title="stretching icon from Freepik"
-                />
-              </div>
-
-              <div className="img-container">
-                <img
-                  src={kettlebell}
-                  alt="kettlebell"
-                  title="kettlebell icon from Freepik"
-                />
+              <div className="services-icons">
+                {icons.map((icon) => (
+                  <IconContainer icon={icon.icon} alt={icon.alt} />
+                ))}
               </div>
             </div>
-             </div>
           </div>
         </div>
       </main>
