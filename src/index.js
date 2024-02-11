@@ -18,9 +18,10 @@ import HomeScreen from "./screens/Home/HomeScreen";
 import BioScreen from "./screens/Bio/BioScreen";
 import MyStoryScreen from "./screens/Story/MyStoryScreen";
 import ContactScreen from "./screens/Contact/ContactScreen";
-import ServicesScreen from "./screens/Services/ServicesScreen";
 import FAQScreen from "./screens/FAQ/FAQScreen";
 import NotFoundScreen from "./screens/NotFound/NotFoundScreen";
+import PTScreen from "./screens/PT/PTScreen";
+import CoachingScreen from "./screens/WellnessCoaching/CoachingScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,8 +30,9 @@ const router = createBrowserRouter(
       <Route path="/about" element={<BioScreen />} />
       <Route path="/mystory" element={<MyStoryScreen />} />
       <Route path="/contact" element={<ContactScreen />} />
-      <Route path="/services" element={<ServicesScreen />} />
+      <Route path="/physicaltherapy" element={<PTScreen />} />
       <Route path="/faq" element={<FAQScreen />} />
+      <Route path="/wellnesscoaching" element={<CoachingScreen />} />
       <Route path ="*" element={<NotFoundScreen />} />
     </Route>
   )
