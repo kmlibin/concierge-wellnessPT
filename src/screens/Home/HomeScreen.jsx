@@ -17,7 +17,7 @@ import Modal from "../../components/Modal/Modal.jsx";
 //content and images
 import homecontent from "./homecontent.js";
 import logowithoutwords from "../../assets/logowithoutwords.png";
-import gymweights from "../Services/GalleryPhotos/gymweights.jpg";
+import gymweights from "../PT/GalleryPhotos/gymweights.jpg";
 import twist from "../../assets/twist.jpg";
 import livewell from "../../assets/livewell.jpg";
 
