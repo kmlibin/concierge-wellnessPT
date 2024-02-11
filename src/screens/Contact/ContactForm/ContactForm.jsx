@@ -16,6 +16,7 @@ import InputField from "./InputField";
 const ContactForm = () => {
   const form = useRef();
   const [showModal, setShowModal] = useState();
+  const [buttonStatus, setButtonStatus] = useState("Submit")
   const [submissionStatus, setSubmissionStatus] = useState({});
   const [formData, setFormData] = useState({
     name: "",
@@ -39,6 +40,7 @@ const ContactForm = () => {
   //validate data, submit data to emailJS, reset form state
   const handleSubmit = (e) => {
     e.preventDefault();
+    setButtonStatus("Loading...")
     const isValid = validateForm(formData, setFormErrors);
     if (isValid) {
       try {
@@ -56,7 +58,7 @@ const ContactForm = () => {
               message:
                 "Thanks for your email. Christian will respond within the next 24 hours.",
             });
-
+            setButtonStatus("Submit")
             setShowModal(true);
             setFormData({
               name: "",
@@ -68,6 +70,7 @@ const ContactForm = () => {
             });
           });
       } catch (error) {
+        setButtonStatus("Submit")
         setSubmissionStatus({
           heading: "Error",
           message:
@@ -76,6 +79,7 @@ const ContactForm = () => {
         setShowModal(true);
       }
     } else {
+      setButtonStatus("Submit")
       setShowModal(true);
       setSubmissionStatus({
         heading: "Error",
@@ -89,7 +93,7 @@ const ContactForm = () => {
     <div className="contact-form" data-aos="fade-up" data-aos-duration="1000">
       <form onSubmit={handleSubmit} ref={form}>
         <h2>Let's Connect!</h2>
-        <span className="hr-line"></span>
+        <hr className="hr-line" style={{borderBottom: "none", width:"40%"}}></hr>
         <div className="name-lastname-container">
           <InputField
             type="text"
@@ -158,7 +162,7 @@ const ContactForm = () => {
           <div className="error-message">{formErrors.message}</div>
         </div>
         <div className="button-container">
-          <button type="submit">Submit</button>
+          <button type="submit">{buttonStatus}</button>
         </div>
       </form>
       {showModal && (
