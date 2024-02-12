@@ -8,10 +8,10 @@ import "./NavBar.scss";
 
 //react icons
 import { HiMenuAlt4, HiArrowLeft } from "react-icons/hi";
+import { IoIosArrowDown } from "react-icons/io";
 
 //images
 import logosmall from "../../assets/logosmall.png";
-
 
 //routes for the links
 const navRoutes = [
@@ -24,13 +24,10 @@ const navRoutes = [
     route: "/about",
   },
   {
-    name: "My Story",
-    route: "/mystory",
-  },
-  {
     name: "Services",
-    route: "/services",
+    route: "",
   },
+
   {
     name: "FAQ",
     route: "/faq",
@@ -41,6 +38,21 @@ const navRoutes = [
   },
 ];
 
+const DropdownMenu = () => {
+  return (
+    <div className="dropdown-menu">
+      <ul className="dropdown-list">
+        <li className="dropdown-item nav-link">
+          <Link to="/physicaltherapy">Physical Therapy</Link>
+        </li>
+        <li className="dropdown-item nav-link">
+          <Link to="/wellnesscoaching">Wellness Coaching</Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
@@ -50,7 +62,6 @@ const NavBar = () => {
   const handleLinkClick = () => {
     setToggle(false);
   };
-
 
   return (
     <nav className="navbar">
@@ -66,6 +77,16 @@ const NavBar = () => {
               <Link className="contact-link nav-contact-link" to={item.route}>
                 {item.name}
               </Link>
+            </li>
+          ) : item.name === "Services" ? (
+            <li key={`link-${item.name}`} className="services-link">
+              <div className="">
+                <Link href="#" className="service-container">
+                  Services
+                  <IoIosArrowDown size={18} className="caret" />
+                </Link>
+              </div>
+              <DropdownMenu />
             </li>
           ) : (
             <li className="nav-link" key={`link-${item.name}`}>

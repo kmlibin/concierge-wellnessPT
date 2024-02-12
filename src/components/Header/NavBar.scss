@@ -1,5 +1,67 @@
 @import "../../variables/variables.scss";
 
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 90%;
+  left: 0;
+  margin-top: 3px;
+  width: 200px;
+  height: 80px;
+
+  .dropdown-list {
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    color: black;
+    list-style: none;
+    background-color: white;
+    border: 5px solid $accent;
+    border-radius: $standard;
+
+    //also look into this if switch back to spaced evenly
+    .dropdown-item {
+      padding: 0 !important;
+    }
+
+    .dropdown-item a {
+      color: $blackText !important;
+      padding: 0 !important;
+      margin: 0 !important;
+
+      &:hover {
+        color: $lightGrey !important;
+      }
+    }
+  }
+}
+//adjust padding here and in navlinks...remove padding, then .navbar links needs to be switched to center or space evenly or something
+.services-link {
+  padding-right: 3rem;
+}
+.services-link:hover .dropdown-menu {
+  display: block;
+
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+
+  .caret {
+    margin-left: 4px;
+    transition: transform 0.3s ease;
+  }
+}
+
+.services-link:hover .caret {
+  transform: rotate(180deg);
+}
+
 .navbar {
   position: relative;
   width: $fullWidth;
@@ -31,14 +93,15 @@
     flex: 1;
     width: 75%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     padding: 0 2rem;
 
     .nav-link {
       cursor: pointer;
+      padding-right: 3rem;
 
       a {
         text-decoration: none;
@@ -51,6 +114,20 @@
       :hover {
         color: $accent;
         border-bottom: 1px solid $accent;
+      }
+    }
+
+    .services-link {
+      position: relative;
+      a {
+        text-decoration: none;
+        color: $primaryText;
+        font-family: $bodyFont;
+        padding: 1rem 0;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+        &:hover {
+          color: $accent;
+        }
       }
     }
     @media screen and (max-width: 900px) {
