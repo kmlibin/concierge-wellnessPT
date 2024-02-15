@@ -10,7 +10,6 @@ const wellnesscontent = {
     "Weekly review of progress",
     "Video, call, or email check-ins",
     "Access to workout programs",
-    "Corporate wellness programs",
   ],
 };
 
