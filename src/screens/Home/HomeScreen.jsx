@@ -94,8 +94,8 @@ const HomeScreen = () => {
           data-aos-easing="ease-in-out"
         >
           <h2>
-            <span className="blue-color">Movement</span> IS{" "}
-            <span className="blue-color">Medicine</span>
+            <span className="blue-color">MOVEMENT</span> IS{" "}
+            <span className="blue-color">MEDICINE</span>
           </h2>
           <span className="hr-line"></span>
           <h4>Dr. Wade and Concierge Wellness will elevate your well-being</h4>
@@ -166,7 +166,7 @@ const HomeScreen = () => {
           <p>
             Looking to work with like-minded small businesses to improve our
             community’s health and wellness. Email Concierge Wellness for
-            inquiries
+            inquiries.
           </p>
           <Partners />
         </div>
