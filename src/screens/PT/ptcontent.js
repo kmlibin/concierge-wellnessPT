@@ -1,6 +1,6 @@
 const ptcontent = {
   header: "Physical Therapy",
-  subheading: "Achieve Recovery and Mobility",
+  subheading: "Achieve Recovery and Mobility and Maximize Performance",
   summary:
     "Empowering your journey to wellness, our dedicated physical therapy services offer personalized assessments and expert treatments. Discover a tailored approach for your optimal health.",
   listOne: [
