@@ -51,15 +51,7 @@ const CoachingScreen = () => {
 
           {/* text of services screen */}
           <div className="services-main">
-            <div
-              style={{
-                backgroundColor: "rgba(176, 176, 176, 0.25)",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                paddingBottom: "1rem",
-              }}
-            >
+            <div className="services-background">
               <div className="services-text">
                 <h1>{wellnesscontent.header}</h1>
                 <h4>{wellnesscontent.subheading}</h4>
@@ -73,6 +65,7 @@ const CoachingScreen = () => {
                     ))}
                   </ul>
                 </div>
+                <p>* Corporate Wellness Programs Available</p>
               </div>
 
               <span className="hr-line"></span>

@@ -51,14 +51,8 @@ const PTScreen = () => {
 
           {/* text of services screen */}
           <div className="services-main">
-            <div
-              style={{
-                backgroundColor: "rgba(176, 176, 176, 0.25)",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                paddingBottom: "1rem",
-              }}
+            <div className="services-background"
+  
             >
               <div className="services-text">
                 <h1>{ptcontent.header}</h1>
