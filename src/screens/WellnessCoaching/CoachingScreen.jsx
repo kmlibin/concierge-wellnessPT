@@ -1,30 +1,27 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Coaching.scss";
 import mariana from "../../assets/marianamedvedeva.jpg";
 import wellnesscontent from "./wellnesscontent";
 import CallButton from "../../components/DiscoveryButton/CallButton";
 import { Helmet } from "react-helmet-async";
-import jeremy from '../../assets/jeremythomas.jpg'
-import line from '../../assets/line.png'
-import food from '../../assets/food.png';
-import report from '../../assets/report.png';
-import yoga from '../../assets/yoga.png'
+import jeremy from "../../assets/jeremythomas.jpg";
+import food from "../../assets/food.png";
+import report from "../../assets/report.png";
+import yoga from "../../assets/yoga.png";
 import IconContainer from "../../components/Icons/IconContainer";
 
 const CoachingScreen = () => {
-    const [icons] = useState(
-        [
-            {icon: report, alt: "clipboard icon" },
-            {icon: food, alt: "healthy plate icon" },
-            {icon: yoga, alt: "mindfulness icon" },
-        ]
-    )
+  const [icons] = useState([
+    { icon: report, alt: "clipboard icon" },
+    { icon: food, alt: "healthy plate icon" },
+    { icon: yoga, alt: "mindfulness icon" },
+  ]);
   return (
     <>
       <Helmet>
         <title>
           Wellness Coaching Services Provided by Concierge Wellness Physical
-          Therapy
+          Therapy, Colorado Springs and Fountain
         </title>
         <meta
           name="description"
@@ -42,12 +39,12 @@ const CoachingScreen = () => {
             <img
               className="main-photo two-images"
               src={mariana}
-              alt="Dr. Wade helps a patient achieve proper form with a kettlebell exercise"
+              alt="Healthy Food"
             />{" "}
             <img
               className="main-photo two-images second-image"
               src={jeremy}
-              alt="Dr. Wade helps a patient achieve proper form with a kettlebell exercise"
+              alt="A rock cairn"
             />
             <div className="blue-overlapping"></div>
           </div>
@@ -66,8 +63,8 @@ const CoachingScreen = () => {
               <div className="services-text">
                 <h1>{wellnesscontent.header}</h1>
                 <h4>{wellnesscontent.subheading}</h4>
-                <img src={line} alt="decorative line" style={{width: "40%"}}/>
-                {/* <span className="hr-line"></span> */}
+
+                <span className="hr-line"></span>
                 <p>{wellnesscontent.summary}</p>
                 <div className="service-list">
                   <ul>
@@ -77,16 +74,15 @@ const CoachingScreen = () => {
                   </ul>
                 </div>
               </div>
-              <img src={line} alt="decorative line" style={{width: "40%"}}/>
-              {/* <span className="hr-line"></span> */}
+
+              <span className="hr-line"></span>
 
               {/* three icons at the bottom of services text */}
 
               <div className="services-icons">
                 {icons.map((icon) => (
-                    <IconContainer icon={icon.icon} alt={icon.alt} />
+                  <IconContainer icon={icon.icon} alt={icon.alt} />
                 ))}
-
               </div>
             </div>
           </div>

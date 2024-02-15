@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 //react icons
 import { FaCaretDown } from "react-icons/fa";
 
-import line from '../../../assets/line.png'
-
 //styles
 import "./Card.scss";
 
@@ -47,8 +45,7 @@ const Card = ({ image, alt, heading, duration, bulletpoints, tagline }) => {
                 <li key={index}>{point}</li>
               ))}
             </ul>
-            <img src={line} className="line" alt="decorative line"/>
-            {/* <hr className="hr-line"></hr> */}
+            <hr className="hr-line"></hr>
             <p>{tagline}</p>
           </div>
         </div>
