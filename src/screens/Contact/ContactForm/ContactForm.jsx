@@ -90,7 +90,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form" data-aos="fade-up" data-aos-duration="1000">
+    <div className="contact-form" data-aos="fade-up" data-aos-duration="1000" data-aos-once>
       <form onSubmit={handleSubmit} ref={form}>
         <h2>Let's Connect!</h2>
         <hr className="hr-line" style={{borderBottom: "none", width:"40%"}}></hr>
