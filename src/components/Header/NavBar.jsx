@@ -23,7 +23,7 @@ const navRoutes = [
     route: "/",
   },
   {
-    name: "Meet Your PT",
+    name: "Meet The Team",
     route: "/about",
   },
   {
