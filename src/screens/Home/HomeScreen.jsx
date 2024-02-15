@@ -31,10 +31,10 @@ const HomeScreen = () => {
 
   //controls modal pop up
   useEffect(() => {
-    //2 seconds
+    //10 seconds
     const timeoutId = setTimeout(() => {
       setIsOpen(true);
-    }, 7000);
+    }, 10000);
     return () => clearTimeout(timeoutId);
   }, []);
 
