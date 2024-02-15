@@ -13,6 +13,9 @@ import { IoIosArrowDown } from "react-icons/io";
 //images
 import logosmall from "../../assets/logosmall.png";
 
+//components
+import DropdownMenu from "./DropDown";
+
 //routes for the links
 const navRoutes = [
   {
@@ -25,7 +28,6 @@ const navRoutes = [
   },
   {
     name: "Services",
-    route: "",
   },
 
   {
@@ -38,29 +40,20 @@ const navRoutes = [
   },
 ];
 
-const DropdownMenu = () => {
-  return (
-    <div className="dropdown-menu">
-      <ul className="dropdown-list">
-        <li className="dropdown-item nav-link">
-          <Link to="/physicaltherapy">Physical Therapy</Link>
-        </li>
-        <li className="dropdown-item nav-link">
-          <Link to="/wellnesscoaching">Wellness Coaching</Link>
-        </li>
-      </ul>
-    </div>
-  );
-};
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
   const handleLinkClick = () => {
     setToggle(false);
+  };
+  const handleServicesClick = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen);
   };
 
   return (
@@ -98,6 +91,8 @@ const NavBar = () => {
       <div className="navbar-menu">
         <HiMenuAlt4 className="open-nav" onClick={handleToggle} />
       </div>
+
+      {/* responsive nav */}
       {toggle && (
         <div
           className="navbar-menu-content"
@@ -111,7 +106,10 @@ const NavBar = () => {
           <ul>
             {navRoutes.map((item) =>
               item.name === "Contact" ? (
-                <li className="contact-link" key={`link-${item.name}`}>
+                <li
+                  className="contact-link resp-link"
+                  key={`link-${item.name}`}
+                >
                   <Link
                     to={item.route}
                     className="blue-color"
@@ -121,8 +119,29 @@ const NavBar = () => {
                     {item.name}
                   </Link>
                 </li>
+              ) : item.name === "Services" ? (
+                <li
+                  key={`link-${item.name}`}
+                  onClick={handleServicesClick}
+                  className="resp-link"
+                >
+                  <div className="resp-dropdown">
+                    <Link href="" className="service-container">
+                      Services
+                      <IoIosArrowDown
+                        size={18}
+                        className={`caret ${
+                          servicesDropdownOpen ? "open" : "closed"
+                        }`}
+                      />
+                    </Link>
+                  </div>
+                  {servicesDropdownOpen && (
+                    <DropdownMenu toggle={toggle} handleLinkClick={handleLinkClick} />
+                  )}
+                </li>
               ) : (
-                <li className="nav-link" key={`link-${item.name}`}>
+                <li className="resp-link" key={`link-${item.name}`}>
                   <Link to={item.route} onClick={handleLinkClick}>
                     {item.name}
                   </Link>
