@@ -39,11 +39,13 @@ const CoachingScreen = () => {
             <img
               className="main-photo two-images"
               src={mariana}
+              title="Photo by Mariana Medvedeva from Unsplash"
               alt="Healthy Food"
             />{" "}
             <img
               className="main-photo two-images second-image"
               src={jeremy}
+              title="Photo by Jeremy Thomas on Unsplash"
               alt="A rock cairn"
             />
             <div className="blue-overlapping"></div>

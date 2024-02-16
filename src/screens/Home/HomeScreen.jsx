@@ -54,7 +54,7 @@ const HomeScreen = () => {
         <div className="logo-container">
           <img
             src={logowithoutwords}
-            alt="logo"
+            alt="Concierge Wellness logo"
             style={{ height: "auto", width: "50%" }}
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -136,8 +136,8 @@ const HomeScreen = () => {
 
         <div
           className="plx-image2"
-          title="Weight Lifter"
-          alt="Photo by Victor Freitas on Unsplash "
+          title="Photo by Kelly Sikkema on Unsplash "
+          alt="Fitness Bands"
         ></div>
 
         {/* google map */}
