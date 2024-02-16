@@ -1,6 +1,6 @@
 const wellnesscontent = {
   header: "Wellness Coaching",
-  subheading: "Become a Healthier You!",
+  subheading: "Create sustainable lifestyle habits to become a healthier you",
   summary:
     "Embark on a journey to better health with our Wellness Coaching services. From personalized goal-setting to regular progress reviews, we provide comprehensive support to help you achieve your wellness goals effectively.",
   listOne: [
