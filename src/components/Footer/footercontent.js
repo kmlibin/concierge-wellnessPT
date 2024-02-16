@@ -4,7 +4,7 @@ const footercontent = {
   address2: "Fountain, Colorado 80817",
   phone: "719-247-2207",
   email: "christian@conciergewellnessandpt.com",
-  insta: "https://www.instagram.com/conciergewellnessandpt/",
+  insta: "https://www.instagram.com/concierge_wellness/",
 };
 
 export default footercontent;

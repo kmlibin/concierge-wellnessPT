@@ -81,8 +81,8 @@ const HomeScreen = () => {
 
         <div
           className="plx-image1"
-          title="Weight Lifter"
-          alt="Photo by Victor Freitas on Unsplash "
+          title="Photo by Victor Freitas on Unsplash "
+          alt="Weight Lifter"
         ></div>
 
         {/* the process/cards section */}
