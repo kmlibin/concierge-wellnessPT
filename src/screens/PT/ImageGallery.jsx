@@ -16,6 +16,12 @@ import device from './GalleryPhotos/device.jpg'
 import manipulation from './GalleryPhotos/manipulation.jpg'
 import treatment1 from './GalleryPhotos/treatment1.jpg'
 import cords from './GalleryPhotos/cords.JPG'
+import leg2 from './GalleryPhotos/leg2.PNG'
+import ksquat from './GalleryPhotos/ksquat.PNG'
+import discuss from './GalleryPhotos/discuss.PNG'
+import lroom from './GalleryPhotos/lroom.PNG'
+
+
 
 //libraries
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
@@ -34,6 +40,11 @@ const ImageGallery = () => {
     treatment1,
     squarehips,
     cords,
+    leg2,
+    ksquat,
+    discuss,
+    lroom
+ 
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesPerPage = 5;
