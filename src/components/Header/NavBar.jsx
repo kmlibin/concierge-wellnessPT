@@ -73,11 +73,11 @@ const NavBar = () => {
             </li>
           ) : item.name === "Services" ? (
             <li key={`link-${item.name}`} className="services-link">
-              <div className="">
-                <Link href="#" className="service-container">
+              <div className="service-container">
+              
                   Services
                   <IoIosArrowDown size={18} className="caret" />
-                </Link>
+               
               </div>
               <DropdownMenu />
             </li>
