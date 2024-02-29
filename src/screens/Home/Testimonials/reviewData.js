@@ -7,13 +7,13 @@ const reviewData = [
         game-changer for me. From our very first session, it was clear that
         Christian isn't just any physical therapist, he genuinely cares about
         his clients and goes above and beyond to offer solutions tailored to
-        individual needs. The cash payment option simplified things
-        for me, removing the usual insurance-related stress. What truly touched
-        me was Christian's willingness to travel and ensure I was comfortable in
-        my own environment. Beyond his exceptional skills, Christian has an
-        incredible way of explaining complex concepts. He broke everything down,
-        ensuring I understood every step of my treatment. I can't express enough
-        how grateful I am for Christian's dedication and expertise. If you're
+        individual needs. The cash payment option simplified things for me,
+        removing the usual insurance-related stress. What truly touched me was
+        Christian's willingness to travel and ensure I was comfortable in my own
+        environment. Beyond his exceptional skills, Christian has an incredible
+        way of explaining complex concepts. He broke everything down, ensuring I
+        understood every step of my treatment. I can't express enough how
+        grateful I am for Christian's dedication and expertise. If you're
         considering physical therapy, look no further than Concierge Wellness.
       </div>
     ),
@@ -42,16 +42,17 @@ const reviewData = [
     content: (
       <div>
         Christian was my first point of contact after a stress fracture in my
-        foot. As an active person and avid trail runner, I was itching to get back to training as soon as possible
-        and I wouldn't have been able to do it without Christian's guidance and
-        expertise. He pinpointed some weaknesses and gave me recommendations and
-        exercises to correct imbalances so that I would rehab correctly.
-        Christian recommended Dry Needling for my knee, and even though I was a
-        little nervous about it (I mean, needles, come on) the relief was almost
-        immediate. He also talked to other running specialists and PTs to
-        help him make the best decisions about my rehab. Plus, he made it very easy to schedule
-        and he provides in-home treatment. He's clearly committed to patient
-        care and learning as much as he can about his field!
+        foot. As an active person and avid trail runner, I was itching to get
+        back to training as soon as possible and I wouldn't have been able to do
+        it without Christian's guidance and expertise. He pinpointed some
+        weaknesses and gave me recommendations and exercises to correct
+        imbalances so that I would rehab correctly. Christian recommended Dry
+        Needling for my knee, and even though I was a little nervous about it (I
+        mean, needles, come on) the relief was almost immediate. He also talked
+        to other running specialists and PTs to help him make the best decisions
+        about my rehab. Plus, he made it very easy to schedule and he provides
+        in-home treatment. He's clearly committed to patient care and learning
+        as much as he can about his field!
       </div>
     ),
   },
@@ -63,7 +64,15 @@ const reviewData = [
      More importantly, Christian helped our daughter with a foot injury she had overseas. He treated her virtually (over zoom). 
      It was such a blessing to her to have Christian’s care and expertise and he definitely helped her strengthen and heal. 
      While some doctors indicated surgery might be needed, it was Christian who insisted she be patient and persistent with her exercises. 
-     It worked! I highly recommend Dr Wade. If you can’t meet with him in person, he will virtually find a way to help.  `,
+     It worked! I highly recommend Dr Wade. If you can’t meet with him in person, he will virtually find a way to help.`,
+  },
+  {
+    name: "Shane M.",
+    content: `Christian got me in within 2 days after an injury and had a very flexible schedule. He was very professional and 
+    documented everything that we did, gave me take home exercises to complete and provided me a receipt for my HSA (along with
+       a very fair price). If I ever need assistance again I will 100% be back. He also had some great overall tips on diet and 
+       exercise as well.
+    `,
   },
 ];
 
