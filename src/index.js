@@ -16,7 +16,6 @@ import "./index.scss";
 import App from "./App";
 import HomeScreen from "./screens/Home/HomeScreen";
 import BioScreen from "./screens/Bio/BioScreen";
-import MyStoryScreen from "./screens/Story/MyStoryScreen";
 import ContactScreen from "./screens/Contact/ContactScreen";
 import FAQScreen from "./screens/FAQ/FAQScreen";
 import NotFoundScreen from "./screens/NotFound/NotFoundScreen";
@@ -28,7 +27,6 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index={true} path="/" element={<HomeScreen />} />
       <Route path="/about" element={<BioScreen />} />
-      <Route path="/mystory" element={<MyStoryScreen />} />
       <Route path="/contact" element={<ContactScreen />} />
       <Route path="/physicaltherapy" element={<PTScreen />} />
       <Route path="/faq" element={<FAQScreen />} />
