@@ -9,7 +9,7 @@ const DropdownMenu = ({ toggle, handleLinkClick }) => {
             Physical Therapy
           </Link>
         </li>
-        <li className="dropdown-item nav-link">
+        <li className={`${!toggle ? "dropdown-item nav-link" : "drop-link"}`}>
           <Link to="/wellnesscoaching" onClick={handleLinkClick}>
             Wellness Coaching
           </Link>

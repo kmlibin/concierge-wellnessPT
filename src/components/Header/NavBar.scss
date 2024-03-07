@@ -212,12 +212,13 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: column;
     padding-inline-start: 0;
+  
 
     .resp-link {
       margin: 1rem;
@@ -237,6 +238,7 @@
       .resp-dropdown {
         display: flex;
         justify-content: flex-end;
+ 
 
         .service-container {
           display: flex;
@@ -250,18 +252,21 @@
         border-radius: $standard;
         padding: 1rem;
         width: 100%;
+    
 
         .resp-dropdown-list {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
+          justify-content: flex-end;
+        
         }
 
         .drop-link {
-          margin: 0.5rem 1rem 0.5rem 0;
+          margin: 0.5rem 0 0.5rem 0;
 
           a {
-            font-size: 14px;
+            font-size: 15px;
           }
         }
       }
