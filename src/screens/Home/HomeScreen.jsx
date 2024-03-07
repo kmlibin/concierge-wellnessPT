@@ -9,17 +9,11 @@ import "./HomeScreen.scss";
 //components
 import Testimonials from "./Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
-import Card from "./Card/Card.jsx";
 import Map from "../../components/GoogleMap/Map.jsx";
 import Partners from "../../components/Partners/Partners.jsx";
 import Modal from "../../components/Modal/Modal.jsx";
-
-//content and images
-import homecontent from "./homecontent.js";
-import logowithoutwords from "../../assets/logowithoutwords.png";
-import gymweights from "../PT/GalleryPhotos/gymweights.jpg";
-import twist from "../../assets/twist.jpg";
-import livewell from "../../assets/livewell.jpg";
+import Hero from "./Hero/Hero.jsx";
+import MainContent from "./MainContent/MainContent.jsx";
 
 const HomeScreen = () => {
   const [submissionStatus, setSubmissionStatus] = useState({
@@ -48,134 +42,47 @@ const HomeScreen = () => {
         />
       </Helmet>
 
-      {/* hero section */}
-
       <main className="main-container">
-        <div className="logo-container">
-          <img
-            src={logowithoutwords}
-            alt="Concierge Wellness logo"
-            style={{ height: "auto", width: "50%" }}
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          />
-          <div
-            className="brand-text"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-easing="ease-in-out"
-          >
-            <h1>
-              <span className="blue-color">Physical Therapy </span>and{" "}
-              <span className="blue-color">Wellness Coaching </span> <br />
-              at your own convenience.
-            </h1>
-            <h4>In home services and telehealth available</h4>
-          </div>
-        </div>
+        {/* hero section */}
+        <Hero />
 
+        {/* testimonial section */}
         <Testimonials />
 
-        {/* parallax 1 */}
+        {/* parallax 1, works on iOS as well */}
 
-        {/* <div
-          className="plx-image1"
+        <div
+          class="parallax-fixed-bg"
           title="Photo by Victor Freitas on Unsplash "
           alt="Weight Lifter"
-        ></div> */}
-
-        <div class="e-with-fixed-bg">
-          <div class="bg-wrap">
-            <div class="bg"></div>
+        >
+          <div class="parallax-wrap">
+            <div class="parallax"></div>
           </div>
         </div>
 
         {/* the process/cards section */}
+        <MainContent />
 
-        <div
-          className="process-container"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-easing="ease-in-out"
-        >
-          <h2>
-            <span className="blue-color">MOVEMENT</span> IS{" "}
-            <span className="blue-color">MEDICINE</span>
-          </h2>
-          <span className="hr-line"></span>
-          <h4>Dr. Wade and Concierge Wellness will elevate your well-being</h4>
-          <p> Recovery | Performance | Wellness</p>
-          <div className="process-info-container">
-            <Card
-              image={twist}
-              alt="A man using a foam roller"
-              heading="Recovery"
-              duration="800"
-              bulletpoints={homecontent.home.bulletpointsOne}
-              tagline={`Whether you're overcoming an injury or seeking post-operative care, 
-              our expert guidance will help you regain strength and flexibility, ensuring a swift and effective recovery.`}
-            />
-            <Card
-              image={gymweights}
-              alt="Dr. Wade helps a patient with a deadlift"
-              heading="Performance"
-              duration="1000"
-              bulletpoints={homecontent.home.bulletpointsTwo}
-              tagline={` Tailored to your unique goals, our programs enhance endurance, optimize movement mechanics, and empower you to achieve peak performance.`}
-            />
-            <Card
-              image={livewell}
-              alt="Acrabble tiles that say live well"
-              heading="Wellness"
-              duration="1200"
-              bulletpoints={homecontent.home.bulletpointsThree}
-              tagline={` Our holistic approach integrates physical therapy and wellness coaching to promote a balanced and healthy lifestyle, 
-              fostering long-term vitality and resilience.`}
-            />
-          </div>
-        </div>
-
+        {/* call button */}
         <CallButton />
 
         {/* parallax 2 */}
-
         <div
-          className="plx-image2"
+          class="parallax-fixed-bg parallax-margin"
           title="Photo by Kelly Sikkema on Unsplash "
           alt="Fitness Bands"
-        ></div>
+        >
+          <div class="parallax-wrap">
+            <div class="parallax2"></div>
+          </div>
+        </div>
 
         {/* google map */}
-
-        <div
-          className="location"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-easing="ease-in-out"
-        >
-          <h2>Our Location</h2>
-          <span className="hr-line"></span>
-          <Map />
-        </div>
+        <Map />
 
         {/* partners section */}
-
-        <div
-          className="partners"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-easing="ease-in-out"
-        >
-          <h2>Proud Partners</h2>
-          <span className="hr-line"></span>{" "}
-          <p>
-            Looking to work with like-minded small businesses to improve our
-            community’s health and wellness. Email Concierge Wellness for
-            inquiries.
-          </p>
-          <Partners />
-        </div>
+        <Partners />
 
         {/* pop up  */}
         {isOpen && (
