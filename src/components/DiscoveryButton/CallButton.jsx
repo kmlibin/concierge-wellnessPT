@@ -7,7 +7,7 @@ const CallButton = () => {
         className="contact-link call"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true"
+        href="https://calendly.com/conciergewellness/free-discovery-call"
       >
         Book FREE Discovery Call!
       </a>
