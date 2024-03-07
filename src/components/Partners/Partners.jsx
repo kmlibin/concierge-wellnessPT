@@ -4,7 +4,7 @@ import React from "react";
 import "./Partners.scss";
 
 //content
-import partners from "../../constants/partners";
+import partners from "./partners";
 
 const Partners = () => {
   return (
