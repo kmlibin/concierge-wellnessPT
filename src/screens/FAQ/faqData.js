@@ -32,9 +32,11 @@ const faqData = [
   {
     question: `What is dry needling?`,
     answer: ` Dry needling is a therapeutic technique that involves the insertion of thin, solid needles into specific 
-    points in the body, known as myofascial trigger points to stimulate a healing response.  Unlike acupuncture, 
-    which is rooted in traditional Chinese medicine and focuses on balancing the body's energy flow, dry needling is a Western 
-    medicine technique primarily used for the treatment of musculoskeletal pain and dysfunction.`,
+    points in the body, known as myofascial trigger points to stimulate a healing response.  Dry needling is a therapeutic 
+    technique that involves the insertion of thin, solid needles into specific points in the body, known as myofascial trigger 
+    points to stimulate a healing response. Unlike acupuncture, which is rooted in traditional Chinese medicine and focuses 
+    on balancing the body's energy flow, dry needling is a Western medicine technique primarily used to improve tissue health, 
+    decrease pain, and improve muscle function.`,
   },
   {
     question: `Can you work with clients in another state?`,

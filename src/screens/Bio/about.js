@@ -1,7 +1,7 @@
 export const about= {
     header: "Dr. Christian Wade",
     subheading: "Owner of Concierge Wellness",
-    credential: "PT, DPT",
+    credential: "Physical Therapist and Wellness Coach",
     content: (
       <div>
         Dr. Christian Wade, a native of Fort Worth, TX, discovered his passion

@@ -19,7 +19,7 @@ const HomeScreen = () => {
   const [submissionStatus, setSubmissionStatus] = useState({
     heading: "Welcome",
     message: "Book a FREE Discovery Call with Dr. Wade!",
-    link: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1EETz6ot_qwrUVyS1SoXryFGwiVbG2x95K22gDuY4CVbJ1KHUqBRfEatmAd_TC_yjMB1cAE2eZ?gv=true",
+    link: "https://calendly.com/conciergewellness/free-discovery-call",
   });
   const [isOpen, setIsOpen] = useState(false);
 
