@@ -79,11 +79,17 @@ const HomeScreen = () => {
 
         {/* parallax 1 */}
 
-        <div
+        {/* <div
           className="plx-image1"
           title="Photo by Victor Freitas on Unsplash "
           alt="Weight Lifter"
-        ></div>
+        ></div> */}
+
+        <div class="e-with-fixed-bg">
+          <div class="bg-wrap">
+            <div class="bg"></div>
+          </div>
+        </div>
 
         {/* the process/cards section */}
 
