@@ -10,7 +10,7 @@ import "./HomeScreen.scss";
 import Testimonials from "./Testimonials/Testimonials.jsx";
 import CallButton from "../../components/DiscoveryButton/CallButton.jsx";
 import Map from "../../components/GoogleMap/Map.jsx";
-import Partners from "../../components/Partners/Partners.jsx";
+import Partners from "../../components/Partners/ProudPartners.jsx";
 import Modal from "../../components/Modal/Modal.jsx";
 import Hero from "./Hero/Hero.jsx";
 import MainContent from "./MainContent/MainContent.jsx";
