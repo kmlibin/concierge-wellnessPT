@@ -4,7 +4,9 @@ import React from "react";
 import homecontent from "../homecontent.js";
 import gymweights from "../../PT/GalleryPhotos/gymweights.jpg";
 import twist from "../../../assets/twist.jpg";
-import livewell from "../../../assets/livewell.jpg";
+// import livewell from "../../../assets/livewell.jpg";
+import discuss2 from '../../../assets/discuss3.PNG'
+// import unamed from '../../../assets/unamed.jpg'
 
 //components
 import Card from "./Card.jsx";
@@ -43,7 +45,7 @@ const MainContent = () => {
           tagline={` Tailored to your unique goals, our programs enhance endurance, optimize movement mechanics, and empower you to achieve peak performance.`}
         />
         <Card
-          image={livewell}
+          image={discuss2}
           alt="Acrabble tiles that say live well"
           heading="Wellness"
           duration="1200"
