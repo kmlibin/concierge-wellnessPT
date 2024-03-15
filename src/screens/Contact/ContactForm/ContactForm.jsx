@@ -47,7 +47,7 @@ const ContactForm = () => {
         emailjs
           .sendForm(
             process.env.REACT_APP_SERVICE_ID,
-            "template_m2bhs6m",
+            "template_r4rir42",
             form.current,
             process.env.REACT_APP_PUBLIC_KEY
           )
