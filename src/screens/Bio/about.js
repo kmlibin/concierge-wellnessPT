@@ -17,8 +17,7 @@ export const about= {
         personally experiencing the benefits following an injury. His
         educational journey culminated in the attainment of a Doctorate from Texas Woman's University in
         Dallas. Eager to broaden his perspective, he embarked on a two-year
-        journey, working in five different states across over 10 physical
-        therapy clinics. 
+        journey, working 10 different physical therapy clinics across 5 states. 
         <br /> <br />
         These diverse experiences not only enriched Dr. Wade's
         understanding of the healthcare system but also exposed him to various
