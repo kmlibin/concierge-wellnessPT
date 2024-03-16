@@ -3,7 +3,7 @@ const reviewData = [
     name: "Dylan T. ",
     content: (
       <div>
-        Working with Christian Wade from Concierge Wellness has been a
+        Working with Christian Wade from Concierge Wellness is a
         game-changer for me. From our very first session, it was clear that
         Christian isn't just any physical therapist, he genuinely cares about
         his clients and goes above and beyond to offer solutions tailored to
@@ -58,12 +58,12 @@ const reviewData = [
   },
   {
     name: "Priscilla D.",
-    content: `Doctor Wade has helped not only me, but one of my adult children - both virtually. Christian gave me exercises to 
-    help strengthen my ankle after I broke it with a fall. He definitely helped me get back on the ski slopes through 
+    content: `Doctor Wade has helped me and one of my adult children - both virtually. Christian gave me exercises to 
+     strengthen my ankle after I broke it with a fall. He helped me get back on the ski slopes through 
     strength training and stretching. The movement in my left foot/ankle now matches the right (which is a HUGE improvement).
      More importantly, Christian helped our daughter with a foot injury she had overseas. He treated her virtually (over zoom). 
      It was such a blessing to her to have Christian’s care and expertise and he definitely helped her strengthen and heal. 
-     While some doctors indicated surgery might be needed, it was Christian who insisted she be patient and persistent with her exercises. 
+     While some doctors indicated surgery might be needed, Christian insisted she be patient and persistent with her exercises. 
      It worked! I highly recommend Dr Wade. If you can’t meet with him in person, he will virtually find a way to help.`,
   },
   {
