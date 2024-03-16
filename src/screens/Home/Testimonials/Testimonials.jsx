@@ -72,7 +72,9 @@ const Testimonials = () => {
                 <h4>{review.name}</h4>
                 <span className="hr-line"></span>
               </div>
+              <div className="center-content">
               <p>{review.content}</p>
+              </div>
             </div>
             <div className="testimonial-dots">{renderDots()}</div>
           </div>
