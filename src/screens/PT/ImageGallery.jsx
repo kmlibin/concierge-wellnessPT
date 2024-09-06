@@ -4,24 +4,22 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./ImageGallery.scss";
 
 //images
-import gymbrand from './GalleryPhotos/gymbrand.jpg'
-import gymweights from './GalleryPhotos/gymweights.jpg'
-import gym from './GalleryPhotos/gym.jpg'
-import foot from './GalleryPhotos/foot.jpg'
-import assessment from './GalleryPhotos/assessment.jpg'
-import looking from './GalleryPhotos/looking.jpg'
-import stretch from './GalleryPhotos/stretch.jpg'
-import squarehips from './GalleryPhotos/squarehips.jpg'
-import device from './GalleryPhotos/device.jpg'
-import manipulation from './GalleryPhotos/manipulation.jpg'
-import treatment1 from './GalleryPhotos/treatment1.jpg'
-import cords from './GalleryPhotos/cords.JPG'
-import leg2 from './GalleryPhotos/leg2.PNG'
-import ksquat from './GalleryPhotos/ksquat.PNG'
-import discuss from './GalleryPhotos/discuss.PNG'
-import lroom from './GalleryPhotos/lroom.PNG'
-
-
+import gymbrand from "./GalleryPhotos/gymbrand.jpg";
+import gymweights from "./GalleryPhotos/gymweights.jpg";
+import foot from "./GalleryPhotos/foot.jpg";
+import assessment from "./GalleryPhotos/assessment.jpg";
+import looking from "./GalleryPhotos/looking.jpg";
+import stretch from "./GalleryPhotos/stretch.jpg";
+import squarehips from "./GalleryPhotos/squarehips.jpg";
+import device from "./GalleryPhotos/device.jpg";
+import manipulation from "./GalleryPhotos/manipulation.jpg";
+import treatment1 from "./GalleryPhotos/treatment1.jpg";
+import cords from "./GalleryPhotos/cords.JPG";
+import leg2 from "./GalleryPhotos/leg2.PNG";
+import ksquat from "./GalleryPhotos/ksquat.PNG";
+import discuss from "./GalleryPhotos/discuss.PNG";
+import lroom from "./GalleryPhotos/lroom.PNG";
+import gym1 from "./GalleryPhotos/gym1.jpg";
 
 //libraries
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
@@ -29,7 +27,6 @@ import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 const ImageGallery = () => {
   const images = [
     device,
-    gym,
     looking,
     gymweights,
     foot,
@@ -43,8 +40,8 @@ const ImageGallery = () => {
     leg2,
     ksquat,
     discuss,
-    lroom
- 
+    lroom,
+    gym1,
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesPerPage = 5;
